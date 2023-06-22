@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  @apply bg-main-white;
+  @apply font-lato
+}
