@@ -1,3 +1,4 @@
+import ProjectInfo from "../components/ProjectInfo"
 import { SectionTitle } from "../components/SectionTitle"
 
 const Projects = () => {
@@ -9,6 +10,7 @@ const Projects = () => {
         </div>
         <div className="w-1/2 bg-gray-50 h-full py-36 px-36">
         <SectionTitle sectionTitle="My work." sectionVariant={true}/>
+        <ProjectInfo />
         </div>
       </div>
     </section>

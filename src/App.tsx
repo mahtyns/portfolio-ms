@@ -19,7 +19,6 @@ function App() {
       <Technology />
       <Experience />
       <Contact />
-      <ProjectCard />
     </>
   )
 }

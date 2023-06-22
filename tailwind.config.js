@@ -25,7 +25,10 @@ export default {
         'module-big': '900px',
         'module-medium': '650px',
         'module-small': '400px'
-      }
+      },
+      animation: {
+        'spin': 'spin 15s linear infinite'
+      },
     },
     screens: {
       xxs: '320px',

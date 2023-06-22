@@ -1,9 +1,9 @@
 
 const ProjectCard = () => {
   return (
-    <div className={`w-96 border border-main-dark`}>
+    <article className={`w-96 border border-main-dark`}>
       ProjectCard
-    </div>
+    </article>
   )
 }
 
