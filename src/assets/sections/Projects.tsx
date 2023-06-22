@@ -1,7 +1,17 @@
+import { SectionTitle } from "../components/SectionTitle"
 
-export const Projects = () => {
+const Projects = () => {
   return (
-    <section></section>
+    <section className={`bg-gray-100 h-module-big`}>
+      <div className={'flex h-full'}>
+        <div className="w-1/2 py-36 px-36">
+
+        </div>
+        <div className="w-1/2 bg-gray-50 h-full py-36 px-36">
+        <SectionTitle sectionTitle="My work." sectionVariant={true}/>
+        </div>
+      </div>
+    </section>
   )
 }
 

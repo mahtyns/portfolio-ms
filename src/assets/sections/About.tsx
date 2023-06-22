@@ -1,6 +1,13 @@
+import { SectionTitle } from "../components/SectionTitle"
 
-export const About = () => {
+const About = () => {
   return (
-    <section></section>
+    <section className={'bg-main-dark h-module-medium py-12 px-24'}>
+      <div>
+        <SectionTitle sectionTitle="Something about me." sectionVariant={false}/>
+      </div>
+    </section>
   )
 }
+
+export default About

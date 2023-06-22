@@ -17,6 +17,14 @@ export default {
       fontFamily: {
         lato: ['Lato', 'sans-serif'],
         playfair: ['Playfair Display', 'serif']
+      },
+      fontSize: {
+        '2xl': '2em'
+      },
+      height: {
+        'module-big': '900px',
+        'module-medium': '650px',
+        'module-small': '400px'
       }
     },
     screens: {

@@ -1,5 +1,9 @@
-export const Home = () => {
+const Home = () => {
   return (
-    <section></section>
+    <section className={'h-module-big '}>
+
+    </section>
   )
 }
+
+export default Home
