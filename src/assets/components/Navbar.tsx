@@ -9,7 +9,6 @@ const flex = `flex items-center justify-between`
 const Navbar = () => {
 
     const [isMenuToggled, setMenuToggled] = useState(false)
-
     const isAboveMediumScreen = useMediaQueries("(min-width: 1024px)");
 
     return (
@@ -21,12 +20,12 @@ const Navbar = () => {
                 </div>
                 {isAboveMediumScreen
                     ? <div className={`${flex} gap-4`}>
-                            <Navlink pageName="Home"/>
-                            <Navlink pageName="Projects"/>
-                            <Navlink pageName="About"/>
-                            <Navlink pageName="Technology"/>
-                            <Navlink pageName="Experience"/>
-                            <Navlink pageName="Contact"/>
+                            <Navlink pageName="Home" clickedPage="home"/>
+                            <Navlink pageName="Projects" clickedPage="projects"/>
+                            <Navlink pageName="About" clickedPage="about"/>
+                            <Navlink pageName="Technology" clickedPage="technology"/>
+                            <Navlink pageName="Experience" clickedPage="experience"/>
+                            <Navlink pageName="Contact" clickedPage="contact"/>
                         </div>
                     : <div onClick={()=>setMenuToggled(!isMenuToggled)}>
                         <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" className="w-5 h-5"/>

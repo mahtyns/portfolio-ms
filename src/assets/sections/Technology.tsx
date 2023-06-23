@@ -2,7 +2,7 @@ import {SectionTitle} from "../components/SectionTitle"
 
 const Technology = () => {
     return (
-        <section className={'h-screen xl:h-module-medium p-12 xl:p-12 relative overflow-hidden'}>
+        <section id="technology" className={'h-screen xl:h-module-medium p-12 xl:p-12 relative overflow-hidden'}>
             <div className="w-full flex flex-col xl:flex-row">
                 <div className="xl:w-1/2"></div>
                 <div className="xl:w-1/2 xl:p-16 ">

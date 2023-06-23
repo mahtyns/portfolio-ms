@@ -2,7 +2,7 @@ import Navlink from "./Navlink"
 
 type Props = {
   isMenuToggled: boolean;
-  setMenuToggled: (arg: any)=> void
+  setMenuToggled: (toggle: boolean)=> void
 }
 
 const MenuMobile = ( props: Props ) => {

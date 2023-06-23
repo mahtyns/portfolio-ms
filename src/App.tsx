@@ -8,7 +8,6 @@ import Technology from "./assets/sections/Technology"
 
 function App() {
   
-
   return (
     <>
       <Navbar />

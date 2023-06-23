@@ -9,7 +9,7 @@ const About = () => {
     const isAboveMediumScreen = useMediaQueries('(min-width: 1024px)')
 
     return (
-        <section className={'bg-main-dark xl:h-module-big flex xl:flex-row flex-col'}>
+        <section id="about" className={'bg-main-dark xl:h-module-big flex xl:flex-row flex-col'}>
             <div className="p-16 xl:p-36 xl:w-1/2">
                 <SectionTitle sectionTitle="About me." sectionVariant={false}/>
                 <p

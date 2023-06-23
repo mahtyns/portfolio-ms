@@ -8,7 +8,7 @@ const Projects = () => {
     const isAboveMediumScreen = useMediaQueries('(min-width: 1240px)')
 
     return (
-        <section className={`bg-gray-100 xl:h-module-big`}>
+        <section id="projects" className={`bg-gray-100 xl:h-module-big`}>
             <div className={'flex xl:flex-row flex-col h-full w-full'}>
                 {isAboveMediumScreen
                     ? <div className="w-full py-12 px-12 xl:w-1/2 xl:py-36 xl:px-36">

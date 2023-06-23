@@ -3,7 +3,7 @@ import { SectionTitle } from "../components/SectionTitle"
 const Contact = () => {
 
   return (
-    <section className={'h-module-medium p-16 xl:py-36 xl:px-36'}>
+    <section  id="contact" className={'h-module-medium p-16 xl:py-36 xl:px-36'}>
       <div className="xl:w-1/2">
         <SectionTitle sectionTitle="Let's talk." sectionVariant={true}/>
         <p className="xl:w-5/6 py-8 font-lato  tracking-wide font-light text-lg">

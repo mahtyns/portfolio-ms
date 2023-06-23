@@ -8,7 +8,7 @@ const Home = () => {
     const isAboveMediumScreen = useMediaQueries('(min-width: 1024px)')
 
     return (
-        <section >
+        <section id="home" >
             <div className="flex items-center flex-col justify-between mb-36">
                 {isAboveMediumScreen ? <MainOrbits /> : <MainOrbitsMobile />}                
                 <p className="mb-6 text-2xl font-playfair ">Hello, I'm Martyna.</p>
