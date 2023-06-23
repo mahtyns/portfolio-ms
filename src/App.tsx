@@ -1,5 +1,4 @@
 import Navbar from "./assets/components/Navbar"
-import ProjectCard from "./assets/components/ProjectCard"
 import About from "./assets/sections/About"
 import Contact from "./assets/sections/Contact"
 import Experience from "./assets/sections/Experience"
