@@ -5,7 +5,7 @@ const MainOrbitsMobile = () => {
     const flex = `flex justify-center items-center`
 
     return (
-        <div className={`w-full pt-28 pb-12 ${flex} overflow-hidden flex-col`}>
+        <div className={`w-full pt-8 pb-12 ${flex} overflow-hidden flex-col`}>
             <div className={`${orbit} ${flex} w-[470px] h-[470px] border border-gray-100`}>
                 <div
                     className={`${orbit} ${flex} w-[350px] h-[350px] border border-gray-200 before:bg-special-500 before:w-2 before:h-2 before:rounded-full before:absolute before:transform before:translate-y-64 animate-spin`}>

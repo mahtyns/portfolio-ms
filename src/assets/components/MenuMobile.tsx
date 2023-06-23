@@ -13,12 +13,12 @@ const MenuMobile = ( props: Props ) => {
           <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="close button" className="w-4 h-4 invert"/>
         </div>
         <div className="flex gap-8 flex-col py-10 invert">
-        <Navlink pageName="Home" />
-        <Navlink pageName="Projects" />
-        <Navlink pageName="About" />
-        <Navlink pageName="Technology" />
-        <Navlink pageName="Experience" />
-        <Navlink pageName="Contact" />
+        <Navlink pageName="Home" clickedPage="home" setMenuToggled={props.setMenuToggled}/>
+          <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={props.setMenuToggled} />
+          <Navlink pageName="About" clickedPage="about" setMenuToggled={props.setMenuToggled} />
+          <Navlink pageName="Technology" clickedPage="technology" setMenuToggled={props.setMenuToggled} />
+          <Navlink pageName="Experience" clickedPage="experience" setMenuToggled={props.setMenuToggled} />
+          <Navlink pageName="Contact" clickedPage="contact" setMenuToggled={props.setMenuToggled} />
         </div>
       </div>
     </nav>

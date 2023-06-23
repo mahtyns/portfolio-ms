@@ -5,6 +5,7 @@ import Experience from "./assets/sections/Experience"
 import Home from "./assets/sections/Home"
 import Projects from "./assets/sections/Projects"
 import Technology from "./assets/sections/Technology"
+import Footer from "./assets/sections/Footer"
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
       <Technology />
       <Experience />
       <Contact />
+      <Footer />
     </>
   )
 }

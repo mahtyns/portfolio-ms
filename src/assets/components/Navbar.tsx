@@ -20,12 +20,12 @@ const Navbar = () => {
                 </div>
                 {isAboveMediumScreen
                     ? <div className={`${flex} gap-4`}>
-                            <Navlink pageName="Home" clickedPage="home"/>
-                            <Navlink pageName="Projects" clickedPage="projects"/>
-                            <Navlink pageName="About" clickedPage="about"/>
-                            <Navlink pageName="Technology" clickedPage="technology"/>
-                            <Navlink pageName="Experience" clickedPage="experience"/>
-                            <Navlink pageName="Contact" clickedPage="contact"/>
+                        <Navlink pageName="Home" clickedPage="home" setMenuToggled={setMenuToggled} />
+                        <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={setMenuToggled} />
+                        <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} />
+                        <Navlink pageName="Technology" clickedPage="technology" setMenuToggled={setMenuToggled} />
+                        <Navlink pageName="Experience" clickedPage="experience" setMenuToggled={setMenuToggled} />
+                        <Navlink pageName="Contact" clickedPage="contact" setMenuToggled={setMenuToggled} />
                         </div>
                     : <div onClick={()=>setMenuToggled(!isMenuToggled)}>
                         <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" className="w-5 h-5"/>

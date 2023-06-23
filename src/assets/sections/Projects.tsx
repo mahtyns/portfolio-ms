@@ -1,3 +1,4 @@
+import ActiveCircle from "../components/ActiveCircle"
 import ProjectCardGrid from "../components/ProjectCardGrid"
 import ProjectInfo from "../components/ProjectInfo"
 import {SectionTitle} from "../components/SectionTitle"
@@ -19,7 +20,7 @@ const Projects = () => {
                     className="w-full py-16 px-16 xl:w-1/2 bg-gray-50 h-full xl:py-36 xl:px-36">
                     <SectionTitle sectionTitle="My work." sectionVariant={true}/>
                     <ProjectInfo/>
-                    {isAboveMediumScreen ? null : <p>prev next</p> }
+                    {isAboveMediumScreen ? null : <div className="flex w-full justify-center gap-2"><ActiveCircle /></div> }
                 </div>
             </div>
         </section>

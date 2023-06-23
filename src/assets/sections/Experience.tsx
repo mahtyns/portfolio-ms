@@ -1,3 +1,4 @@
+import ActiveCircle from "../components/ActiveCircle"
 import ExperienceCard from "../components/ExperienceCard"
 import ExperienceCardMobile from "../components/ExperienceCardMobile"
 import {SectionTitle} from "../components/SectionTitle"
@@ -19,21 +20,20 @@ const Experience = () => {
                         </div>
                     : <div className="py-6">
                         <ExperienceCardMobile/>
-                        <div>
-                          <p>Prev</p>
-                          <p>Next</p>
+                        <div className="w-full flex items-center justify-center gap-2 py-4">
+                          <ActiveCircle />
                         </div>
                     </div>}
 
                 <div
                     className="flex flex-row gap-6 text-lg uppercase font-lato font-light py-10">
-                    <p>
+                    <p className="hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s]">
                         Work
                     </p>
-                    <p>
+                    <p className="hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s]">
                         Education
                     </p>
-                    <p>
+                    <p className="hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s]">
                         Courses
                     </p>
                 </div>
