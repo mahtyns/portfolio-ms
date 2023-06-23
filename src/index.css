@@ -10,5 +10,8 @@
 body,
 #root {
   @apply bg-main-white;
-  @apply font-lato
+  @apply font-lato;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }

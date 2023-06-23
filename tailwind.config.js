@@ -30,12 +30,11 @@ export default {
         'spin': 'spin 15s linear infinite'
       },
     },
-    screens: {
-      xxs: '320px',
-      xs: "480px",
-      sm: "768px",
-      md: "1060px"
-    }
+    // screens: {
+    //   xs: "480px",
+    //   sm: "768px",
+    //   md: "1060px"
+    // }
   },
   plugins: [],
 }

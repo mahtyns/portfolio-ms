@@ -9,7 +9,10 @@ const Technology = () => {
       <div className="w-1/2 px-36">
         <SectionTitle sectionTitle="My stack." sectionVariant={true}/>
         <p className="w-5/6 py-8 font-lato  tracking-wide font-light text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam delectus illo iure ex adipisci rem soluta iste, fugiat deserunt!</p>
+        {/* <p className="w-5/6 font-lato  tracking-wide font-light text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam delectus illo iure ex adipisci rem soluta iste, fugiat deserunt!</p> */}
       </div>
+
+      {/* Squares backgroud  */}
       <div className="absolute -bottom-64 left-1/2 w-96 h-96 border border-gray-100 rotate-45"></div>
       <div className="absolute -bottom-64 left-1/3 w-80 h-80 border border-gray-100 rotate-12"></div>
       <div className="absolute -bottom-36 left-1/2 w-64 h-64 border border-gray-200 rotate-6"></div>
