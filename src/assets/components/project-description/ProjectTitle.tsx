@@ -5,7 +5,7 @@ type Props = {
 
 const ProjectTitle = (props: Props) => {
   return (
-    <div className="text-5xl w-5/6 tracking-wide text-main-dark font-playfair pb-4 border-b">
+    <div className="xl:text-5xl text-4xl xl:w-5/6 tracking-wide text-main-dark font-playfair pb-2 md:pb-4 border-b">
         {props.projectTitle}
     </div>
   )
