@@ -1,12 +1,15 @@
+import {useState} from 'react'
 import ExperienceCard from "../components/ExperienceCard"
 import ExperienceCardMobile from "../components/ExperienceCardMobile"
 import {SectionTitle} from "../components/SectionTitle"
 import useMediaQueries from "../hooks/useMediaQueries"
 import { experiences } from "../datafiles/data"
 
+
 const Experience = () => {
 
     const isAboveLargeScren = useMediaQueries('(min-width: 1275px)')
+    const [expCategory, setExpCategory] = useState<string>('work')
 
     return (
         <section id="experience" className={'bg-gray-100 xl:h-module-big py-16 xl:py-36 xl:px-24'}>
@@ -18,8 +21,9 @@ const Experience = () => {
                         <div >
                             <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="prev" className="w-10 h-10 rotate-180" />
                         </div>
-                        {experiences.slice(0, 3)
-                        .filter(elem => elem.experience_cat === 'work')
+                        {experiences
+                        .filter(elem => elem.experience_cat === `${expCategory}`)
+                        .slice(0, 3)
                         .map( (elem, ind) => <ExperienceCard 
                             key={ind} 
                             expName={elem.experience_name} 
@@ -45,13 +49,19 @@ const Experience = () => {
                 {/* Experience categories to choose                  */}
                 <div
                     className="flex flex-row gap-6 text-lg uppercase font-lato font-light py-10">
-                    <p className="hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s]">
+                    <p 
+                    onClick={()=>setExpCategory('work')}
+                    className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'work' ? 'underline underline-offset-4' : null}`}>
                         Work
                     </p>
-                    <p className="hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s]">
+                    <p 
+                    onClick={() => setExpCategory('edu')}
+                    className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'edu' ? 'underline underline-offset-4' : null}` }>
                         Education
                     </p>
-                    <p className="hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s]">
+                    <p 
+                    onClick={() => setExpCategory('course')}
+                    className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'course' ? 'underline underline-offset-4' : null}`}>
                         Courses
                     </p>
                 </div>
