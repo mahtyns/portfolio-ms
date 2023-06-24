@@ -1,6 +1,7 @@
 import ActiveCircle from "./ActiveCircle"
 import ProjectCard from "./ProjectCard"
 import { Project } from "../types/projects"
+import { projects } from "../datafiles/data"
 
 type Props = {
   projects: Array<Project>,
@@ -22,10 +23,8 @@ const ProjectCardGrid = (props: Props) => {
         </div>
     </div>
     <div className="w-full flex justify-center gap-4">
-      <ActiveCircle />
-      <ActiveCircle />
-      <ActiveCircle />
-      <ActiveCircle />
+      {projects.map( (element, index) => 
+      <ActiveCircle key={index} isActive={index === props.projectIndShown ? true : false } />)}
     </div>
   </>
   )

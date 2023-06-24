@@ -22,7 +22,7 @@ export default {
         '2xl': '2em'
       },
       height: {
-        'module-big': '900px',
+        'module-big': '1000px',
         'module-medium': '650px',
         'module-small': '400px'
       },
