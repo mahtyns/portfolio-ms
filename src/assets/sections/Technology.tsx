@@ -1,4 +1,5 @@
 import {SectionTitle} from "../components/SectionTitle"
+import { skills } from "../datafiles/data"
 
 const Technology = () => {
     return (
@@ -7,12 +8,8 @@ const Technology = () => {
                 <div className="xl:w-1/2"></div>
                 <div className="xl:w-1/2 xl:p-16 ">
                     <SectionTitle sectionTitle="My skills." sectionVariant={true}/>
-                    <p className="xl:w-5/6 py-8 font-lato  tracking-wide font-light text-lg">Lorem
-                        ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam delectus
-                        illo iure ex adipisci rem soluta iste, fugiat deserunt!</p>
-                    <p className="w-5/6 font-lato  tracking-wide font-light text-lg">Lorem ipsum
-                        dolor, sit amet consectetur adipisicing elit. Animi laboriosam delectus illo
-                        iure ex adipisci rem soluta iste, fugiat deserunt!</p>
+                    <p className="xl:w-5/6 py-8 font-lato  tracking-wide font-light text-lg">{skills}</p>
+                   
                 </div>
             </div>
 

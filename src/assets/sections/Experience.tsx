@@ -18,7 +18,9 @@ const Experience = () => {
                         <div >
                             <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="prev" className="w-10 h-10 rotate-180" />
                         </div>
-                            {experiences.slice(0,3).map( (elem, ind) => <ExperienceCard 
+                        {experiences.slice(0, 3)
+                        .filter(elem => elem.experience_cat === 'work')
+                        .map( (elem, ind) => <ExperienceCard 
                             key={ind} 
                             expName={elem.experience_name} 
                             expDate={elem.experience_date}

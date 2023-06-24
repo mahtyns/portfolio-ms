@@ -1,6 +1,7 @@
 import {SectionTitle} from "../components/SectionTitle"
 import Button from "../components/Button"
 import useMediaQueries from "../hooks/useMediaQueries"
+import { aboutMe } from "../datafiles/data"
 
 const About = () => {
 
@@ -13,13 +14,12 @@ const About = () => {
             <div className="p-16 xl:p-36 xl:w-1/2">
                 <SectionTitle sectionTitle="About me." sectionVariant={false}/>
                 <p
-                    className="text-lg xl:text-xl text-gray-50 py-12 font-light font-lato leading-8 xl:w-5/6 tracking-wide">
-                    Szybciej bijące serce, czerwienienie się, jąkanie, bezsenność, miękkie kolana.
-                    Co objawia się w taki sposób? I jaki ma z tym związek nasz ośrodek nagrody?
-                    Julia Fischer zaprasza w niesamowitą podróż po świecie emocji. Po nitce neuronów
-                    do kłębka mózgu i fascynujących procesów biochemicznych zachodzących w całym
-                    naszym organizmie. Jej przepełniona emocjami książka pozwoli nam lepiej
-                    zrozumieć uczucia i dostrzec sygnały wysyłane przez nasze ciała.
+                    className="text-lg xl:text-xl text-gray-50 pt-12 font-light font-lato leading-8 xl:w-5/6 tracking-wide">
+                    {aboutMe}
+                </p>
+                <p
+                    className="text-lg xl:text-xl text-gray-50 py-8 font-light font-lato leading-8 xl:w-5/6 tracking-wide">
+                    You can send me a message in:<br/> Polish · English · Spanish
                 </p>
                 <div className="invert">
                     <a href="https://drive.google.com/file/d/1CTbO3_29Qt3iKLAJXI5m7CBFaqr2R-Jt/view?usp=sharing" target="_blank">

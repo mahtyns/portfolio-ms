@@ -53,4 +53,33 @@ export const experiences: Array<Exp> =
         experience_cat: 'work',
         experience_details: ['HTML', 'CSS', 'JavaScript']
         },
+
+
+        {
+        experience_name: 'Master in Architecture, Universidad Alcala',
+        experience_date: 'September 2018 - May 2020',
+            experience_descr: 'Szybciej bijące serce, czerwienienie się, jąkanie, bezsenność, miękkie kolana. Co objawia się w taki sposób? I jaki ma z tym związek nasz ośrodek nagrody? Julia Fischer zaprasza w niesamowitą podróż po świecie emocji.',
+        experience_cat: 'education',
+        experience_details: ['x']
+        },
+        {
+        experience_name: 'Erasmus+ Universidade Lusiada Lisboa',
+        experience_date: 'September 2014 - February 2015',
+            experience_descr: 'Szybciej bijące serce, czerwienienie się, jąkanie, bezsenność, miękkie kolana. Co objawia się w taki sposób? I jaki ma z tym związek nasz ośrodek nagrody? Julia Fischer zaprasza w niesamowitą podróż po świecie emocji.',
+        experience_cat: 'education',
+        experience_details: ['x']
+        },
+        {
+        experience_name: 'Bachelor in Architecture, Warsaw University of Technology',
+        experience_date: 'September 2018 - May 2020',
+            experience_descr: 'Szybciej bijące serce, czerwienienie się, jąkanie, bezsenność, miękkie kolana. Co objawia się w taki sposób? I jaki ma z tym związek nasz ośrodek nagrody? Julia Fischer zaprasza w niesamowitą podróż po świecie emocji.',
+        experience_cat: 'education',
+        experience_details: ['x']
+        },
 ]
+
+export const aboutMe = "I'm Martyna, a Pole living in Madrid and a creative professional who recently underwent an inspiring transition from the world of architecture to the captivating universe of front-end development. My journey began in 2020, when I started learning frontend basics, and since then I've participated in various courses to broaden my knowledge and keep my skills up to date. To keep learning, I'm currently working on my own projects with React and JavaScript/Typescript. I have a keen eye for detail and a problem-solving mindset. I'm passionate about eye-catching designs and immersive user experiences. I'm always eager to learn and open to new challenges. Enjoy your stay on this page and don't hesitate to send me a message if you'd like."
+
+export const contactMe = "I'm always looking for a new challenge and possibilities of learning and growing. Want me in your team? Feel free to contact me and ask me anything you need to know."
+
+export const skills = "I started learning FrontEnd development technologies in late 2020 while still in architecture sector. I've finished online courses for HTML5, CSS3 with animatons and responsive design, and JavaScript. I've also participated in Mentorship Programme for Women, DareIT where under the supervision of my mentor I created SPA projects with React. I'm currently learning TypeScript and Testing."
