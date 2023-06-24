@@ -1,7 +1,12 @@
+type Props = {
+  expDate: string
+}
 
-const ExperienceDate = () => {
+const ExperienceDate = (props: Props) => {
   return (
-    <div className="font-lato font-light uppercase text-base py-2">ExperienceDate</div>
+    <div className="font-lato font-light uppercase text-base py-2">
+      {props.expDate}
+    </div>
   )
 }
 
