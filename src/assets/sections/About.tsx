@@ -37,7 +37,7 @@ const About = () => {
                                     <div className={`${orbit} ${flex} w-[730px] h-[730px] border border-gray-500 `}>
                                         <div className={`${orbit} ${flex} w-[620px] h-[620px] border border-gray-100 `}>
                                             <div
-                                                className={`${orbit} ${flex} w-64 h-64 border border-gray-500 before:bg-gray-400 before:w-2 before:h-2 before:rounded-full before:absolute before:transform before:translate-y-32 animate-spin`}>
+                                                className={`${orbit} ${flex} w-64 h-64 border border-gray-500 before:bg-special-500 before:w-2 before:h-2 before:rounded-full before:absolute before:transform before:translate-y-32 animate-spin`}>
                                                 <div className={`${orbit} ${flex} w-48 h-48 border border-gray-100 `}>
                                                     <div className={`${orbit} ${flex} w-36 h-36 border border-gray-100 `}></div>
                                                 </div>

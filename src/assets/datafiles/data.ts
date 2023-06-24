@@ -3,9 +3,9 @@ import { Exp } from "../types/experiences"
 
 export const projects: Array<Project> = [
     {
-        project_name: 'Volare aerials',
+        project_name: 'Volare Aerials',
         project_date: 'April 2023',
-        project_description: 'Aerial school Volare page, created with React and Typescript. Used Tailwind for CSS styling, smooth scroll for links and framer motion for animations',
+        project_description: 'Aerial school Volare page, created with React and Typescript. Used Tailwind for CSS styling, smooth scroll for links and framer motion for animations. First project to learn basics of TypeScript. ',
         project_stack: ['React', 'TypeScript', 'TailwindCSS', 'Framer-motion'],
         project_link_l: 'https://aerialclass.netlify.app',
         project_link_gh: 'https://github.com/mahtyns/aerialSchool',
@@ -14,11 +14,56 @@ export const projects: Array<Project> = [
     {
         project_name: 'WalkingBooks',
         project_date: 'January 2023 - WIP',
-        project_description: '',
-        project_stack: ['React', 'JavaScript', 'classnames', 'FireBase'],
-        project_link_l: 'https://app.netlify.com/sites/walkingbooks/overview',
+        project_description: 'A project to practice and expand my React skills. An app that is similar to GoodReads, but with an option to share your books to other users, similar to Vinted. Made of four main modules: explore, user library, friends activity and book map. In the explore page, you can find new books to add to your library. In the user library, you can manage the status of your books and decide if you have any items to share. In the friends module, you can see what other people are up to, and in the map module, you can explore the books nearby if you want to read something new.',
+        project_stack: ['React', 'JavaScript', 'classnames', 'FireBase', 'useContext'],
+        project_link_l: 'https://walkingbooks.netlify.app/',
         project_link_gh: 'https://github.com/mahtyns/bookApp',
         project_img_src: 'https://i.ibb.co/cgLCZm5/books1.jpg'
+    }, 
+    {
+        project_name: 'Ecommerce SPA Page',
+        project_date: 'November 2021 - June 2022 (with further modifications)',
+        project_description: 'Project created during DareIT Mentorship, using ReactJS and styled-components. A page made of main page, main product catalogue, about us page and cart page. You can add products to cart from the main catalogue, and then modify or delete the items from the cart. Then, you can choose the delivery option. The final order price is calculated.',
+        project_stack: ['React', 'styled-components', 'react-router', 'functional components'],
+        project_link_l: 'https://myshop-ecommerce.netlify.app/',
+        project_link_gh: 'https://github.com/mahtyns/myshop-ecommerce-store',
+        project_img_src: 'https://i.ibb.co/7rJgc8y/shop.jpg'
+    }, 
+    {
+        project_name: 'Lab Portfolio Page',
+        project_date: 'November 2021 - June 2022 (with further modifications)',
+        project_description: '.',
+        project_stack: ['React', 'classnames', 'functional components'],
+        project_link_l: 'https://myshop-ecommerce.netlify.app/',
+        project_link_gh: 'https://github.com/mahtyns/myshop-ecommerce-store',
+        project_img_src: 'https://i.ibb.co/JHxNmth/lab.jpg'
+    }, 
+    {
+        project_name: 'PamApp Challenge',
+        project_date: 'May 2021',
+        project_description: 'Innovation Challenge by Reply Challenges, created in team with Edyta Przybysz - a 48h brainstorming run on 21-23 May 21. ',
+        project_stack: ['Figma', 'Photoshop'],
+        project_link_l: 'https://www.behance.net/gallery/122593259/Pam-App-Challenge',
+        project_link_gh: 'https://www.behance.net/gallery/122593259/Pam-App-Challenge',
+        project_img_src: 'https://i.ibb.co/z2kcryr/pamap.jpg'
+    }, 
+    {
+        project_name: 'Sarai Spread redesign',
+        project_date: 'November 2021 - June 2022 (with further modifications)',
+        project_description: '',
+        project_stack: ['Figma', 'Photoshop'],
+        project_link_l: 'https://www.behance.net/gallery/129222825/Sarais-web-page-refresh',
+        project_link_gh: 'https://www.behance.net/gallery/129222825/Sarais-web-page-refresh',
+        project_img_src: 'https://i.ibb.co/QmmZvYf/spread.jpg'
+    }, 
+    {
+        project_name: 'Portfolio Page B&W',
+        project_date: 'June 2023',
+        project_description: '',
+        project_stack: ['React', 'Typescript', 'Smooth scroll links', 'TailwindCSS'],
+        project_link_l: 'https://www.behance.net/gallery/122593259/Pam-App-Challenge',
+        project_link_gh: 'https://www.behance.net/gallery/122593259/Pam-App-Challenge',
+        project_img_src: 'https://i.ibb.co/jVKQ8wk/portfolio.jpg'
     }, 
 
 ]
