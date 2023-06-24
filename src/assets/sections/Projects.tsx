@@ -12,15 +12,18 @@ const Projects = () => {
         <section id="projects" className={`bg-gray-100 xl:h-module-big`}>
             <div className={'flex xl:flex-row flex-col h-full w-full'}>
                 {isAboveMediumScreen
-                    ? <div className="w-full py-12 px-12 xl:w-1/2 xl:py-36 xl:px-36">
+                    ? <div className="w-full py-12 px-12 xl:w-1/2 xl:py-36 xl:px-36 ">
                             <ProjectCardGrid/>
                         </div>
                     : null}
-                <div
-                    className="w-full py-16 px-16 xl:w-1/2 bg-gray-50 h-full xl:py-36 xl:px-36">
+                <div className="w-full py-16 px-16 xl:w-1/2 bg-gray-50 h-full xl:py-36 xl:px-36">
                     <SectionTitle sectionTitle="My work." sectionVariant={true}/>
                     <ProjectInfo/>
-                    {isAboveMediumScreen ? null : <div className="flex w-full justify-center gap-2"><ActiveCircle /></div> }
+                    {isAboveMediumScreen ? null : <div className="flex w-full justify-center gap-4 pt-4">
+                        <ActiveCircle />
+                        <ActiveCircle />
+                        <ActiveCircle />
+                    </div> }
                 </div>
             </div>
         </section>

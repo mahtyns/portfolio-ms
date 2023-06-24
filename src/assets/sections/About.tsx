@@ -22,7 +22,9 @@ const About = () => {
                     zrozumieć uczucia i dostrzec sygnały wysyłane przez nasze ciała.
                 </p>
                 <div className="invert">
+                    <a href="https://drive.google.com/file/d/1CTbO3_29Qt3iKLAJXI5m7CBFaqr2R-Jt/view?usp=sharing" target="_blank">
                     <Button buttonVariant={false} buttonContent="Resume"/>
+                    </a>
                 </div>
             </div>
 

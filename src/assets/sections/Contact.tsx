@@ -19,7 +19,7 @@ const Contact = () => {
         </p>
       </div>
       <div className="xl:w-1/2">
-
+           
       </div>
     </section>
   )
