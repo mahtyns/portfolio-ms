@@ -12,7 +12,7 @@ const Navbar = () => {
     const isAboveMediumScreen = useMediaQueries("(min-width: 1024px)");
 
     return (
-        <nav>
+        <nav >
             <div
                 className={`${flex} py-6 px-9 border-b border-gray-100 fixed top-0 bg-main-white z-20 w-full`}>
                 <div>
@@ -27,14 +27,20 @@ const Navbar = () => {
                         <Navlink pageName="Experience" clickedPage="experience" setMenuToggled={setMenuToggled} />
                         <Navlink pageName="Contact" clickedPage="contact" setMenuToggled={setMenuToggled} />
                         </div>
-                    : <div onClick={()=>setMenuToggled(!isMenuToggled)}>
+                    : 
+                    
+                    <>
+                    <div onClick={()=>setMenuToggled(!isMenuToggled)}>
                         <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" className="w-5 h-5"/>
-                      </div>}
+                    </div>
+                        {
+                    isMenuToggled ? <MenuMobile setMenuToggled={setMenuToggled} isMenuToggled={isMenuToggled} /> : null
+                        }
+                    </>
+                    }
                     
             </div>
-            {
-                isMenuToggled ? <MenuMobile setMenuToggled={setMenuToggled} isMenuToggled={isMenuToggled} /> : null
-            }
+
         </nav>
     )
 }

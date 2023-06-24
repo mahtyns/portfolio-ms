@@ -1,4 +1,3 @@
-import ActiveCircle from "../components/ActiveCircle"
 import ExperienceCard from "../components/ExperienceCard"
 import ExperienceCardMobile from "../components/ExperienceCardMobile"
 import {SectionTitle} from "../components/SectionTitle"
@@ -32,10 +31,12 @@ const Experience = () => {
                         </div>
                         </div>
                     : <div className="py-6">
-                        <ExperienceCardMobile/>
-                        <div className="w-full flex items-center justify-center gap-2 py-4">
-                          <ActiveCircle />
-                        </div>
+                        <ExperienceCardMobile 
+                            expName={experiences[0].experience_name}
+                            expDate={experiences[0].experience_date}
+                            expDescr={experiences[0].experience_descr}
+                            expDetails={experiences[0].experience_details}
+                            expCat={experiences[0].experience_cat} />
                     </div>}
 
 

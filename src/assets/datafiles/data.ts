@@ -28,14 +28,14 @@ export const experiences: Array<Exp> =
         {
         experience_name: 'Web Designer at Le Guide Noir',
         experience_date: 'March 2021 - present',
-            experience_descr: 'Stars',
+            experience_descr: 'Planning & implementing digital e-commerce strategies for clients webpages to drive sales and grow site engagement for various brands; design frontend modules, working with our Product - research, analysis, improvements in the code. ',
         experience_cat: 'work',
         experience_details: ['HTML', 'CSS', 'JavaScript']
         },
         {
         experience_name: 'Architect at Agema Soluciones',
         experience_date: 'March 2019 - February 2021',
-            experience_descr: 'Szybciej bijące serce, czerwienienie się, jąkanie, bezsenność, miękkie kolana. Co objawia się w taki sposób? I jaki ma z tym związek nasz ośrodek nagrody? Julia Fischer zaprasza w niesamowitą podróż po świecie emocji.',
+            experience_descr: 'Retail interior design & refurbishment projects for international chain brands; defining project plans from initial concept to completion. Maintained regular communication with clients and government officials to address concerns, provide updates',
         experience_cat: 'work',
         experience_details: ['HTML', 'CSS', 'JavaScript']
         },
