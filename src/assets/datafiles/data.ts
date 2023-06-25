@@ -97,16 +97,16 @@ export const experiences: Array<Exp> =
         {
         experience_name: 'Architect Assistant at Sweco',
         experience_date: 'October 2017 - June 2018',
-            experience_descr: 'Szybciej bijące serce, czerwienienie się, jąkanie, bezsenność, miękkie kolana. Co objawia się w taki sposób? I jaki ma z tym związek nasz ośrodek nagrody? Julia Fischer zaprasza w niesamowitą podróż po świecie emocji.',
+            experience_descr: 'Working in BIM environment with Revit. 3D modeling and creating parametric families for 3d objects.',
         experience_cat: 'work',
         experience_details: ['parametric design', '3d modeling']
         },
         {
         experience_name: 'Erasmus+ Intern at GRX Arquitectos',
         experience_date: 'June 2017 - September 2017',
-            experience_descr: 'Szybciej bijące serce, czerwienienie się, jąkanie, bezsenność, miękkie kolana. Co objawia się w taki sposób? I jaki ma z tym związek nasz ośrodek nagrody? Julia Fischer zaprasza w niesamowitą podróż po świecie emocji.',
+            experience_descr: 'Erasmus internship for 3 months, working in AutoCAD and creating architectural images and visualizations with Photoshop. Small refurbishments and interventions in landscape. ',
         experience_cat: 'work',
-        experience_details: ['HTML', 'CSS', 'JavaScript']
+        experience_details: ['Photoshop', 'AutoCAD']
         },
 
 
@@ -277,7 +277,7 @@ export const technology: Array<TechStack> = [
     },
     {
         tech_name: 'Indesign',
-        tech_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/600px-Canva_icon_2021.svg.png?20220821125247',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/5210/5210541.png',
         tech_cat: 'design',
         tech_descr: ''
     },
