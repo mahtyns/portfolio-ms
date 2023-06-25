@@ -23,7 +23,7 @@ const Technology = () => {
     console.log(Math.floor(technology.length / perPage))
 
     return (
-        <section id="technology" className={'h-[900px] xl:h-module-medium p-10 xl:p-12 relative overflow-hidden'}>
+        <section id="technology" className={'h-fit xl:h-module-medium xl:p-12 relative overflow-hidden py-10'}>
             <div className="w-full flex flex-col-reverse xl:flex-row">
                 <div className="xl:w-1/2 w-full xl:py-10 pt-4 p-2 xl:flex xl:flex-col xl:items-center xl:gap-12">
                     
@@ -44,7 +44,7 @@ const Technology = () => {
                         
                     </div>
                 </div>
-                <div className="xl:w-1/2 xl:p-16 ">
+                <div className="xl:w-1/2 xl:p-16 px-10">
                     <SectionTitle sectionTitle="My skills." sectionVariant={true}/>
                     <p className="xl:w-5/6 py-6 font-lato  tracking-wide font-light text-lg">{skills}</p>             
                 </div>
