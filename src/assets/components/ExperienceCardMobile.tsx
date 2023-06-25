@@ -15,21 +15,21 @@ type Props = {
 
 const ExperienceCardMobile = (props : Props) => {
     return (
-        <div className="flex gap-1 pt-8 flex-col">
+        <div className="flex gap-1 py-8 flex-col">
 
-            <article className="border-gray-400 border w-96 h-96 bg-main-white">
+            <article className="border-gray-400 border w-[21.5rem] h-fit bg-main-white">
                 <div
                     className="w-full border-b border-gray-400 py-4 flex flex-col items-center">
                     <ExperienceName expName={props.expName}/>
                 </div>
-                <div className="w-full flex flex-col items-center mb-4">
+                <div className="w-full flex flex-col items-center mb-4 pb-2">
                     <ExperienceDate expDate={props.expDate}/>
                     <ExperienceDescription expDescr={props.expDescr}/>
                     <ExperienceDetail expDetails={props.expDetails}/>
                 </div>
                 
             </article>
-            <div className="flex justify-center gap-24 py-8">
+            <div className="flex justify-center gap-24 pt-8">
                 <div onClick={() => props.handlePrevIndex()} >
                     <img
                         src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png"

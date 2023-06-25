@@ -23,23 +23,23 @@ const Technology = () => {
     console.log(Math.floor(technology.length / perPage))
 
     return (
-        <section id="technology" className={'h-[800px] xl:h-module-medium p-12 xl:p-12 relative overflow-hidden'}>
+        <section id="technology" className={'h-[900px] xl:h-module-medium p-10 xl:p-12 relative overflow-hidden'}>
             <div className="w-full flex flex-col-reverse xl:flex-row">
-                <div className="xl:w-1/2 w-full xl:py-10 p-2 xl:flex xl:flex-col xl:items-center xl:gap-12">
+                <div className="xl:w-1/2 w-full xl:py-10 pt-4 p-2 xl:flex xl:flex-col xl:items-center xl:gap-12">
                     
                     {/* stack images map  */}
-                    <div className="w-full h-full flex gap-6 xl:gap-12 justify-center items-center flex-wrap z-100 xl:w-1/2">
+                    <div className="w-full h-full flex gap-4 xl:gap-12 justify-center items-center flex-wrap z-100 xl:w-1/2">
                         {technology.slice(startIndex, endIndex).map(element => <StackCard 
                         key={element.tech_name} 
                         stackImg={element.tech_img} 
                         stackName={element.tech_name}/>)}
                     </div>
-                    <div className="flex w-full items-center justify-center gap-6 pt-5 z-40">
+                    <div className="flex w-full items-center justify-center gap-6 pt-8 z-40">
                         {currentIndex === 0 ? null : <div className="z-40" onClick={() => handlePrevSet()} >
-                            <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="prev" className="z-40 w-10 h-10 rotate-180" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="prev" className="z-40 w-8 h-8 rotate-180" />
                         </div> }
                         {currentIndex === Math.floor(technology.length / perPage) ? null : <div className="z-40" onClick={() => handleNextSet()}>
-                            <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="next" className="w-10 h-10" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="next" className="w-8 h-8" />
                         </div>}
                         
                     </div>

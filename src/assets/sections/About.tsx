@@ -1,7 +1,7 @@
 import {SectionTitle} from "../components/SectionTitle"
 import Button from "../components/Button"
 import useMediaQueries from "../hooks/useMediaQueries"
-import { aboutMe } from "../datafiles/data"
+import { aboutMe, aboutMeMobile } from "../datafiles/data"
 
 const About = () => {
 
@@ -11,12 +11,12 @@ const About = () => {
 
     return (
         <section id="about" className={'bg-main-dark xl:h-module-big flex xl:flex-row flex-col'}>
-            <div className="p-16 xl:p-36 xl:w-1/2">
+            <div className="p-12 xl:p-36 xl:w-1/2">
                 <SectionTitle sectionTitle="About me." sectionVariant={false}/>
                 <article>
                 <p
-                    className="text-lg xl:text-xl text-gray-50 pt-12 font-light font-lato leading-8 xl:w-5/6 tracking-wide">
-                    {aboutMe}
+                    className="text-base xl:text-xl text-gray-50 pt-12 font-light font-lato leading-8 xl:w-5/6 tracking-wide">
+                    {isAboveMediumScreen ? aboutMe : aboutMeMobile}
                 </p>
                 <p
                     className="text-lg xl:text-xl text-gray-50 py-8 font-light font-lato leading-8 xl:w-5/6 tracking-wide">
