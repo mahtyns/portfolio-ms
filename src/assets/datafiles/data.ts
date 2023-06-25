@@ -71,8 +71,8 @@ export const projects: Array<Project> = [
         project_date: 'June 2023',
         project_description: '',
         project_stack: ['React', 'Typescript', 'Smooth scroll links', 'TailwindCSS'],
-        project_link_l: 'https://www.behance.net/gallery/122593259/Pam-App-Challenge',
-        project_link_gh: 'https://www.behance.net/gallery/122593259/Pam-App-Challenge',
+        project_link_l: 'https://martynasmolarek.netlify.app',
+        project_link_gh: 'https://github.com/mahtyns/portfolio-ms',
         project_img_src: 'https://i.ibb.co/jVKQ8wk/portfolio.jpg'
     }, 
 
