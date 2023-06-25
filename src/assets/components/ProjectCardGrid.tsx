@@ -24,7 +24,7 @@ const ProjectCardGrid = (props: Props) => {
     </div>
     <div className="w-full flex justify-center gap-4">
       {projects.map( (element, index) => 
-      <ActiveCircle key={index} isActive={index === props.projectIndShown ? true : false } />)}
+      <ActiveCircle key={element.project_name} isActive={index === props.projectIndShown ? true : false } />)}
     </div>
   </>
   )

@@ -1,5 +1,6 @@
 import { Project } from "../types/projects"
 import { Exp } from "../types/experiences"
+import { TechStack } from "../types/stack"
 
 export const projects: Array<Project> = [
     {
@@ -44,7 +45,7 @@ export const projects: Array<Project> = [
         project_description: 'Innovation Challenge by Reply Challenges, created in team with Edyta Przybysz - a 48h brainstorming run on 21-23 May 21. ',
         project_stack: ['Figma', 'Photoshop'],
         project_link_l: 'https://www.behance.net/gallery/122593259/Pam-App-Challenge',
-        project_link_gh: 'https://www.behance.net/gallery/122593259/Pam-App-Challenge',
+        project_link_gh: '',
         project_img_src: 'https://i.ibb.co/z2kcryr/pamap.jpg'
     }, 
     {
@@ -53,8 +54,17 @@ export const projects: Array<Project> = [
         project_description: '',
         project_stack: ['Figma', 'Photoshop'],
         project_link_l: 'https://www.behance.net/gallery/129222825/Sarais-web-page-refresh',
-        project_link_gh: 'https://www.behance.net/gallery/129222825/Sarais-web-page-refresh',
+        project_link_gh: '',
         project_img_src: 'https://i.ibb.co/QmmZvYf/spread.jpg'
+    }, 
+    {
+        project_name: 'Winelovers Shop',
+        project_date: 'October 2020',
+        project_description: '',
+        project_stack: ['HTML', 'CSS'],
+        project_link_l: 'https://mahtyns.github.io/WineloversShop/',
+        project_link_gh: 'https://github.com/mahtyns/WineloversShop',
+        project_img_src: 'https://i.ibb.co/5hdQwtq/wine.jpg'
     }, 
     {
         project_name: 'Portfolio Page B&W',
@@ -82,14 +92,14 @@ export const experiences: Array<Exp> =
         experience_date: 'March 2019 - February 2021',
             experience_descr: 'Retail interior design & refurbishment projects for international chain brands; defining project plans from initial concept to completion. Maintained regular communication with clients and government officials to address concerns, provide updates',
         experience_cat: 'work',
-        experience_details: ['HTML', 'CSS', 'JavaScript']
+        experience_details: ['project management']
         },
         {
         experience_name: 'Architect Assistant at Sweco',
         experience_date: 'October 2017 - June 2018',
             experience_descr: 'Szybciej bijące serce, czerwienienie się, jąkanie, bezsenność, miękkie kolana. Co objawia się w taki sposób? I jaki ma z tym związek nasz ośrodek nagrody? Julia Fischer zaprasza w niesamowitą podróż po świecie emocji.',
         experience_cat: 'work',
-        experience_details: ['HTML', 'CSS', 'JavaScript']
+        experience_details: ['parametric design', '3d modeling']
         },
         {
         experience_name: 'Erasmus+ Intern at GRX Arquitectos',
@@ -129,7 +139,21 @@ export const experiences: Array<Exp> =
             experience_date: 'November 2021 - May 2022',
             experience_descr: 'Mentorship Programme for women, on path Fullstack Development. Creating projects with JavaScript and React, then connecting with PostgreSQL.',
             experience_cat: 'course',
-            experience_details: [' ']
+            experience_details: ['react', 'styled-components', 'postgresql', ]
+        },
+        {
+            experience_name: 'Programming in JavaScript',
+            experience_date: 'August 2021 - November 2021',
+            experience_descr: 'Udemy course for JavaScript programming: working with arrays, loops, objects and classes, handling events.',
+            experience_cat: 'course',
+            experience_details: ['javascript']
+        },
+        {
+            experience_name: 'HTML5, CSS3 and Responsive web',
+            experience_date: 'October 2020',
+            experience_descr: 'Introduction to HTML5, CSS3 and responsive web - media queries. Animations, new semantic tags, gradients, shadows. Domestika course.',
+            experience_cat: 'course',
+            experience_details: ['HTML', 'CSS', 'Responsive web']
         },
 
 ]
@@ -139,3 +163,146 @@ export const aboutMe = "I'm Martyna, a Pole living in Madrid and a creative prof
 export const contactMe = "I'm always looking for a new challenge and possibilities of learning and growing. Want me in your team? Feel free to contact me and ask me anything you need to know."
 
 export const skills = "I started learning FrontEnd development technologies in late 2020 while still in architecture sector. I've finished online courses for HTML5, CSS3 with animatons and responsive design, and JavaScript. I've also participated in Mentorship Programme for Women, DareIT where under the supervision of my mentor I created SPA projects with React. I'm currently learning TypeScript and Testing."
+
+
+export const technology: Array<TechStack> = [
+    {
+        tech_name: 'React',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'JavaScript',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'TypeScript',
+        tech_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'HTML',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/5968/5968267.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'CSS',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/5968/5968242.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Rest API',
+        tech_img: 'https://img.uxwing.com/wp-content/themes/uxwing/download/web-app-development/rest-api-icon.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Tailwind',
+        tech_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Bootstrap',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/5968/5968672.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Github',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/733/733553.png',
+        tech_cat: 'other',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'PostgreSQL',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/5968/5968342.png',
+        tech_cat: 'backend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'styled components',
+        tech_img: 'https://avatars.githubusercontent.com/u/20658825?s=200&v=4',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Responsive Web',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/65/65381.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Storybook',
+        tech_img: 'https://static-00.iconduck.com/assets.00/storybook-icon-icon-412x512-341bo8r1.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Vite',
+        tech_img: 'https://vitejs.dev/logo-with-shadow.png',
+        tech_cat: 'other',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Sass',
+        tech_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Photoshop',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/5210/5210800.png',
+        tech_cat: 'design',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Illustrator',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/5210/5210500.png',
+        tech_cat: 'design',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Figma',
+        tech_img: 'https://cdn-icons-png.flaticon.com/512/5968/5968705.png',
+        tech_cat: 'design',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Indesign',
+        tech_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/600px-Canva_icon_2021.svg.png?20220821125247',
+        tech_cat: 'design',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Canva',
+        tech_img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/600px-Canva_icon_2021.svg.png?20220821125247',
+        tech_cat: 'design',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'Asana',
+        tech_img: 'https://companieslogo.com/img/orig/ASAN-1325de11.png?t=1670917087',
+        tech_cat: 'other',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'npm',
+        tech_img: 'https://cdn.iconscout.com/icon/free/png-256/npm-3-1175132.png',
+        tech_cat: 'other',
+        tech_descr: ''
+    },
+    {
+        tech_name: 'React Testing Library',
+        tech_img: 'https://testing-library.com/img/octopus-128x128.png',
+        tech_cat: 'frontend',
+        tech_descr: ''
+    },
+
+]

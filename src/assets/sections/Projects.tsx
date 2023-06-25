@@ -1,5 +1,5 @@
 import { useState } from "react"
-import ActiveCircle from "../components/ActiveCircle"
+// import ActiveCircle from "../components/ActiveCircle"
 import ProjectCardGrid from "../components/ProjectCardGrid"
 import ProjectInfo from "../components/ProjectInfo"
 import {SectionTitle} from "../components/SectionTitle"
@@ -43,9 +43,9 @@ const Projects = () => {
                     <SectionTitle sectionTitle="My work." sectionVariant={true}/>
                     <ProjectInfo projects={projects} projectIndShown={projectIndShown} />
                     {isAboveMediumScreen ? null : <div className="flex w-full justify-center gap-4 pt-4">
+                        {/* <ActiveCircle />
                         <ActiveCircle />
-                        <ActiveCircle />
-                        <ActiveCircle />
+                        <ActiveCircle /> */}
                     </div> }
                 </div>
             </div>

@@ -29,6 +29,9 @@ export default {
       animation: {
         'spin': 'spin 15s linear infinite'
       },
+      flex: {
+        '3': '1fr 1fr 1fr'
+      }
     },
     // screens: {
     //   xs: "480px",

@@ -1,15 +1,52 @@
 import {SectionTitle} from "../components/SectionTitle"
-import { skills } from "../datafiles/data"
+import StackCard from "../components/StackCard"
+import { skills, technology } from "../datafiles/data"
+import { useState } from "react"
 
 const Technology = () => {
+
+    const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+
+    // stack gallery functionality - change the shown set
+    const perPage = 9;
+    const startIndex = perPage * currentIndex;
+    const endIndex = startIndex + perPage
+
+    const handleNextSet = () => {
+        setCurrentIndex(currentIndex + 1)
+    }
+    const handlePrevSet = () => {
+        setCurrentIndex(currentIndex - 1)
+    }
+
+    console.log(Math.floor(technology.length / perPage))
+
     return (
         <section id="technology" className={'h-[800px] xl:h-module-medium p-12 xl:p-12 relative overflow-hidden'}>
-            <div className="w-full flex flex-col xl:flex-row">
-                <div className="xl:w-1/2"></div>
+            <div className="w-full flex flex-col-reverse xl:flex-row">
+                <div className="xl:w-1/2 w-full xl:py-10 p-2 xl:flex xl:flex-col xl:items-center xl:gap-12">
+                    
+                    {/* stack images map  */}
+                    <div className="w-full h-full flex gap-6 xl:gap-12 justify-center items-center flex-wrap z-100 xl:w-1/2">
+                        {technology.slice(startIndex, endIndex).map(element => <StackCard 
+                        key={element.tech_name} 
+                        stackImg={element.tech_img} 
+                        stackName={element.tech_name}/>)}
+                    </div>
+                    <div className="flex w-full items-center justify-center gap-6 pt-5 z-40">
+                        {currentIndex === 0 ? null : <div className="z-40" onClick={() => handlePrevSet()} >
+                            <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="prev" className="z-40 w-10 h-10 rotate-180" />
+                        </div> }
+                        {currentIndex === Math.floor(technology.length / perPage) ? null : <div className="z-40" onClick={() => handleNextSet()}>
+                            <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="next" className="w-10 h-10" />
+                        </div>}
+                        
+                    </div>
+                </div>
                 <div className="xl:w-1/2 xl:p-16 ">
                     <SectionTitle sectionTitle="My skills." sectionVariant={true}/>
-                    <p className="xl:w-5/6 py-8 font-lato  tracking-wide font-light text-lg">{skills}</p>
-                   
+                    <p className="xl:w-5/6 py-6 font-lato  tracking-wide font-light text-lg">{skills}</p>             
                 </div>
             </div>
 
@@ -50,6 +87,8 @@ const Technology = () => {
                 className="absolute bottom-72 right-96 w-12 h-12 border border-gray-400 -rotate-12"></div>
             <div
                 className="absolute bottom-64 right-80 w-6 h-6 border border-gray-400 rotate-45"></div>
+
+            {/* End squares      */}
         </section>
     )
 }
