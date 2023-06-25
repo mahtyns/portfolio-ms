@@ -8,12 +8,14 @@ type Props = {
     expDate: string,
     expCat: string,
     expDescr: string,
-    expDetails: Array < string >
+    expDetails: Array < string >,
+    handleNextIndex: () => void,
+    handlePrevIndex: () => void
 }
 
 const ExperienceCardMobile = (props : Props) => {
     return (
-        <div className="flex gap-1 py-8">
+        <div className="flex gap-1 pt-8 flex-col">
 
             <article className="border-gray-400 border w-96 h-96 bg-main-white">
                 <div
@@ -25,21 +27,22 @@ const ExperienceCardMobile = (props : Props) => {
                     <ExperienceDescription expDescr={props.expDescr}/>
                     <ExperienceDetail expDetails={props.expDetails}/>
                 </div>
-                <div className="flex justify-center gap-24 py-8">
-                    <div >
-                        <img
-                            src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png"
-                            alt="prev"
-                            className="w-10 h-10 rotate-180"/>
-                    </div>
-                    <div >
-                        <img
-                            src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png"
-                            alt="next"
-                            className="w-10 h-10"/>
-                    </div>
-                </div>
+                
             </article>
+            <div className="flex justify-center gap-24 py-8">
+                <div onClick={() => props.handlePrevIndex()} >
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png"
+                        alt="prev"
+                        className="w-10 h-10 rotate-180" />
+                </div>
+                <div onClick={() => props.handleNextIndex()} >
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png"
+                        alt="next"
+                        className="w-10 h-10" />
+                </div>
+            </div>
         </div>
     )
 }

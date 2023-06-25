@@ -19,9 +19,9 @@ const ProjectInfo = (props: Props) => {
     <article className="xl:py-16 pt-10" >
       {isAboveMediumScreen ? null : <img src={props.projects[props.projectIndShown].project_img_src} alt="project" className="w-full h-64 object-cover mb-8 border border-main-dark" />}
         <ProjectTitle projectTitle={props.projects[props.projectIndShown].project_name}/>
-      <ProjectDate projectDate={props.projects[props.projectIndShown].project_date} />
-      <ProjectDescription projectDescription={props.projects[props.projectIndShown].project_description} />
-      <ProjectLinks projects={props.projects} projectIndShown={props.projectIndShown}/>
+        <ProjectDate projectDate={props.projects[props.projectIndShown].project_date} />
+        <ProjectDescription projectDescription={props.projects[props.projectIndShown].project_description} />
+        <ProjectLinks projects={props.projects} projectIndShown={props.projectIndShown}/>
     </article>
   )
 }

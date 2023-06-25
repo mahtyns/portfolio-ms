@@ -42,10 +42,22 @@ const Projects = () => {
                 <div className="w-full py-16 px-16 xl:w-1/2 bg-gray-50 h-full xl:py-36 xl:px-36">
                     <SectionTitle sectionTitle="My work." sectionVariant={true}/>
                     <ProjectInfo projects={projects} projectIndShown={projectIndShown} />
-                    {isAboveMediumScreen ? null : <div className="flex w-full justify-center gap-4 pt-4">
-                        {/* <ActiveCircle />
-                        <ActiveCircle />
-                        <ActiveCircle /> */}
+                    {isAboveMediumScreen ? null : <div className="flex w-full justify-center gap-4 pt-2">
+                        <div className="flex justify-center gap-24 py-2">
+                            {/* Mobile view arrows to change projects  */}
+                            <div onClick={() => handlePrevProject()} >
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png"
+                                    alt="prev"
+                                    className="w-10 h-10 rotate-180" />
+                            </div>
+                            <div onClick={() => handleNextProject()} >
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png"
+                                    alt="next"
+                                    className="w-10 h-10" />
+                            </div>
+                        </div>
                     </div> }
                 </div>
             </div>

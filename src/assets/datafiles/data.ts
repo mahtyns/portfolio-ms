@@ -31,18 +31,9 @@ export const projects: Array<Project> = [
         project_img_src: 'https://i.ibb.co/7rJgc8y/shop.jpg'
     }, 
     {
-        project_name: 'Lab Portfolio Page',
-        project_date: 'November 2021 - June 2022 (with further modifications)',
-        project_description: '.',
-        project_stack: ['React', 'classnames', 'functional components'],
-        project_link_l: 'https://myshop-ecommerce.netlify.app/',
-        project_link_gh: 'https://github.com/mahtyns/myshop-ecommerce-store',
-        project_img_src: 'https://i.ibb.co/JHxNmth/lab.jpg'
-    }, 
-    {
         project_name: 'PamApp Challenge',
         project_date: 'May 2021',
-        project_description: 'Innovation Challenge by Reply Challenges, created in team with Edyta Przybysz - a 48h brainstorming run on 21-23 May 21. ',
+        project_description: 'Innovation Challenge by Reply Challenges, created in team with Edyta Przybysz - a 48h brainstorming run on 21-23 May 21. The objective was to propose UX improvements for the famous Fitness App run by Pam. Our idea was to create a bigger sense of community, increase the engagement and keep all the fitness information the user might need in one place. We have added some new functionalities and shifted the focus to the app user.',
         project_stack: ['Figma', 'Photoshop'],
         project_link_l: 'https://www.behance.net/gallery/122593259/Pam-App-Challenge',
         project_link_gh: '',
@@ -51,7 +42,7 @@ export const projects: Array<Project> = [
     {
         project_name: 'Sarai Spread redesign',
         project_date: 'November 2021 - June 2022 (with further modifications)',
-        project_description: '',
+        project_description: 'Webpage redesign for www.sarais.us, a shop with spreads. Added new modules: best recipes, reviews with the product link, newsletter subscription. Design both for desktop and mobile. Redesigning of the existing web to make it more intuitive and aesthetic.',
         project_stack: ['Figma', 'Photoshop'],
         project_link_l: 'https://www.behance.net/gallery/129222825/Sarais-web-page-refresh',
         project_link_gh: '',
@@ -60,11 +51,20 @@ export const projects: Array<Project> = [
     {
         project_name: 'Winelovers Shop',
         project_date: 'October 2020',
-        project_description: '',
+        project_description: 'Project for Domestika Course for HTML5, CSS3 and responsive web basics. A simple HTML5, CSS3 Project - a webpage for a Wine Store with wine courses available. Page with best products, reservation module and testimonials. The Domestika course explained basics of CSS animations, some advanced CSS styling and responsive design with Media Queries.',
         project_stack: ['HTML', 'CSS'],
         project_link_l: 'https://mahtyns.github.io/WineloversShop/',
         project_link_gh: 'https://github.com/mahtyns/WineloversShop',
         project_img_src: 'https://i.ibb.co/5hdQwtq/wine.jpg'
+    }, 
+    {
+        project_name: 'Lab Portfolio Page',
+        project_date: 'November 2021 - June 2022 (with further modifications)',
+        project_description: 'Previous page with the showcase of my projects, about me page and contact module.',
+        project_stack: ['React', 'classnames', 'functional components'],
+        project_link_l: 'https://mahtyns-personalsite.netlify.app',
+        project_link_gh: 'https://github.com/mahtyns/personalMartyna',
+        project_img_src: 'https://i.ibb.co/JHxNmth/lab.jpg'
     }, 
     {
         project_name: 'Portfolio Page B&W',

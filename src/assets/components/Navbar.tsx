@@ -31,7 +31,7 @@ const Navbar = () => {
                     
                     <>
                     <div onClick={()=>setMenuToggled(!isMenuToggled)}>
-                        <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" className="w-5 h-5"/>
+                        <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" className="w-5 h-5 cursor-pointer"/>
                     </div>
                         {
                     isMenuToggled ? <MenuMobile setMenuToggled={setMenuToggled} isMenuToggled={isMenuToggled} /> : null

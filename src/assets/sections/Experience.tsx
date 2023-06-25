@@ -11,6 +11,24 @@ const Experience = () => {
     const isAboveLargeScren = useMediaQueries('(min-width: 1275px)')
     const [expCategory, setExpCategory] = useState<string>('work')
 
+    //Experiences on mobile
+    const experienceFiltered = experiences.filter(elem => elem.experience_cat === `${expCategory}`)
+    const [experienceIndex, setExperienceIndex] = useState<number>(0)
+
+    const handleNextIndex = () => {
+        if (experienceIndex === experienceFiltered.length - 1) {
+            setExperienceIndex(0)
+        }
+        else setExperienceIndex(experienceIndex + 1)
+    }
+
+    const handlePrevIndex = () => {
+        if (experienceIndex === 0) {
+            setExperienceIndex(experienceFiltered.length - 1)
+        }
+        else setExperienceIndex(experienceIndex - 1)
+    }
+
     return (
         <section id="experience" className={'bg-gray-100 xl:h-module-big py-16 xl:py-36 xl:px-24'}>
             <div className="flex items-center justify-center flex-col">
@@ -18,9 +36,9 @@ const Experience = () => {
                 {/* A grid of 3 cards on desktop screens  */}
                 {isAboveLargeScren
                     ?   <div className="flex flex-row gap-8 py-16 items-center">
-                        <div >
+                        {/* <div >
                             <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="prev" className="w-10 h-10 rotate-180" />
-                        </div>
+                        </div> */}
                         {experiences
                         .filter(elem => elem.experience_cat === `${expCategory}`)
                         .slice(0, 3)
@@ -32,23 +50,25 @@ const Experience = () => {
                             expDetails={elem.experience_details}
                             expCat={elem.experience_cat}
                             />)}     
-                        <div >
+                        {/* <div >
                             <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="next" className="w-10 h-10"/>
-                        </div>
+                        </div> */}
                         </div>
                     : <div className="py-6">
                         <ExperienceCardMobile 
-                            expName={experiences[0].experience_name}
-                            expDate={experiences[0].experience_date}
-                            expDescr={experiences[0].experience_descr}
-                            expDetails={experiences[0].experience_details}
-                            expCat={experiences[0].experience_cat} />
+                            expName={experienceFiltered[experienceIndex].experience_name}
+                            expDate={experienceFiltered[experienceIndex].experience_date}
+                            expDescr={experienceFiltered[experienceIndex].experience_descr}
+                            expDetails={experienceFiltered[experienceIndex].experience_details}
+                            expCat={experienceFiltered[experienceIndex].experience_cat}
+                            handleNextIndex={handleNextIndex}
+                            handlePrevIndex={handlePrevIndex} />
                     </div>}
 
 
                 {/* Experience categories to choose                  */}
                 <div
-                    className="flex flex-row gap-6 text-lg uppercase font-lato font-light py-10">
+                    className="flex flex-row gap-6 text-lg uppercase font-lato font-light xl:py-10">
                     <p 
                     onClick={()=>setExpCategory('work')}
                     className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'work' ? 'underline underline-offset-4' : null}`}>
