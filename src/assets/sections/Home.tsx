@@ -16,11 +16,9 @@ const Home = () => {
                 <p className="mb-6 md:text-lg font-lato uppercase tracking-wider text-base text-center px-4">Junior FrontEnd Developer - Discover my projects.</p>
                 <div className="flex gap-6">
                     <AnchorLink href="#projects">
-                    <Button buttonVariant={true} buttonContent={'Explore'}/>
+                        <Button buttonVariant={true} buttonContent={'Explore'} handleOnClick={()=>null}/>
                     </AnchorLink>
-                    <a href="mailto:m.smolarek19@gmail.com">
-                    <Button buttonVariant={false} buttonContent={'Contact'}/>
-                    </a>
+                    <Button buttonVariant={false} buttonContent={'Contact'} handleOnClick={() => window.open('mailto:m.smolarek19@gmail.com')} />
                 </div>
             </div>
         </section>

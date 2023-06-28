@@ -23,9 +23,7 @@ const About = () => {
                     You can send me a message in:<br/> Polish · English · Spanish
                 </p>
                 <div className="invert">
-                    <a href="https://drive.google.com/file/d/1CTbO3_29Qt3iKLAJXI5m7CBFaqr2R-Jt/view?usp=sharing" target="_blank">
-                    <Button buttonVariant={false} buttonContent="Resume"/>
-                    </a>
+                    <Button buttonVariant={false} buttonContent="Resume" handleOnClick={() => window.open('https://drive.google.com/file/d/1CTbO3_29Qt3iKLAJXI5m7CBFaqr2R-Jt/view?usp=sharing')}/>
                 </div>
                 </article>
             </div>
