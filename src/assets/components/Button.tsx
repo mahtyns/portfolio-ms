@@ -1,6 +1,7 @@
 type Props = {
     buttonContent: string,
     buttonVariant: boolean
+    handleOnClick: () => void
 }
 
 const Button = (props: Props) => {
@@ -11,6 +12,7 @@ const Button = (props: Props) => {
   return (
     <button 
     className={`${props.buttonVariant ? buttonBlack : buttonWhite} py-2 px-4 md:py-3 md:px-16 uppercase`} 
+    onClick={()=>props.handleOnClick()}
     >
       {props.buttonContent}
     </button>
