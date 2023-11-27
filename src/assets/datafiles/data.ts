@@ -58,15 +58,6 @@ export const projects: Array<Project> = [
         project_img_src: 'https://i.ibb.co/5hdQwtq/wine.jpg'
     }, 
     {
-        project_name: 'Lab Portfolio Page',
-        project_date: 'November 2021 - June 2022 (with further modifications)',
-        project_description: 'Previous page with the showcase of my projects, about me page and contact module.',
-        project_stack: ['React', 'classnames', 'functional components'],
-        project_link_l: 'https://mahtyns-personalsite.netlify.app',
-        project_link_gh: 'https://github.com/mahtyns/personalMartyna',
-        project_img_src: 'https://i.ibb.co/JHxNmth/lab.jpg'
-    }, 
-    {
         project_name: 'Portfolio Page B&W',
         project_date: 'June 2023',
         project_description: '',
@@ -82,7 +73,7 @@ export const experiences: Array<Exp> =
     [
         {
         experience_name: 'Web Designer at Le Guide Noir',
-        experience_date: 'March 2021 - present',
+        experience_date: 'March 2021 - November 2023',
             experience_descr: 'Planning & implementing digital e-commerce strategies for clients webpages to drive sales and grow site engagement for various brands; design frontend modules, working with our Product - research, analysis, improvements in the code. ',
         experience_cat: 'work',
         experience_details: ['HTML', 'CSS', 'JavaScript']
@@ -199,7 +190,7 @@ export const technology: Array<TechStack> = [
     },
     {
         tech_name: 'Rest API',
-        tech_img: 'https://img.uxwing.com/wp-content/themes/uxwing/download/web-app-development/rest-api-icon.png',
+        tech_img: 'https://icons.veryicon.com/png/o/internet--web/internet-simple-icon/api-management.png',
         tech_cat: 'frontend',
         tech_descr: ''
     },

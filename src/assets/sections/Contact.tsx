@@ -13,9 +13,6 @@ const Contact = () => {
         <p className="xl:w-5/6 font-lato tracking-wide font-light text-lg">
           Email: <span className="font-medium"><a href="mailto:m.smolarek19@gmail.com">m.smolarek19@gmail.com</a></span>
         </p>
-        <p className="xl:w-5/6 font-lato tracking-wide font-light text-lg">
-          Phone: <span className="font-medium"><a href="tel:34684211250">(+34) 684 211 250</a></span>
-        </p>
       </div>
       <div className="xl:w-1/2">
            
