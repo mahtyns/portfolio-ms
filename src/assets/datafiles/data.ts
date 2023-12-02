@@ -4,7 +4,7 @@ import { TechStack } from "../types/stack"
 export const projects: Array<Project> = [
     {
         project_name: 'Daniel Śnieżyński web',
-        project_date: 'November 2023',
+        project_date: 'October - November 2023',
         project_description: 'Freelance project, personal webpage for Daniel offering his furniture and wooden terraces services',
         project_stack: ['VanillaJS', 'TailwindCSS', 'Netlify'],
         project_link_l: 'https://sniezynski-meble.netlify.app',
@@ -49,7 +49,7 @@ export const projects: Array<Project> = [
     }, 
     {
         project_name: 'Sarai Spread redesign',
-        project_date: 'November 2021 - June 2022 (with further modifications)',
+        project_date: 'November 2021',
         project_description: 'Webpage redesign for www.sarais.us, a shop with spreads. Added new modules: best recipes, reviews with the product link, newsletter subscription. Design both for desktop and mobile. Redesigning of the existing web to make it more intuitive and aesthetic.',
         project_stack: ['Figma', 'Photoshop'],
         project_link_l: 'https://www.behance.net/gallery/129222825/Sarais-web-page-refresh',
