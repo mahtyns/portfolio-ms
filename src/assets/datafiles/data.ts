@@ -1,8 +1,16 @@
 import { Project } from "../types/projects"
 import { Exp } from "../types/experiences"
 import { TechStack } from "../types/stack"
-
 export const projects: Array<Project> = [
+    {
+        project_name: 'Daniel Śnieżyński web',
+        project_date: 'November 2023',
+        project_description: 'Freelance project, personal webpage for Daniel offering his furniture and wooden terraces services',
+        project_stack: ['VanillaJS', 'TailwindCSS', 'Netlify'],
+        project_link_l: 'https://sniezynski-meble.netlify.app',
+        project_link_gh: 'https://github.com/mahtyns/danielsniezynski-meble',
+        project_img_src: 'https://i.ibb.co/LRNcRsb/daniel.jpg'
+    }, 
     {
         project_name: 'Volare Aerials',
         project_date: 'April 2023',
