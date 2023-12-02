@@ -162,7 +162,7 @@ export const aboutMeMobile = "I'm Martyna, a Pole living in Madrid and a creativ
 
 export const contactMe = "I'm always looking for a new challenge and possibilities of learning and growing. Want me in your team? Feel free to contact me and ask me anything you need to know."
 
-export const skills = "I started learning FrontEnd development technologies in late 2020 while still in architecture sector. I've finished online courses for HTML5, CSS3 with animatons and responsive design, and JavaScript. I've also participated in Mentorship Programme for Women, DareIT where under the supervision of my mentor I created SPA projects with React. I'm currently learning TypeScript and Testing."
+export const skills = "I started learning FrontEnd development technologies in late 2020 while still in architecture sector. I've finished online courses for HTML5, CSS3 with animatons and responsive design, and JavaScript. I've also participated in Mentorship Programme for Women, DareIT where under the supervision of my mentor I created SPA projects with React. I'm currently learning NextJS, TypeScript and Testing."
 
 
 export const technology: Array<TechStack> = [

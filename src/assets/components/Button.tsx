@@ -6,8 +6,8 @@ type Props = {
 
 const Button = (props: Props) => {
 
-  const buttonBlack = `bg-main-dark text-main-white`
-  const buttonWhite= `border-main-dark border text-main-dark`  
+  const buttonBlack = `bg-main-dark text-main-white hover:bg-gray-800 ease-in-out duration-300`
+  const buttonWhite = `border-main-dark border text-main-dark ease-in-out duration-300 hover:bg-gray-100`  
 
   return (
     <button 

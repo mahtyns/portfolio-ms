@@ -9,7 +9,7 @@ type Props = {
 const ProjectCard = (props: Props) => {
   return (
     <article className={`w-96 h-96 border border-gray-500 bg-gray-50 drop-shadow-lg`}>
-      <img src={props.projects[props.projectIndShown].project_img_src} className="w-full h-56 object-cover"/>
+      <img src={props.projects[props.projectIndShown].project_img_src} loading="lazy" className="w-full h-56 object-cover"/>
       <div className="text-2xl font-playfair w-full text-center py-3">
         {props.projects[props.projectIndShown].project_name}
       </div>
