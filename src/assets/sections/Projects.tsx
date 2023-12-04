@@ -28,7 +28,7 @@ const Projects = () => {
 
 
     return (
-        <section id="projects" className={`bg-gray-100 xl:h-module-big`}>
+        <section id="projects" className={`bg-gray-100 dark:bg-main-dark xl:h-module-big`}>
             <div className={'flex xl:flex-row flex-col h-full w-full'}>
                 {isAboveMediumScreen
                     ? <div className="w-full py-12 px-10 xl:w-1/2 xl:py-36 xl:px-36 ">
@@ -39,7 +39,7 @@ const Projects = () => {
                         handlePrevProject={handlePrevProject} />
                       </div>
                     : null}
-                <div className="w-full py-16 px-10 xl:w-1/2 bg-gray-50 h-full xl:py-36 xl:px-36">
+                <div className="w-full py-16 px-10 xl:w-1/2 bg-gray-50 dark:bg-gray-800 h-full xl:py-36 xl:px-36">
                     <SectionTitle sectionTitle="My work." sectionVariant={true}/>
                     <ProjectInfo projects={projects} projectIndShown={projectIndShown} />
                     {isAboveMediumScreen ? null : <div className="flex w-full justify-center gap-4 pt-2">
@@ -49,13 +49,13 @@ const Projects = () => {
                                 <img
                                     src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png"
                                     alt="prev"
-                                    className="w-10 h-10 rotate-180" />
+                                    className="w-10 h-10 rotate-180 dark:invert" />
                             </div>
                             <div onClick={() => handleNextProject()} >
                                 <img
                                     src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png"
                                     alt="next"
-                                    className="w-10 h-10" />
+                                    className="w-10 h-10 dark:invert" />
                             </div>
                         </div>
                     </div> }

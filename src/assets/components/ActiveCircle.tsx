@@ -4,8 +4,8 @@ type Props = {
 
 const ActiveCircle = (props: Props) => {
 
-  const active = 'bg-main-dark';
-  const notActive = 'bg-main-white border border-main-dark';
+  const active = 'bg-main-dark dark:bg-gray-50';
+  const notActive = 'bg-main-white border border-main-dark dark:bg-main-dark dark:border-main-white';
 
   return (
     <>

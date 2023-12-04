@@ -13,8 +13,8 @@ export default {
         'gray-100': '#e7e7e7',
         'gray-500': '#454545',
         'gray-700': '#302f2f',
-        'gray-800': '#2c2c2c',
-        'main-dark': '#1a1a1a',
+        'gray-800': '#1d1d1d',
+        'main-dark': '#151515',
         'special-500': '#f30a30',
       },
       fontFamily: {
