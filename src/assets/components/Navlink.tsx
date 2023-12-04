@@ -11,7 +11,7 @@ export const Navlink = (props: Props) => {
     return (
     <AnchorLink 
     href={`#${props.clickedPage}`} 
-    className={`tracking-wider uppercase text-base text-gray-500 hover:text-special-500 transition-all hover:tracking-widest`}
+    className={`tracking-wider uppercase text-base text-gray-500 dark:text-gray-200 hover:text-special-500 transition-all hover:tracking-widest`}
     onClick={()=>props.setMenuToggled(false)}>
         {props.pageName}
     </AnchorLink>
