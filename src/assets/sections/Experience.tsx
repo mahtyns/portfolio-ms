@@ -30,7 +30,7 @@ const Experience = () => {
     }
 
     return (
-        <section id="experience" className={'bg-gray-100 xl:h-module-big py-16 xl:py-36 xl:px-24'}>
+        <section id="experience" className={'bg-gray-100 xl:h-module-big py-16 xl:py-36 xl:px-24 dark:bg-gray-800'}>
             <div className="flex items-center justify-center flex-col">
                 <SectionTitle sectionTitle="Experiences." sectionVariant={true}/> 
                 {/* A grid of 3 cards on desktop screens  */}

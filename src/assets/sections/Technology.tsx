@@ -23,7 +23,7 @@ const Technology = () => {
     console.log(Math.floor(technology.length / perPage))
 
     return (
-        <section id="technology" className={'h-fit xl:h-module-medium xl:p-12 relative overflow-hidden py-10'}>
+        <section id="technology" className={'h-fit xl:h-module-medium xl:p-12 relative overflow-hidden py-10 -z-0'}>
             <div className="w-full flex flex-col-reverse xl:flex-row">
                 <div className="xl:w-1/2 w-full xl:py-10 pt-4 p-2 xl:flex xl:flex-col xl:items-center xl:gap-12">
                     
@@ -36,10 +36,10 @@ const Technology = () => {
                     </div>
                     <div className="flex w-full items-center justify-center gap-6 pt-8 z-40">
                         {currentIndex === 0 ? null : <div className="z-40" onClick={() => handlePrevSet()} >
-                            <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="prev" className="z-40 w-8 h-8 rotate-180" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="prev" className="z-40 w-8 h-8 rotate-180 dark:invert" />
                         </div> }
                         {currentIndex === Math.floor(technology.length / perPage) ? null : <div className="z-40" onClick={() => handleNextSet()}>
-                            <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="next" className="w-8 h-8" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="next" className="w-8 h-8 dark:invert" />
                         </div>}
                         
                     </div>
@@ -52,7 +52,7 @@ const Technology = () => {
 
             {/* Squares backgroud  */}
             <div
-                className="absolute -bottom-64 left-1/2 w-96 h-96 border border-gray-100 rotate-45"></div>
+                className="absolute -bottom-64 left-1/2 w-96 h-96 border border-gray-100 rotate-45 "></div>
             <div
                 className="absolute -bottom-64 left-1/3 w-80 h-80 border border-gray-100 rotate-12"></div>
             <div

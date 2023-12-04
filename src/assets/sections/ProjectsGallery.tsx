@@ -1,6 +1,6 @@
-import { projects } from "../datafiles/data"
+// import { projects } from "../datafiles/data"
 import { SectionTitle } from "../components/SectionTitle"
-import ProjectCard from "../components/ProjectCard"
+// import ProjectCard from "../components/ProjectCard"
 
 
 const ProjectsGallery = () => {

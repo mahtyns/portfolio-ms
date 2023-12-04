@@ -10,7 +10,7 @@ const About = () => {
     const isAboveMediumScreen = useMediaQueries('(min-width: 1024px)')
 
     return (
-        <section id="about" className={'bg-main-dark xl:h-module-big flex xl:flex-row flex-col'}>
+        <section id="about" className={'bg-main-dark xl:h-module-big flex xl:flex-row flex-col dark:bg-gray-800'}>
             <div className="p-12 xl:p-36 xl:w-1/2">
                 <SectionTitle sectionTitle="About me." sectionVariant={false}/>
                 <article>
@@ -22,7 +22,7 @@ const About = () => {
                     className="text-lg xl:text-xl text-gray-50 py-8 font-light font-lato leading-8 xl:w-5/6 tracking-wide">
                     You can send me a message in:<br/> Polish · English · Spanish
                 </p>
-                <div className="invert">
+                <div className="invert dark:invert-0">
                     <Button buttonVariant={false} buttonContent="Resume" handleOnClick={() => window.open('https://drive.google.com/file/d/1CTbO3_29Qt3iKLAJXI5m7CBFaqr2R-Jt/view?usp=sharing')}/>
                 </div>
                 </article>

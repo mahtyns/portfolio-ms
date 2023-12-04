@@ -13,7 +13,7 @@ type Props = {
 
 const ExperienceCard = (props: Props) => {
   return (
-    <article className="border-gray-400 border w-96 h-96 bg-main-white">
+    <article className="border-gray-400 border w-96 h-96 bg-main-white dark:bg-gray-800">
         <div className="w-full border-b border-gray-400 py-4 flex flex-col items-center">
             <ExperienceName 
             expName={props.expName}

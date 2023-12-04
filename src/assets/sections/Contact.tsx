@@ -4,7 +4,7 @@ import { contactMe } from "../datafiles/data"
 const Contact = () => {
 
   return (
-    <section  id="contact" className={'h-module-medium p-16 xl:py-36 xl:px-36'}>
+    <section  id="contact" className={'h-module-medium p-16 xl:py-36 xl:px-36 dark:bg-main-dark'}>
       <div className="xl:w-1/2">
         <SectionTitle sectionTitle="Let's talk." sectionVariant={true}/>
         <p className="xl:w-5/6 py-8 font-lato  tracking-wide font-light text-lg">

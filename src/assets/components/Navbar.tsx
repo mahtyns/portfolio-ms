@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <nav >
             <div
-                className={`${flex} py-6 px-9 border-b border-gray-100 fixed top-0 bg-main-white z-20 w-full dark:bg-main-dark dark:border-gray-900`}>
+                className={`${flex} py-6 px-9 border-b border-gray-100 fixed top-0 bg-main-white z-20 w-full dark:bg-main-dark dark:border-gray-800`}>
                 <div>
                     <h1 className={`font-playfair md:text-xl text-lg dark:text-gray-200`}>Martyna Smolarek</h1>
                 </div>

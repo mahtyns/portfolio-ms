@@ -14,7 +14,7 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <main>
+      <main className="dark:bg-main-dark">
         <Home />
         <Projects />
         <About />
