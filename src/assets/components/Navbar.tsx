@@ -36,14 +36,16 @@ const Navbar = (props:Props) => {
                         <img src="https://cdn-icons-png.flaticon.com/512/11598/11598733.png" alt="dark mode" className="w-7 h-7 cursor-pointer invert" onClick={() => props.handleDarkMode()} /> : <img src="https://cdn-icons-png.flaticon.com/512/1415/1415431.png" alt="dark mode" className="w-6 h-6 cursor-pointer" onClick={()=>props.handleDarkMode()}/>}
                         </div>
                     : 
-                    <>
+                    <div className="flex flex-row gap-4">
+                    {props.darkMode ?
+                            <img src="https://cdn-icons-png.flaticon.com/512/11598/11598733.png" alt="dark mode" className="w-5 h-5 cursor-pointer invert" onClick={() => props.handleDarkMode()} /> : <img src="https://cdn-icons-png.flaticon.com/512/1415/1415431.png" alt="dark mode" className="w-5 h-5 cursor-pointer" onClick={() => props.handleDarkMode()} />}
                     <div onClick={()=>setMenuToggled(!isMenuToggled)}>
                         <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" className="w-5 h-5 cursor-pointer dark:invert"/>
                     </div>
                         {
                     isMenuToggled ? <MenuMobile setMenuToggled={setMenuToggled} isMenuToggled={isMenuToggled} /> : null
                         }
-                    </>
+                    </div>
                     }
                     
             </div>
