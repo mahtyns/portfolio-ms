@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <header>
-        <Navbar />
+        <Navbar darkMode={darkMode} handleDarkMode={handleDarkMode}/>
       </header>
       <main className="dark:bg-main-dark">
         <Home />

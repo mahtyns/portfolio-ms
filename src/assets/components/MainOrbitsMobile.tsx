@@ -6,9 +6,9 @@ const MainOrbitsMobile = () => {
 
     return (
         <div className={`w-full pt-8 pb-12 ${flex} overflow-hidden flex-col`}>
-            <div className={`${orbit} ${flex} w-[470px] h-[470px] border border-gray-100`}>
+            <div className={`${orbit} ${flex} w-[430px] h-[430px] border border-gray-100`}>
                 <div
-                    className={`${orbit} ${flex} w-[350px] h-[350px] border border-gray-200 before:bg-special-500 before:w-2 before:h-2 before:rounded-full before:absolute before:transform before:translate-y-64 animate-spin`}>
+                    className={`${orbit} ${flex} w-[350px] h-[350px] border border-gray-200 before:bg-special-500 before:w-2 before:h-2 before:rounded-full before:absolute before:transform before:translate-y-64 animate-spin dark:border-gray-500`}>
                     <div className={`${orbit} ${flex} w-80 h-80 border border-gray-300`}>
                         <div className={`${orbit} ${flex} w-44 h-44 border border-gray-500`}>
                             <div

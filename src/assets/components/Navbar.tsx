@@ -6,7 +6,13 @@ import MenuMobile from "./MenuMobile";
 
 const flex = `flex items-center justify-between`
 
-const Navbar = () => {
+type Props = {
+    darkMode: boolean,
+    handleDarkMode: () => void
+}
+
+const Navbar = (props:Props) => {
+
 
     const [isMenuToggled, setMenuToggled] = useState(false)
     const isAboveMediumScreen = useMediaQueries("(min-width: 1024px)");
@@ -26,12 +32,13 @@ const Navbar = () => {
                         <Navlink pageName="Technology" clickedPage="technology" setMenuToggled={setMenuToggled} />
                         <Navlink pageName="Experience" clickedPage="experience" setMenuToggled={setMenuToggled} />
                         <Navlink pageName="Contact" clickedPage="contact" setMenuToggled={setMenuToggled} />
+                        {props.darkMode ? 
+                        <img src="https://cdn-icons-png.flaticon.com/512/11598/11598733.png" alt="dark mode" className="w-7 h-7 cursor-pointer invert" onClick={() => props.handleDarkMode()} /> : <img src="https://cdn-icons-png.flaticon.com/512/1415/1415431.png" alt="dark mode" className="w-6 h-6 cursor-pointer" onClick={()=>props.handleDarkMode()}/>}
                         </div>
                     : 
-                    
                     <>
                     <div onClick={()=>setMenuToggled(!isMenuToggled)}>
-                        <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" className="w-5 h-5 cursor-pointer"/>
+                        <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" className="w-5 h-5 cursor-pointer dark:invert"/>
                     </div>
                         {
                     isMenuToggled ? <MenuMobile setMenuToggled={setMenuToggled} isMenuToggled={isMenuToggled} /> : null
