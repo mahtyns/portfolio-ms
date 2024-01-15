@@ -80,6 +80,13 @@ export const projects: Array<Project> = [
 export const experiences: Array<Exp> = 
     [
         {
+        experience_name: 'Web Designer & Developer at Fever',
+        experience_date: 'January 2024 - now',
+        experience_descr: 'Designing and developing landing pages for events. Designing from scratch and updating existing modules.',
+        experience_cat: 'work',
+        experience_details: ['Handlebars', 'YAML' , 'SCSS', 'Netlify', 'jira']
+        },
+        {
         experience_name: 'Web Designer at Le Guide Noir',
         experience_date: 'March 2021 - November 2023',
             experience_descr: 'Planning & implementing digital e-commerce strategies for clients webpages to drive sales and grow site engagement for various brands; design frontend modules, working with our Product - research, analysis, improvements in the code. ',
