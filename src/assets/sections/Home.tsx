@@ -10,10 +10,10 @@ const Home = () => {
 
     return (
         <section id="home" >
-            <div className="flex items-center flex-col justify-between mb-36">
+            <div className="flex items-center flex-col justify-between mb-12">
                 {isAboveMediumScreen ? <MainOrbits /> : <MainOrbitsMobile />}                
                 <p className="mb-6 text-2xl font-playfair ">Hello, I'm Martyna.</p>
-                <p className="mb-6 md:text-lg font-lato uppercase tracking-wider text-base text-center px-4">Junior FrontEnd Developer - Discover my projects.</p>
+                <p className="mb-6 md:text-lg font-lato uppercase tracking-wider text-base text-center px-4">FrontEnd Developer | React, Svelte | Discover my projects.</p>
                 <div className="flex gap-6">
                     <AnchorLink href="#projects">
                         <Button buttonVariant={true} buttonContent={'Explore'} handleOnClick={()=>null}/>

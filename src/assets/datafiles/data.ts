@@ -84,7 +84,7 @@ export const experiences: Array<Exp> =
         experience_date: 'January 2024 - now',
         experience_descr: 'Designing and developing landing pages for events. Designing from scratch and updating existing modules.',
         experience_cat: 'work',
-        experience_details: ['Handlebars', 'YAML' , 'SCSS', 'Netlify', 'jira']
+        experience_details: ['React', 'Svelte' , 'Astro', 'NextJS', 'SCSS', 'Tailwind' ]
         },
         {
         experience_name: 'Web Designer at Le Guide Noir',
