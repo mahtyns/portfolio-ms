@@ -3,6 +3,15 @@ import { Exp } from "../types/experiences"
 import { TechStack } from "../types/stack"
 export const projects: Array<Project> = [
     {
+        project_name: 'Harry Potter - Forbidden Forest Experience',
+        project_date: 'February / March 2025',
+        project_description: 'Project with FeverUp - Full page redesign to adapt to the new CMS. Started with Figma mockups.',
+        project_stack: ['Astro', 'Svelte', 'SCSS', 'CSS Animations'],
+        project_link_l: 'https://hpforbiddenforestexperience.com',
+        project_link_gh: '',
+        project_img_src: '/images/projects/hpforest.webp'
+    }, 
+    {
         project_name: 'Daniel Śnieżyński web',
         project_date: 'October - November 2023',
         project_description: 'Freelance project, personal webpage for Daniel offering his furniture and wooden terraces services',
@@ -19,16 +28,7 @@ export const projects: Array<Project> = [
         project_link_l: 'https://aerialclass.netlify.app',
         project_link_gh: 'https://github.com/mahtyns/aerialSchool',
         project_img_src: 'https://i.ibb.co/26Kvzts/volarethumb1.jpg'
-    }, 
-    {
-        project_name: 'WalkingBooks',
-        project_date: 'January 2023 - WIP',
-        project_description: 'A project to practice and expand my React skills. An app that is similar to GoodReads, but with an option to share your books to other users, similar to Vinted. Made of four main modules: explore, user library, friends activity and book map. In the explore page, you can find new books to add to your library. In the user library, you can manage the status of your books and decide if you have any items to share. In the friends module, you can see what other people are up to, and in the map module, you can explore the books nearby if you want to read something new.',
-        project_stack: ['React', 'JavaScript', 'classnames', 'FireBase', 'useContext'],
-        project_link_l: 'https://walkingbooks.netlify.app/',
-        project_link_gh: 'https://github.com/mahtyns/bookApp',
-        project_img_src: 'https://i.ibb.co/cgLCZm5/books1.jpg'
-    }, 
+    },  
     {
         project_name: 'Ecommerce SPA Page',
         project_date: 'November 2021 - June 2022 (with further modifications)',
@@ -48,24 +48,6 @@ export const projects: Array<Project> = [
         project_img_src: 'https://i.ibb.co/z2kcryr/pamap.jpg'
     }, 
     {
-        project_name: 'Sarai Spread redesign',
-        project_date: 'November 2021',
-        project_description: 'Webpage redesign for www.sarais.us, a shop with spreads. Added new modules: best recipes, reviews with the product link, newsletter subscription. Design both for desktop and mobile. Redesigning of the existing web to make it more intuitive and aesthetic.',
-        project_stack: ['Figma', 'Photoshop'],
-        project_link_l: 'https://www.behance.net/gallery/129222825/Sarais-web-page-refresh',
-        project_link_gh: '',
-        project_img_src: 'https://i.ibb.co/QmmZvYf/spread.jpg'
-    }, 
-    {
-        project_name: 'Winelovers Shop',
-        project_date: 'October 2020',
-        project_description: 'Project for Domestika Course for HTML5, CSS3 and responsive web basics. A simple HTML5, CSS3 Project - a webpage for a Wine Store with wine courses available. Page with best products, reservation module and testimonials. The Domestika course explained basics of CSS animations, some advanced CSS styling and responsive design with Media Queries.',
-        project_stack: ['HTML', 'CSS'],
-        project_link_l: 'https://mahtyns.github.io/WineloversShop/',
-        project_link_gh: 'https://github.com/mahtyns/WineloversShop',
-        project_img_src: 'https://i.ibb.co/5hdQwtq/wine.jpg'
-    }, 
-    {
         project_name: 'Portfolio Page B&W',
         project_date: 'June 2023',
         project_description: '',
@@ -82,9 +64,9 @@ export const experiences: Array<Exp> =
         {
         experience_name: 'Web Designer & Developer at Fever',
         experience_date: 'January 2024 - now',
-        experience_descr: 'Designing and developing landing pages for events. Designing from scratch and updating existing modules.',
+            experience_descr: 'Designing and developing landing pages, starting from initial Figma design to developing coded mockups.  Developing and maintaining reusable UI components for the CMS template. Engaging in internal Hackathons and Hackdays',
         experience_cat: 'work',
-        experience_details: ['React', 'Svelte' , 'Astro', 'NextJS', 'SCSS', 'Tailwind' ]
+        experience_details: ['React', 'Svelte' , 'Astro', 'NextJS', 'SCSS', 'Tailwind', 'Decap Server CMS', 'Github' ]
         },
         {
         experience_name: 'Web Designer at Le Guide Noir',

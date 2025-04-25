@@ -17,7 +17,7 @@ const ExperienceCardMobile = (props : Props) => {
     return (
         <div className="flex gap-1 py-8 flex-col">
 
-            <article className="border-gray-400 border w-[21.5rem] h-fit bg-main-white">
+            <article className="border-gray-400 border w-[21.5rem] h-96 bg-main-white">
                 <div
                     className="w-full border-b border-gray-400 py-4 flex flex-col items-center">
                     <ExperienceName expName={props.expName}/>

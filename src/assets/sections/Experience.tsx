@@ -68,7 +68,7 @@ const Experience = () => {
 
                 {/* Experience categories to choose                  */}
                 <div
-                    className="flex flex-row gap-6 text-lg uppercase font-lato font-light xl:py-10">
+                    className="flex flex-row gap-6 text-lg uppercase py-2 font-lato font-light xl:pt-10 xl:pb-4">
                     <p 
                     onClick={()=>setExpCategory('work')}
                     className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'work' ? 'underline underline-offset-4' : null}`}>
@@ -84,6 +84,9 @@ const Experience = () => {
                     className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'course' ? 'underline underline-offset-4' : null}`}>
                         Courses
                     </p>
+                </div>
+                <div>
+                    <span className='uppercase text-gray-500'>Find more on my <a className='underline' href="https://www.linkedin.com/in/msmolarek/" target="_blank">Linkedin Page</a>.</span>
                 </div>
             </div>
         </section>

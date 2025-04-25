@@ -4,7 +4,7 @@ type Props = {
 
 const ExperienceDescription = (props : Props) => {
     return (
-        <div className="py-2 font-lato tracking-wide font-light text-lg px-8">
+        <div className="py-2 font-lato tracking-wide font-light text-lg px-6">
             {props.expDescr}
         </div>
     )
