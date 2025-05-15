@@ -12,6 +12,15 @@ export const projects: Array<Project> = [
         project_img_src: '/images/projects/hpforest.webp'
     }, 
     {
+        project_name: 'Sofi Tukker Quiz',
+        project_date: 'January 2025',
+        project_description: 'Not so serious - Sofi Tukker quiz with Guess lyrics / Guess song options. ',
+        project_stack: ['React'],
+        project_link_l: 'https://sofi-lyrics-challenge.netlify.app',
+        project_link_gh: '',
+        project_img_src: '/images/projects/sofitukker.webp'
+    }, 
+    {
         project_name: 'Daniel Śnieżyński web',
         project_date: 'October - November 2023',
         project_description: 'Freelance project, personal webpage for Daniel offering his furniture and wooden terraces services',

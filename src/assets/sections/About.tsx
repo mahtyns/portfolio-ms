@@ -1,5 +1,5 @@
 import {SectionTitle} from "../components/SectionTitle"
-import Button from "../components/Button"
+// import Button from "../components/Button"
 import useMediaQueries from "../hooks/useMediaQueries"
 import { aboutMe, aboutMeMobile } from "../datafiles/data"
 
@@ -22,9 +22,9 @@ const About = () => {
                     className="text-lg xl:text-xl text-gray-50 py-8 font-light font-lato leading-8 xl:w-5/6 tracking-wide">
                     You can send me a message in:<br/> Polish · English · Spanish
                 </p>
-                <div className="invert dark:invert-0">
+                {/* <div className="invert dark:invert-0">
                     <Button buttonVariant={false} buttonContent="Resume" handleOnClick={() => window.open('https://drive.google.com/file/d/1CTbO3_29Qt3iKLAJXI5m7CBFaqr2R-Jt/view?usp=sharing')}/>
-                </div>
+                </div> */}
                 </article>
             </div>
 
