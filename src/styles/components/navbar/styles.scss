@@ -1,0 +1,39 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: $main-white;
+    border-bottom: solid 1px $gray-50;
+    z-index: 20;
+    @include flex-row;
+    justify-content: center;
+    padding: $space-3 $space-5;
+
+    &__wrapper {
+        width: 100%;
+        @include flex-row;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        @include flex-row;
+        gap: $space-2;
+
+        &--mobile {
+            @include flex-row;
+            gap: $space-2;
+        }
+
+        &__theme-icon,
+        &__burger {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+
+            @include md {
+                width: $space-3;
+                height: $space-3;
+            }
+        }
+    }
+}
