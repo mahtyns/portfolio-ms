@@ -1,0 +1,52 @@
+//Screen sizes mixins
+@mixin md {
+    @media (min-width: #{$screen-md}) {
+        @content
+    }
+}
+
+;
+
+@mixin lg {
+    @media (min-width: #{$screen-lg}) {
+        @content
+    }
+}
+
+;
+
+@mixin xl {
+    @media (min-width: #{$screen-xl}) {
+        @content
+    }
+}
+
+;
+
+@mixin xxl {
+    @media (min-width: #{$screen-xxl}) {
+        @content
+    }
+}
+
+;
+
+//Layout mixins 
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+// Style mixins
+
+@mixin bordered-box {
+    border: solid $gray-500 1px;
+    background-color: $gray-50;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}

@@ -12,8 +12,6 @@ type Props = {
 }
 
 const Navbar = (props:Props) => {
-
-
     const [isMenuToggled, setMenuToggled] = useState(false)
     const isAboveMediumScreen = useMediaQueries("(min-width: 1024px)");
 
