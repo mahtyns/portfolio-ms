@@ -1,4 +1,4 @@
-import {SectionTitle} from "../components/SectionTitle"
+import {SectionTitle} from "../components/basics/SectionTitle"
 // import Button from "../components/Button"
 import useMediaQueries from "../hooks/useMediaQueries"
 import { aboutMe, aboutMeMobile } from "../datafiles/data"

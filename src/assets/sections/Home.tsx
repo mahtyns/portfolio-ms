@@ -1,5 +1,5 @@
 import MainOrbits from "../components/MainOrbits"
-import Button from "../components/Button"
+import Button from "../components/basics/Button"
 import MainOrbitsMobile from "../components/MainOrbitsMobile"
 import useMediaQueries from "../hooks/useMediaQueries"
 import AnchorLink from "react-anchor-link-smooth-scroll"
@@ -12,8 +12,8 @@ const Home = () => {
         <section id="home" >
             <div className="flex items-center flex-col justify-between mb-12">
                 {isAboveMediumScreen ? <MainOrbits /> : <MainOrbitsMobile />}                
-                <p className="mb-6 text-2xl font-playfair ">Hello, I'm Martyna.</p>
-                <p className="mb-6 md:text-lg font-lato uppercase tracking-wider text-base text-center px-4">FrontEnd Developer | React, Svelte | Discover my projects.</p>
+                <h1 className="mb-6 text-2xl font-playfair text-center">Hello, I'm Martyna. This is my portfolio site.</h1>
+                <h2 className="mb-6 md:text-lg font-lato uppercase tracking-wider text-base text-center px-4">FrontEnd Developer | React, Svelte, Astro, NextJS | Discover my projects.</h2>
                 <div className="flex gap-6">
                     <AnchorLink href="#projects">
                         <Button buttonVariant={true} buttonContent={'Explore'} handleOnClick={()=>null}/>

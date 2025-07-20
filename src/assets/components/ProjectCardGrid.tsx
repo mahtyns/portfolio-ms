@@ -1,4 +1,4 @@
-import ActiveCircle from "./ActiveCircle"
+import ActiveCircle from "./basics/ActiveCircle"
 import ProjectCard from "./ProjectCard"
 import { Project } from "../types/projects"
 import { projects } from "../datafiles/data"

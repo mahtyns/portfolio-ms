@@ -1,4 +1,4 @@
-import Navlink from "./Navlink"
+import Navlink from "./basics/Navlink"
 
 type Props = {
   isMenuToggled: boolean;

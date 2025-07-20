@@ -10,9 +10,9 @@ export const SectionTitle = (props: Props) => {
 
   return (
     <header>
-      <h1 className={`font-playfair text-2xl ${props.sectionVariant ? textDark : textWhite} dark:text-gray-100`}>
+      <h2 className={`font-playfair text-2xl ${props.sectionVariant ? textDark : textWhite} dark:text-gray-100`}>
         {props.sectionTitle}
-      </h1>
+      </h2>
     </header>
   )
 }

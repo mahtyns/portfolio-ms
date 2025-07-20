@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import ExperienceCard from "../components/ExperienceCard"
 import ExperienceCardMobile from "../components/ExperienceCardMobile"
-import {SectionTitle} from "../components/SectionTitle"
+import {SectionTitle} from "../components/basics/SectionTitle"
 import useMediaQueries from "../hooks/useMediaQueries"
 import { experiences } from "../datafiles/data"
 

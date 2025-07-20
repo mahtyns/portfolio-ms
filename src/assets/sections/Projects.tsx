@@ -2,7 +2,7 @@ import { useState } from "react"
 // import ActiveCircle from "../components/ActiveCircle"
 import ProjectCardGrid from "../components/ProjectCardGrid"
 import ProjectInfo from "../components/ProjectInfo"
-import {SectionTitle} from "../components/SectionTitle"
+import {SectionTitle} from "../components/basics/SectionTitle"
 import useMediaQueries from "../hooks/useMediaQueries"
 import { projects } from "../datafiles/data"
 
