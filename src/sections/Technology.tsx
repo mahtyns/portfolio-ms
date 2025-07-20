@@ -1,6 +1,6 @@
-import {SectionTitle} from "../components/basics/SectionTitle"
-import StackCard from "../components/StackCard"
-import { skills, technology } from "../datafiles/data"
+import {SectionTitle} from "../assets/components/basics/SectionTitle"
+import StackCard from "../assets/components/StackCard"
+import { skills, technology } from "../assets/datafiles/data"
 import { useState } from "react"
 
 const Technology = () => {

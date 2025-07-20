@@ -1,10 +1,10 @@
 import { useState } from "react"
 // import ActiveCircle from "../components/ActiveCircle"
-import ProjectCardGrid from "../components/ProjectCardGrid"
-import ProjectInfo from "../components/ProjectInfo"
-import {SectionTitle} from "../components/basics/SectionTitle"
-import useMediaQueries from "../hooks/useMediaQueries"
-import { projects } from "../datafiles/data"
+import ProjectCardGrid from "../assets/components/ProjectCardGrid"
+import ProjectInfo from "../assets/components/ProjectInfo"
+import {SectionTitle} from "../assets/components/basics/SectionTitle"
+import useMediaQueries from "../assets/hooks/useMediaQueries"
+import { projects } from "../assets/datafiles/data"
 
 const Projects = () => {
 

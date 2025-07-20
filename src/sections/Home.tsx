@@ -1,7 +1,7 @@
-import MainOrbits from "../components/MainOrbits"
-import Button from "../components/basics/Button"
-import MainOrbitsMobile from "../components/MainOrbitsMobile"
-import useMediaQueries from "../hooks/useMediaQueries"
+import MainOrbits from "../assets/components/MainOrbits"
+import Button from "../assets/components/basics/Button"
+import MainOrbitsMobile from "../assets/components/MainOrbitsMobile"
+import useMediaQueries from "../assets/hooks/useMediaQueries"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const Home = () => {

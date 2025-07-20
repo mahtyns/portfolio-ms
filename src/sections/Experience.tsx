@@ -1,9 +1,9 @@
 import {useState} from 'react'
-import ExperienceCard from "../components/ExperienceCard"
-import ExperienceCardMobile from "../components/ExperienceCardMobile"
-import {SectionTitle} from "../components/basics/SectionTitle"
-import useMediaQueries from "../hooks/useMediaQueries"
-import { experiences } from "../datafiles/data"
+import ExperienceCard from "../assets/components/ExperienceCard"
+import ExperienceCardMobile from "../assets/components/ExperienceCardMobile"
+import {SectionTitle} from "../assets/components/basics/SectionTitle"
+import useMediaQueries from "../assets/hooks/useMediaQueries"
+import { experiences } from "../assets/datafiles/data"
 
 
 const Experience = () => {

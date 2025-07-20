@@ -1,5 +1,5 @@
-import { SectionTitle } from "../components/basics/SectionTitle"
-import { contactMe } from "../datafiles/data"
+import { SectionTitle } from "../assets/components/basics/SectionTitle"
+import { contactMe } from "../assets/datafiles/data"
 
 const Contact = () => {
 

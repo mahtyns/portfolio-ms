@@ -1,7 +1,6 @@
-import {SectionTitle} from "../components/basics/SectionTitle"
-// import Button from "../components/Button"
-import useMediaQueries from "../hooks/useMediaQueries"
-import { aboutMe, aboutMeMobile } from "../datafiles/data"
+import {SectionTitle} from "../assets/components/basics/SectionTitle"
+import useMediaQueries from "../assets/hooks/useMediaQueries"
+import { aboutMe, aboutMeMobile } from "../assets/datafiles/data"
 
 const About = () => {
 
