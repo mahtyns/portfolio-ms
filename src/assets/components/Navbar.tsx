@@ -1,7 +1,7 @@
 // import PropTypes from 'prop-types'
 import { useState } from "react";
 import useMediaQueries from "../hooks/useMediaQueries";
-import Navlink from "./Navlink"
+import Navlink from "./basics/Navlink"
 import MenuMobile from "./MenuMobile";
 
 const flex = `flex items-center justify-between`

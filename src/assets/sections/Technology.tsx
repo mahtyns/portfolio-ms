@@ -1,4 +1,4 @@
-import {SectionTitle} from "../components/SectionTitle"
+import {SectionTitle} from "../components/basics/SectionTitle"
 import StackCard from "../components/StackCard"
 import { skills, technology } from "../datafiles/data"
 import { useState } from "react"

@@ -1,5 +1,5 @@
 // import { projects } from "../datafiles/data"
-import { SectionTitle } from "../components/SectionTitle"
+import { SectionTitle } from "../components/basics/SectionTitle"
 // import ProjectCard from "../components/ProjectCard"
 
 

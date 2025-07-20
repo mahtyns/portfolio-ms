@@ -1,4 +1,4 @@
-import { SectionTitle } from "../components/SectionTitle"
+import { SectionTitle } from "../components/basics/SectionTitle"
 import { contactMe } from "../datafiles/data"
 
 const Contact = () => {

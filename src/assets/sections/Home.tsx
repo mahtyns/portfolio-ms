@@ -1,5 +1,5 @@
 import MainOrbits from "../components/MainOrbits"
-import Button from "../components/Button"
+import Button from "../components/basics/Button"
 import MainOrbitsMobile from "../components/MainOrbitsMobile"
 import useMediaQueries from "../hooks/useMediaQueries"
 import AnchorLink from "react-anchor-link-smooth-scroll"

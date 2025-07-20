@@ -1,4 +1,4 @@
-import Button from "../Button"
+import Button from "../basics/Button"
 import { Project } from "../../types/projects"
 
 type Props = {
