@@ -36,7 +36,7 @@ const Navbar = (props:Props) => {
                     {props.darkMode ?
                             <img src="https://cdn-icons-png.flaticon.com/512/11598/11598733.png" alt="dark mode" className=" invert navbar__menu__theme-icon" onClick={() => props.handleDarkMode()} /> : <img src="https://cdn-icons-png.flaticon.com/512/1415/1415431.png" alt="dark mode" className="navbar__menu__theme-icon" onClick={() => props.handleDarkMode()} />}
                     <div className="navbar__menu__burger-icon" onClick={()=>setMenuToggled(!isMenuToggled)}>
-                        <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" className="  dark:invert"/>
+                            <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu"/>
                     </div>
                         {
                     isMenuToggled ? <MenuMobile setMenuToggled={setMenuToggled} isMenuToggled={isMenuToggled} /> : null
