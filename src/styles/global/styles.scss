@@ -1,3 +1,5 @@
+@import 'mixins.scss';
+
 //Colors
 $main-white: #f3f3f3;
 $main-dark: #151515;
@@ -28,7 +30,91 @@ $space-4: 32px;
 $space-5: 40px;
 $space-6: 64px;
 
+//Font sizes
+$font-base: 16px;
+$font-small: 14px;
+$font-bigger: 18px;
+$font-lg: 32px;
+$font-xl: 48px;
+
+
 body {
     box-sizing: border-box;
     background-color: $main-white;
+    font-family: "Lato", sans-serif;
+}
+
+//Basics
+.button {
+    padding: $space-1 $space-2;
+    text-transform: uppercase;
+
+    @include md {
+        padding: $space-2 $space-6;
+        transition: ease-in-out 1s all;
+    }
+
+    &--black {
+        background-color: $main-dark;
+        color: $main-white;
+
+
+        &:hover {
+            background-color: $gray-700;
+        }
+    }
+
+    &--white {
+        background-color: $main-white;
+        color: $main-dark;
+        border: solid 1px $main-dark;
+
+        &:hover {
+            background-color: $gray-100;
+        }
+    }
+}
+
+//Navigation links
+.navlink {
+    text-transform: uppercase;
+    font-size: $font-base;
+    color: $gray-500;
+    letter-spacing: 2px;
+    transition: ease-in-out 0.5s all;
+
+    &:hover {
+        color: $special-500;
+        letter-spacing: 3px;
+    }
+}
+
+//Titles 
+.title-h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: $font-lg;
+
+    &--white {
+        color: $main-white;
+    }
+
+    &--black {
+        color: $gray-500;
+    }
+}
+
+//Pagination 
+.pagination {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    &--active {
+        background-color: $main-dark;
+    }
+
+    &--basic {
+        background-color: $main-white;
+        border: solid 1px $main-dark;
+    }
 }

@@ -4,12 +4,12 @@ type Props = {
 
 const ActiveCircle = (props: Props) => {
 
-  const active = 'bg-main-dark dark:bg-gray-50';
-  const notActive = 'bg-main-white border border-main-dark dark:bg-main-dark dark:border-main-white';
+  const active = 'active dark:bg-gray-50';
+  const notActive = 'basic dark:bg-main-dark dark:border-main-white';
 
   return (
     <>
-      <div className={`w-3 h-3 rounded-full ${props.isActive ? active : notActive}`}></div>
+      <div className={`pagination pagination--${props.isActive ? active : notActive}`}></div>
     </>
   )
 }
