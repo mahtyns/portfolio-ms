@@ -30,6 +30,9 @@ $space-3: 24px;
 $space-4: 32px;
 $space-5: 40px;
 $space-6: 64px;
+$space-7: 80px;
+$space-8: 96px;
+$space-9: 144px;
 
 //Sizing
 $size-1: 4px;
@@ -51,6 +54,7 @@ body {
     box-sizing: border-box;
     background-color: $main-white;
     font-family: "Lato", sans-serif;
+    font-weight: 300;
 }
 
 //Basics
