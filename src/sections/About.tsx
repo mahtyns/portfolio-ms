@@ -1,25 +1,24 @@
 import { SectionTitle } from "../assets/components/basics/SectionTitle"
 import useMediaQueries from "../assets/hooks/useMediaQueries"
-import { aboutMe, aboutMeMobile } from "../assets/datafiles/data"
+import about from '../assets/datafiles/about/about.json'
 
 const About = () => {
 
-    const orbit = `rounded-full`
-    const flex = `flex justify-center items-center`
+    // const orbit = `rounded-full`
+    // const flex = `flex justify-center items-center`
     const isAboveMediumScreen = useMediaQueries('(min-width: 1024px)')
 
     return (
-        <section id="about" className={'about section--black flex xl:flex-row flex-col dark:bg-gray-800'}>
+        <section id="about" className={'about section-main section--black dark:bg-gray-800'}>
             <div className="about__container">
                 <SectionTitle sectionTitle="About me." sectionVariant={false} />
                 <article>
+                    <h3 className="about__intro">{about.intro}</h3>
+                    <p className="about__description">{about.main_text}</p>
+                    <p className="about__description">{about.extra_text}</p>
                     <p
-                        className="text-base xl:text-xl text-gray-50 pt-12 font-light font-lato leading-8 xl:w-5/6 tracking-wide">
-                        {isAboveMediumScreen ? aboutMe : aboutMeMobile}
-                    </p>
-                    <p
-                        className="text-lg xl:text-xl text-gray-50 py-8 font-light font-lato leading-8 xl:w-5/6 tracking-wide">
-                        You can send me a message in:<br /> Polish · English · Spanish
+                        className="about__languages">
+                        {about.languages_text}<br /> {about.languages.map(language => <span className="about__languages-item">{language}</span>)}
                     </p>
                     {/* <div className="invert dark:invert-0">
                     <Button buttonVariant={false} buttonContent="Resume" handleOnClick={() => window.open('https://drive.google.com/file/d/1CTbO3_29Qt3iKLAJXI5m7CBFaqr2R-Jt/view?usp=sharing')}/>

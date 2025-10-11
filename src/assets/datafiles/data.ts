@@ -10,7 +10,7 @@ export const projects: Array<Project> = [
         project_link_l: 'https://hpforbiddenforestexperience.com',
         project_link_gh: '',
         project_img_src: '/images/projects/hpforest.webp'
-    }, 
+    },
     {
         project_name: 'Sofi Tukker Quiz',
         project_date: 'January 2025',
@@ -19,7 +19,7 @@ export const projects: Array<Project> = [
         project_link_l: 'https://sofi-lyrics-challenge.netlify.app',
         project_link_gh: '',
         project_img_src: '/images/projects/sofitukker.webp'
-    }, 
+    },
     {
         project_name: 'Daniel Śnieżyński web',
         project_date: 'October - November 2023',
@@ -28,7 +28,7 @@ export const projects: Array<Project> = [
         project_link_l: 'https://sniezynski-meble.netlify.app',
         project_link_gh: 'https://github.com/mahtyns/danielsniezynski-meble',
         project_img_src: 'https://i.ibb.co/LRNcRsb/daniel.jpg'
-    }, 
+    },
     {
         project_name: 'Volare Aerials',
         project_date: 'April 2023',
@@ -37,7 +37,7 @@ export const projects: Array<Project> = [
         project_link_l: 'https://aerialclass.netlify.app',
         project_link_gh: 'https://github.com/mahtyns/aerialSchool',
         project_img_src: 'https://i.ibb.co/26Kvzts/volarethumb1.jpg'
-    },  
+    },
     {
         project_name: 'Ecommerce SPA Page',
         project_date: 'November 2021 - June 2022 (with further modifications)',
@@ -46,7 +46,7 @@ export const projects: Array<Project> = [
         project_link_l: 'https://myshop-ecommerce.netlify.app/',
         project_link_gh: 'https://github.com/mahtyns/myshop-ecommerce-store',
         project_img_src: 'https://i.ibb.co/7rJgc8y/shop.jpg'
-    }, 
+    },
     {
         project_name: 'PamApp Challenge',
         project_date: 'May 2021',
@@ -55,7 +55,7 @@ export const projects: Array<Project> = [
         project_link_l: 'https://www.behance.net/gallery/122593259/Pam-App-Challenge',
         project_link_gh: '',
         project_img_src: 'https://i.ibb.co/z2kcryr/pamap.jpg'
-    }, 
+    },
     {
         project_name: 'Portfolio Page B&W',
         project_date: 'June 2023',
@@ -64,70 +64,70 @@ export const projects: Array<Project> = [
         project_link_l: 'https://martynasmolarek.netlify.app',
         project_link_gh: 'https://github.com/mahtyns/portfolio-ms',
         project_img_src: 'https://i.ibb.co/jVKQ8wk/portfolio.jpg'
-    }, 
+    },
 
 ]
 
-export const experiences: Array<Exp> = 
+export const experiences: Array<Exp> =
     [
         {
-        experience_name: 'Web Designer & Developer at Fever',
-        experience_date: 'January 2024 - now',
+            experience_name: 'Web Designer & Developer at Fever',
+            experience_date: 'January 2024 - now',
             experience_descr: 'Designing and developing landing pages, starting from initial Figma design to developing coded mockups.  Developing and maintaining reusable UI components for the CMS template. Engaging in internal Hackathons and Hackdays',
-        experience_cat: 'work',
-        experience_details: ['React', 'Svelte' , 'Astro', 'NextJS', 'SCSS', 'Tailwind', 'Decap Server CMS', 'Github' ]
+            experience_cat: 'work',
+            experience_details: ['React', 'Svelte', 'Astro', 'NextJS', 'SCSS', 'Tailwind', 'Decap Server CMS', 'Github']
         },
         {
-        experience_name: 'Web Designer at Le Guide Noir',
-        experience_date: 'March 2021 - November 2023',
+            experience_name: 'Web Designer at Le Guide Noir',
+            experience_date: 'March 2021 - November 2023',
             experience_descr: 'Planning & implementing digital e-commerce strategies for clients webpages to drive sales and grow site engagement for various brands; design frontend modules, working with our Product - research, analysis, improvements in the code. ',
-        experience_cat: 'work',
-        experience_details: ['HTML', 'CSS', 'JavaScript']
+            experience_cat: 'work',
+            experience_details: ['HTML', 'CSS', 'JavaScript']
         },
         {
-        experience_name: 'Architect at Agema Soluciones',
-        experience_date: 'March 2019 - February 2021',
+            experience_name: 'Architect at Agema Soluciones',
+            experience_date: 'March 2019 - February 2021',
             experience_descr: 'Retail interior design & refurbishment projects for international chain brands; defining project plans from initial concept to completion. Maintained regular communication with clients and government officials to address concerns, provide updates',
-        experience_cat: 'work',
-        experience_details: ['project management']
+            experience_cat: 'work',
+            experience_details: ['project management']
         },
         {
-        experience_name: 'Architect Assistant at Sweco',
-        experience_date: 'October 2017 - June 2018',
+            experience_name: 'Architect Assistant at Sweco',
+            experience_date: 'October 2017 - June 2018',
             experience_descr: 'Working in BIM environment with Revit. 3D modeling and creating parametric families for 3d objects.',
-        experience_cat: 'work',
-        experience_details: ['parametric design', '3d modeling']
+            experience_cat: 'work',
+            experience_details: ['parametric design', '3d modeling']
         },
         {
-        experience_name: 'Erasmus+ Intern at GRX Arquitectos',
-        experience_date: 'June 2017 - September 2017',
+            experience_name: 'Erasmus+ Intern at GRX Arquitectos',
+            experience_date: 'June 2017 - September 2017',
             experience_descr: 'Erasmus internship for 3 months, working in AutoCAD and creating architectural images and visualizations with Photoshop. Small refurbishments and interventions in landscape. ',
-        experience_cat: 'work',
-        experience_details: ['Photoshop', 'AutoCAD']
+            experience_cat: 'work',
+            experience_details: ['Photoshop', 'AutoCAD']
         },
 
 
         // Education experiences
         {
-        experience_name: 'Master in Architecture',
-        experience_date: 'September 2018 - May 2020',
+            experience_name: 'Master in Architecture',
+            experience_date: 'September 2018 - May 2020',
             experience_descr: 'Studied at Universidad de Alcala de Henares, Madrid, Spain. Graduated in May 2020.',
-        experience_cat: 'edu',
-        experience_details: [' ']
+            experience_cat: 'edu',
+            experience_details: [' ']
         },
         {
-        experience_name: 'Erasmus+ Exchange',
-        experience_date: 'September 2014 - February 2015',
+            experience_name: 'Erasmus+ Exchange',
+            experience_date: 'September 2014 - February 2015',
             experience_descr: 'Studied at Universidade de Lusiada, Lisbon, Portugal.',
-        experience_cat: 'edu',
-        experience_details: [' ']
+            experience_cat: 'edu',
+            experience_details: [' ']
         },
         {
-        experience_name: 'Bachelor in Architecture',
-        experience_date: 'September 2018 - May 2020',
+            experience_name: 'Bachelor in Architecture',
+            experience_date: 'September 2018 - May 2020',
             experience_descr: 'Studied at Warsaw University of Technology in Poland. Graduated in June 2016, then coursed 1 year of Masters (60ECTS) before moving to Spain.',
-        experience_cat: 'edu',
-        experience_details: [' ']
+            experience_cat: 'edu',
+            experience_details: [' ']
         },
 
         // Online courses 
@@ -136,7 +136,7 @@ export const experiences: Array<Exp> =
             experience_date: 'November 2021 - May 2022',
             experience_descr: 'Mentorship Programme for women, on path Fullstack Development. Creating projects with JavaScript and React, then connecting with PostgreSQL.',
             experience_cat: 'course',
-            experience_details: ['react', 'styled-components', 'postgresql', ]
+            experience_details: ['react', 'styled-components', 'postgresql',]
         },
         {
             experience_name: 'Programming in JavaScript',
@@ -153,11 +153,7 @@ export const experiences: Array<Exp> =
             experience_details: ['HTML', 'CSS', 'Responsive web']
         },
 
-]
-
-export const aboutMe = "I'm Martyna, a Pole living in Madrid and a creative and detail-oriented Frontend Developer with a unique foundation in architecture and design principles, with a strong understanding of structure, user-centered design, and detailed planning, which I now apply to functional, creative and visually appealing web interfaces. As an organized and self-sufficient individual, I thrive in collaborative environments, communicate effectively across teams, and am always eager to learn and incorporate new technologies. Enjoy your stay on this page and don't hesitate to send me a message if you'd like."
-export const aboutMeMobile = "I'm Martyna, a Pole living in Madrid and a creative and detail-oriented Frontend Developer with a unique foundation in architecture and design principles, with a strong understanding of structure, user-centered design, and detailed planning, which I now apply to functional, creative and visually appealing web interfaces. As an organized and self-sufficient individual, I thrive in collaborative environments, communicate effectively across teams, and am always eager to learn and incorporate new technologies. Enjoy your stay on this page and don't hesitate to send me a message if you'd like."
-
+    ]
 
 export const skills = "I started learning FrontEnd development technologies in late 2020 while still in architecture sector. I've finished online courses for HTML5, CSS3 with animatons and responsive design, and JavaScript. I've also participated in Mentorship Programme for Women, DareIT where under the supervision of my mentor I created SPA projects with React. I'm currently learning NextJS, TypeScript and Testing."
 

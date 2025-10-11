@@ -1,10 +1,4 @@
 .contact {
-    padding: $space-6 $space-4;
-
-    @include md {
-        padding: $space-9 $space-8;
-    }
-
     &__wrapper {
         margin-bottom: $space-4;
 

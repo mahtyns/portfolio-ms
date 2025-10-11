@@ -4,9 +4,9 @@ import { contactMe } from "../assets/datafiles/contact/contact"
 const Contact = () => {
 
   return (
-    <section  id="contact" className={'contact dark:bg-main-dark'}>
+    <section id="contact" className={'contact section-main section--white dark:bg-main-dark'}>
       <div className="contact__wrapper">
-        <SectionTitle sectionTitle="Let's talk." sectionVariant={true}/>
+        <SectionTitle sectionTitle="Let's talk." sectionVariant={true} />
         <p className="contact__description">
           {contactMe}
         </p>

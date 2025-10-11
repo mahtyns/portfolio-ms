@@ -1,16 +1,33 @@
 .about {
     display: flex;
     flex-direction: column;
-    padding: $space-3 $space-2;
 
     @include md {
         flex-direction: row;
-        padding: $space-8 $space-6;
     }
 
     &__container {
         @include md {
             width: 50%;
+        }
+    }
+
+    &__intro,
+    &__description,
+    &__languages {
+        color: $main-white;
+        font-size: $font-bigger;
+        margin-bottom: $space-2;
+        letter-spacing: 1px;
+    }
+
+    &__intro {
+        margin-top: $space-3;
+    }
+
+    &__languages {
+        &-item {
+            margin-right: $space-1;
         }
     }
 }
