@@ -1,4 +1,5 @@
 import { SectionTitle } from "../assets/components/basics/SectionTitle"
+import IntroItem from "../assets/components/intro/IntroItem"
 import intro from "../assets/datafiles/intro/intro.json"
 
 const Intro = () => {
@@ -8,10 +9,7 @@ const Intro = () => {
             <h3 className="intro__subtitle">{intro.subtitle}</h3>
             <div className="intro__kpis__wrapper">
                 {
-                    intro.items.map(item => <div className="intro__kpis__item">
-                        <h4 className="intro__kpis__title">{item.name}</h4>
-                        <p className="intro__kpis__description">{item.description}</p>
-                    </div>)
+                    intro.items.map(item => <IntroItem title={item.name} description={item.description} />)
                 }
             </div>
         </section>

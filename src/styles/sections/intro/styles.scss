@@ -36,6 +36,7 @@
             text-align: center;
             border: solid 1px $main-dark;
             padding: $space-4;
+            background-color: $main-white;
 
             @include md {
                 width: calc(100% / 3 - $space-4);
