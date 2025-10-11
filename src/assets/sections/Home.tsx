@@ -11,14 +11,14 @@ const Home = () => {
     return (
         <section id="home" >
             <div className="flex items-center flex-col justify-between mb-12">
-                {isAboveMediumScreen ? <MainOrbits /> : <MainOrbitsMobile />}                
+                {isAboveMediumScreen ? <MainOrbits /> : <MainOrbitsMobile />}
                 <h1 className="mb-6 text-2xl font-playfair text-center">Hello, I'm Martyna. This is my portfolio site.</h1>
                 <h2 className="mb-6 md:text-lg font-lato uppercase tracking-wider text-base text-center px-4">FrontEnd Developer | React, Svelte, Astro, NextJS | Discover my projects.</h2>
                 <div className="flex gap-6">
                     <AnchorLink href="#projects">
-                        <Button buttonVariant={true} buttonContent={'Explore'} handleOnClick={()=>null}/>
+                        <Button buttonVariant={true} buttonContent={'Explore'} handleOnClick={() => null} />
                     </AnchorLink>
-                    <Button buttonVariant={false} buttonContent={'Contact'} handleOnClick={() => window.open('mailto:m.smolarek19@gmail.com')} />
+                    <Button buttonVariant={false} buttonContent={'Contact'} handleOnClick={() => window.open('mailto:martyna.smolarek19@gmail.com')} />
                 </div>
             </div>
         </section>
