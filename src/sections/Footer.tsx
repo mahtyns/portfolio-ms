@@ -14,7 +14,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer__icon">
-          <a href="mailto:m.smolarek19@gmail.com" target="_blank">
+          <a href="mailto:martyna.smolarek19@gmail.com" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/181/181535.png" alt="mailme icon" loading="lazy" />
           </a>
         </div>
