@@ -24,8 +24,9 @@
         font-size: $font-bigger;
         text-align: center;
         text-transform: uppercase;
-        margin-bottom: $space-3;
+        margin-bottom: $space-5;
         letter-spacing: $font-xwide;
+        font-weight: 400;
     }
 
     &__ctas {
