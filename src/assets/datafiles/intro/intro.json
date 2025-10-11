@@ -1,0 +1,23 @@
+{
+    "subtitle": "Always curious, always creating — here’s a bit more about what drives my work and keeps me inspired.",
+    "items": [
+        {
+            "name": "Frontend Dev",
+            "description": "I’ve built a variety of web projects using different technologies — from simple landing pages to more complex, dynamic applications.",
+            "image_src": "",
+            "image_alt": ""
+        },
+        {
+            "name": "Design",
+            "description": "With a background in architecture, I’ve developed a strong eye for detail and a solid understanding of design principles that shape clean, cohesive interfaces.",
+            "image_src": "",
+            "image_alt": ""
+        },
+        {
+            "name": "Constant learning",
+            "description": "I never stop exploring new tools, techniques, and opportunities to grow — every project is a chance to learn something new.",
+            "image_src": "",
+            "image_alt": ""
+        }
+    ]
+}
