@@ -1,7 +1,7 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import ExperienceCard from "../assets/components/ExperienceCard"
 import ExperienceCardMobile from "../assets/components/ExperienceCardMobile"
-import {SectionTitle} from "../assets/components/basics/SectionTitle"
+import { SectionTitle } from "../assets/components/basics/SectionTitle"
 import useMediaQueries from "../assets/hooks/useMediaQueries"
 import { experiences } from "../assets/datafiles/data"
 
@@ -30,32 +30,32 @@ const Experience = () => {
     }
 
     return (
-        <section id="experience" className={'bg-gray-100 xl:h-module-big py-16 xl:py-36 xl:px-24 dark:bg-gray-800'}>
-            <div className="flex items-center justify-center flex-col">
-                <SectionTitle sectionTitle="Experiences." sectionVariant={true}/> 
+        <section id="experience" className={'experience bg-gray-100 xl:h-module-big py-16 xl:py-36 xl:px-24 dark:bg-gray-800'}>
+            <div className="experience__container flex items-center justify-center flex-col">
+                <SectionTitle sectionTitle="Experiences." sectionVariant={true} />
                 {/* A grid of 3 cards on desktop screens  */}
                 {isAboveLargeScren
-                    ?   <div className="flex flex-row gap-8 py-16 items-center">
+                    ? <div className="flex flex-row gap-8 py-16 items-center">
                         {/* <div >
                             <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="prev" className="w-10 h-10 rotate-180" />
                         </div> */}
                         {experiences
-                        .filter(elem => elem.experience_cat === `${expCategory}`)
-                        .slice(0, 3)
-                        .map( (elem, ind) => <ExperienceCard 
-                            key={ind} 
-                            expName={elem.experience_name} 
-                            expDate={elem.experience_date}
-                            expDescr={elem.experience_descr}
-                            expDetails={elem.experience_details}
-                            expCat={elem.experience_cat}
-                            />)}     
+                            .filter(elem => elem.experience_cat === `${expCategory}`)
+                            .slice(0, 3)
+                            .map((elem, ind) => <ExperienceCard
+                                key={ind}
+                                expName={elem.experience_name}
+                                expDate={elem.experience_date}
+                                expDescr={elem.experience_descr}
+                                expDetails={elem.experience_details}
+                                expCat={elem.experience_cat}
+                            />)}
                         {/* <div >
                             <img src="https://cdn-icons-png.flaticon.com/512/9229/9229001.png" alt="next" className="w-10 h-10"/>
                         </div> */}
-                        </div>
+                    </div>
                     : <div className="py-6">
-                        <ExperienceCardMobile 
+                        <ExperienceCardMobile
                             expName={experienceFiltered[experienceIndex].experience_name}
                             expDate={experienceFiltered[experienceIndex].experience_date}
                             expDescr={experienceFiltered[experienceIndex].experience_descr}
@@ -69,19 +69,19 @@ const Experience = () => {
                 {/* Experience categories to choose                  */}
                 <div
                     className="flex flex-row gap-6 text-lg uppercase py-2 font-lato font-light xl:pt-10 xl:pb-4">
-                    <p 
-                    onClick={()=>setExpCategory('work')}
-                    className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'work' ? 'underline underline-offset-4' : null}`}>
+                    <p
+                        onClick={() => setExpCategory('work')}
+                        className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'work' ? 'underline underline-offset-4' : null}`}>
                         Work
                     </p>
-                    <p 
-                    onClick={() => setExpCategory('edu')}
-                    className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'edu' ? 'underline underline-offset-4' : null}` }>
+                    <p
+                        onClick={() => setExpCategory('edu')}
+                        className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'edu' ? 'underline underline-offset-4' : null}`}>
                         Education
                     </p>
-                    <p 
-                    onClick={() => setExpCategory('course')}
-                    className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'course' ? 'underline underline-offset-4' : null}`}>
+                    <p
+                        onClick={() => setExpCategory('course')}
+                        className={`hover:underline hover:underline-offset-4 hover:transition hover:ease-in-out hover:duration-[3s] ${expCategory === 'course' ? 'underline underline-offset-4' : null}`}>
                         Courses
                     </p>
                 </div>

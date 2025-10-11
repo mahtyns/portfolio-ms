@@ -1,0 +1,16 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: $space-3 $space-2;
+
+    @include md {
+        flex-direction: row;
+        padding: $space-8 $space-6;
+    }
+
+    &__container {
+        @include md {
+            width: 50%;
+        }
+    }
+}
