@@ -7,7 +7,7 @@
                 aspect-ratio: 1 / 1;
                 object-fit: cover;
 
-                @include md {
+                @include lg {
                     filter: grayscale(1);
 
                     &:hover {
@@ -20,7 +20,7 @@
 
     &__description {
         &__wrapper {
-            @include md {
+            @include lg {
                 border: solid 1px $gray-500;
                 padding: $space-3;
             }
@@ -56,6 +56,19 @@
                 background-color: $gray-300;
                 color: $main-dark;
             }
+        }
+
+        .button {
+            padding: $space-1 $space-4;
+        }
+
+        &__links {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: $space-2;
+            justify-content: flex-start;
+            margin-top: $space-4;
         }
     }
 }

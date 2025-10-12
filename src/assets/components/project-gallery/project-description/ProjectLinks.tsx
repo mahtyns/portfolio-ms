@@ -1,25 +1,25 @@
+import { Project } from "../../../types/projects"
 import Button from "../../basics/Button"
 
-type Props = {
-
+type ProjectLinkProps = {
+  project: Project
 }
 
-const ProjectLinks = (props: Props) => {
+const ProjectLinks = (props: ProjectLinkProps) => {
+
+  const liveLink = props.project.link_live;
+  const githubLink = props.project.link_github
 
   return (
-    <div className="w-fit flex flex-row justify-between items-center gap-4 py-8">
-      {/* {
-        liveLink && (
-          <Button buttonVariant={false} buttonContent="Link Live" handleOnClick={() => window.open(liveLink)} />
-        )
-      }
+    <div className="projects__description__links">
+      {liveLink && (
+        <Button buttonContent="Live" buttonVariant={true} handleOnClick={() => window.open(liveLink)} />
+      )}
       {
         githubLink && (
-          <Button buttonVariant={false} buttonContent="Link Github" handleOnClick={() => window.open(githubLink)} />
+          <Button buttonContent="Code" buttonVariant={false} handleOnClick={() => window.open(githubLink)} />
         )
-      } */}
-      <Button buttonContent="Live" buttonVariant={true} handleOnClick={() => null} />
-      <Button buttonContent="Code" buttonVariant={false} handleOnClick={() => null} />
+      }
     </div>
   )
 }

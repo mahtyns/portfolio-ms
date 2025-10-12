@@ -23,7 +23,7 @@ const Navbar = (props: Props) => {
                 {isAboveMediumScreen
                     ? <div className="navbar__menu">
                         <Navlink pageName="Home" clickedPage="home" setMenuToggled={setMenuToggled} />
-                        {/* <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={setMenuToggled} /> */}
+                        <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={setMenuToggled} />
                         <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} />
                         {/* <Navlink pageName="Technology" clickedPage="technology" setMenuToggled={setMenuToggled} /> */}
                         {/* <Navlink pageName="Experience" clickedPage="experience" setMenuToggled={setMenuToggled} /> */}

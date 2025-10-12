@@ -30,7 +30,7 @@
             "link_github": "",
             "work_project": true,
             "image": {
-                "image_src": "/images/projects/hpforest.webp",
+                "image_src": "/images/projects/hpforbiddenforest.webp",
                 "image_alt": "Harry Potter - Forbidden Forest Experience Project Thumbnail"
             }
         },
@@ -63,7 +63,7 @@
             "link_github": "",
             "work_project": false,
             "image": {
-                "image_src": "/images/projects/sofitukker.webp",
+                "image_src": "/images/projects/sofi-tukker-app.webp",
                 "image_alt": "Sofi Tukker Quiz Project Thumbnail"
             }
         },

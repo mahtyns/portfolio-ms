@@ -3,14 +3,17 @@ import PaginationCircle from "../basics/PaginationCircle";
 
 interface PaginationProps {
     projects: ProjectGalleryItems;
+    index: number,
+    setNext: () => void,
+    setPrev: () => void
 }
 
-export const ProjectGalleryItemPagination = ({ projects }: PaginationProps) => {
+export const ProjectGalleryItemPagination = (props: PaginationProps) => {
     return (
         <div className="projects__pagination-container">
-            <div className="projects__pagination__text">Prev</div>
-            <div className="projects__pagination__bullets">{projects.map(item => <PaginationCircle key={item.name} isActive={false} />)}</div>
-            <div className="projects__pagination__text">Next</div>
+            <button onClick={props.setPrev} className="projects__pagination__text">Prev</button>
+            <div className="projects__pagination__bullets">{props.projects.map((item, ind) => <PaginationCircle key={item.name} isActive={ind === props.index ? true : false} />)}</div>
+            <button onClick={props.setNext} className="projects__pagination__text">Next</button>
         </div>
     )
 }
