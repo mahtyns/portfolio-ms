@@ -1,0 +1,122 @@
+{
+    "project_list": [
+        {
+            "name": "Formula 1® Grand Prix España 2026",
+            "date": "August / September 2025",
+            "description": "Description lorem ipsum",
+            "stack": [
+                "Stack1",
+                "Stack2"
+            ],
+            "link_live": "https://ticketsf1.madring.com",
+            "link_github": "",
+            "work_project": true,
+            "image": {
+                "image_src": "",
+                "image_alt": "Formula 1® Grand Prix España 2026 Project thumbnail"
+            }
+        },
+        {
+            "name": "Harry Potter - Forbidden Forest Experience",
+            "date": "February / March 2025",
+            "description": "Project with FeverUp - Full page redesign to adapt to the new CMS. Started with Figma mockups.",
+            "stack": [
+                "Astro",
+                "Svelte",
+                "CSS Animations",
+                "SCSS"
+            ],
+            "link_live": "https://hpforbiddenforestexperience.com",
+            "link_github": "",
+            "work_project": true,
+            "image": {
+                "image_src": "/images/projects/hpforest.webp",
+                "image_alt": "Harry Potter - Forbidden Forest Experience Project Thumbnail"
+            }
+        },
+        {
+            "name": "Toyota x SMN: Secret Road Trip",
+            "date": "January / February 2025",
+            "description": "Project with FeverUp - Full page redesign to adapt to the new CMS. Started with Figma mockups.",
+            "stack": [
+                "Astro",
+                "Svelte",
+                "Google Maps API",
+                "local storage"
+            ],
+            "link_live": "https://toyotaroadtrip.secretmedianetwork.com",
+            "link_github": "",
+            "work_project": true,
+            "image": {
+                "image_src": "",
+                "image_alt": "Toyota Secret Road Trip Project Thumbnail"
+            }
+        },
+        {
+            "name": "Sofi Tukker Quiz",
+            "date": "January 2025",
+            "description": "Not so serious - Sofi Tukker quiz with Guess lyrics / Guess song options. ",
+            "stack": [
+                "React"
+            ],
+            "link_live": "https://sofi-lyrics-challenge.netlify.app",
+            "link_github": "",
+            "work_project": false,
+            "image": {
+                "image_src": "/images/projects/sofitukker.webp",
+                "image_alt": "Sofi Tukker Quiz Project Thumbnail"
+            }
+        },
+        {
+            "name": "Daniel Śnieżyński web",
+            "date": "October - November 2023",
+            "description": "Freelance project, personal webpage for Daniel offering his furniture and wooden terraces services ",
+            "stack": [
+                "Vanilla JS",
+                "Tailwind CSS",
+                "Netlify"
+            ],
+            "link_live": "https://meblesniezynski.com/",
+            "link_github": "https://github.com/mahtyns/danielsniezynski-meble",
+            "work_project": false,
+            "image": {
+                "image_src": "https://i.ibb.co/LRNcRsb/daniel.jpg",
+                "image_alt": "Daniel Śnieżyński Page Project Thumbnail"
+            }
+        },
+        {
+            "name": "Volare Aerials",
+            "date": "April 2023",
+            "description": "Aerial school Volare page, created with React and Typescript. Used Tailwind for CSS styling, smooth scroll for links and framer motion for animations. First project to learn basics of TypeScript. ",
+            "stack": [
+                "React",
+                "TypeScript",
+                "TailwindCSS",
+                "Framer-motion"
+            ],
+            "link_live": "https://aerialclass.netlify.app/",
+            "link_github": "https://github.com/mahtyns/aerialSchool",
+            "work_project": false,
+            "image": {
+                "image_src": "https://i.ibb.co/LRNcRsb/daniel.jpg",
+                "image_alt": "Volare Aerials Project Thumbnail"
+            }
+        },
+        {
+            "name": "PamApp Challenge",
+            "date": "May 2021",
+            "description": "Innovation Challenge by Reply Challenges, created in team with Edyta Przybysz - a 48h brainstorming run on 21-23 May 21. The objective was to propose UX improvements for the famous Fitness App run by Pam. Our idea was to create a bigger sense of community, increase the engagement and keep all the fitness information the user might need in one place. We have added some new functionalities and shifted the focus to the app user.",
+            "stack": [
+                "Figma",
+                "Photoshop"
+            ],
+            "link_live": "https://www.behance.net/gallery/122593259/Pam-App-Challenge",
+            "link_github": "",
+            "work_project": false,
+            "image": {
+                "image_src": "https://i.ibb.co/z2kcryr/pamap.jpg",
+                "image_alt": "PamApp Challenge Page Project Thumbnail"
+            }
+        }
+    ]
+}

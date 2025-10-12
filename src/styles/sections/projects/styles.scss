@@ -1,0 +1,64 @@
+@import '../../components/project-gallery/styles.scss';
+
+.projects {
+    .title-h2 {
+        text-align: center;
+        margin-bottom: $space-2;
+
+        @include md {
+            margin-bottom: $space-6;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include md {
+            flex-direction: row;
+            gap: $space-6;
+            justify-content: center;
+        }
+    }
+
+    &__image__container {
+        margin-bottom: $space-2;
+
+        @include md {
+            max-width: 30%;
+            padding-bottom: $space-8;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+
+        @include md {
+            justify-content: flex-end;
+            max-width: 30%;
+        }
+    }
+
+    &__pagination-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: $space-2;
+        margin-top: $space-4;
+
+        @include md {
+            margin-top: $space-6;
+        }
+    }
+
+    &__pagination {
+        &__bullets {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: $space-1;
+        }
+    }
+}

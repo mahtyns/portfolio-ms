@@ -1,0 +1,61 @@
+.projects {
+    &__image {
+        &__visual {
+            border: solid 1px $gray-100;
+
+            img {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+
+                @include md {
+                    filter: grayscale(1);
+
+                    &:hover {
+                        filter: grayscale(0);
+                    }
+                }
+            }
+        }
+    }
+
+    &__description {
+        &__wrapper {
+            @include md {
+                border: solid 1px $gray-500;
+                padding: $space-3;
+            }
+        }
+
+        &__info {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin: $space-1 0 $space-2;
+        }
+
+        &__dates {
+            color: $gray-500;
+            text-transform: uppercase;
+            letter-spacing: $font-wider;
+            font-size: $font-base;
+        }
+
+        &__work {
+            padding: $space-1 $space-2;
+            text-transform: uppercase;
+            border-radius: $space-3;
+            font-size: $font-small;
+
+            &--work {
+                background-color: $gray-500;
+                color: $main-white;
+            }
+
+            &--personal {
+                background-color: $gray-300;
+                color: $main-dark;
+            }
+        }
+    }
+}

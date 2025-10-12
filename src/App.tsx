@@ -3,7 +3,7 @@ import About from "./sections/About"
 import Contact from "./sections/Contact"
 import Home from "./sections/Home"
 import Intro from "./sections/Intro"
-// import Projects from "./sections/Projects"
+import Projects from "./sections/Projects"
 // import Technology from "./sections/Technology"
 import Footer from "./sections/Footer"
 import { useEffect, useState } from "react"
@@ -31,6 +31,7 @@ function App() {
       <main className="dark:bg-main-dark">
         <Home />
         <Intro />
+        <Projects />
         <About />
         <Contact />
       </main>
