@@ -7,6 +7,7 @@ import Projects from "./sections/Projects"
 // import Technology from "./sections/Technology"
 import Footer from "./sections/Footer"
 import { useEffect, useState } from "react"
+import Experience from "./sections/Experience"
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Intro />
         <Projects />
         <About />
+        <Experience />
         <Contact />
       </main>
       <footer>
