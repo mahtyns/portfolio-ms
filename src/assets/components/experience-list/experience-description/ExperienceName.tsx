@@ -4,7 +4,7 @@ type Props = {
 
 const ExperienceName = (props: Props) => {
   return (
-      <h3 className="font-playfair text-xl">{props.expName}</h3>
+    <h3 className="experience__item__title">{props.expName}</h3>
   )
 }
 

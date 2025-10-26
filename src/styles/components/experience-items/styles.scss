@@ -1,0 +1,27 @@
+.experience {
+    &__item {
+        &__title {
+            font-family: 'Playfair Display', serif;
+            font-size: $font-lg;
+            margin-bottom: $space-1;
+        }
+
+        &__date {
+            text-transform: uppercase;
+            font-size: $font-small;
+            letter-spacing: $font-wider;
+        }
+
+        &__description {
+            font-size: $font-base;
+            letter-spacing: $font-wider;
+            margin-top: $space-1;
+        }
+
+        &__details {
+            display: flex;
+            gap: $space-1;
+            margin-top: $space-1;
+        }
+    }
+}

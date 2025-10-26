@@ -1,3 +1,38 @@
+@import '../../components/experience-items/styles.scss';
+
 .experience {
     padding-top: 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        @include md {
+            flex-direction: row;
+        }
+    }
+
+    &__description {
+        color: $main-white;
+    }
+
+    &__content,
+    &__items {
+        flex: 1,
+    }
+
+    &__categories {
+        color: $main-white;
+        display: flex;
+        gap: $space-2;
+        list-style: none;
+
+        li {
+            text-transform: uppercase;
+        }
+    }
+
+    &__item {
+        color: $main-white
+    }
 }

@@ -2,9 +2,9 @@ type Props = {
     expDescr: string
 }
 
-const ExperienceDescription = (props : Props) => {
+const ExperienceDescription = (props: Props) => {
     return (
-        <div className="py-2 font-lato tracking-wide font-light text-lg px-6">
+        <div className="experience__item__description">
             {props.expDescr}
         </div>
     )

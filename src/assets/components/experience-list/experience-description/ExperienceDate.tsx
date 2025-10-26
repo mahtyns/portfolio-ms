@@ -4,7 +4,7 @@ type Props = {
 
 const ExperienceDate = (props: Props) => {
   return (
-    <div className="font-lato font-light uppercase text-base py-2">
+    <div className="experience__item__date">
       {props.expDate}
     </div>
   )

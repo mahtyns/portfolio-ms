@@ -20,9 +20,6 @@ const About = () => {
                         className="about__languages">
                         {about.languages_text}<br /> {about.languages.map(language => <span className="about__languages-item">{language}</span>)}
                     </p>
-                    {/* <div className="invert dark:invert-0">
-                    <Button buttonVariant={false} buttonContent="Resume" handleOnClick={() => window.open('https://drive.google.com/file/d/1CTbO3_29Qt3iKLAJXI5m7CBFaqr2R-Jt/view?usp=sharing')}/>
-                </div> */}
                 </article>
             </div>
 
