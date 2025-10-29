@@ -14,6 +14,20 @@
 
     &__description {
         color: $main-white;
+        font-size: $font-bigger;
+        margin-top: $space-2;
+
+        @include md {
+            padding-right: $space-8;
+        }
+    }
+
+    &__cta {
+        color: $gray-100;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: $space-5;
+        display: block;
     }
 
     &__content,

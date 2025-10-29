@@ -1,4 +1,4 @@
-import type { Project, ProjectGalleryItems } from "../../types/projects"
+import type { Project } from "../../types/projects"
 
 interface ProjectImageProps {
     project: Project

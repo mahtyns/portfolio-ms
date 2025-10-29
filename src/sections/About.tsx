@@ -1,12 +1,12 @@
 import { SectionTitle } from "../assets/components/basics/SectionTitle"
-import useMediaQueries from "../assets/hooks/useMediaQueries"
+// import useMediaQueries from "../assets/hooks/useMediaQueries"
 import about from '../assets/datafiles/about/about.json'
 
 const About = () => {
 
     // const orbit = `rounded-full`
     // const flex = `flex justify-center items-center`
-    const isAboveMediumScreen = useMediaQueries('(min-width: 1024px)')
+    // const isAboveMediumScreen = useMediaQueries('(min-width: 1024px)')
 
     return (
         <section id="about" className={'about section-main section--black dark:bg-gray-800'}>

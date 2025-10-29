@@ -68,6 +68,24 @@
             }
         },
         {
+            "name": "Magnum Pleasure Pass",
+            "date": "June 2024",
+            "description": "Freelance project, personal webpage for Daniel offering his furniture and wooden terraces services ",
+            "stack": [
+                "Svelte",
+                "Svelte stores",
+                "Tailwind CSS",
+                "Astro JS"
+            ],
+            "link_live": "https://secretmedianetwork.com/magnumpleasurepass",
+            "link_github": "",
+            "work_project": true,
+            "image": {
+                "image_src": "/images/projects/magnumpleasurepass.webp",
+                "image_alt": "Magnum Pleasure Pass Page Project Thumbnail"
+            }
+        },
+        {
             "name": "Daniel Śnieżyński web",
             "date": "October - November 2023",
             "description": "Freelance project, personal webpage for Daniel offering his furniture and wooden terraces services ",

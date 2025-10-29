@@ -1,0 +1,86 @@
+{
+    "experiences_list": {
+        "work": [
+            {
+                "name": "Web Designer & Developer",
+                "company": "FeverUp",
+                "date": "Jan 2024 - now",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "details": [
+                    "JavaScript",
+                    "TypeScript",
+                    "SCSS",
+                    "Svelte",
+                    "AstroJS",
+                    "NextJS"
+                ]
+            },
+            {
+                "name": "Web Designer",
+                "company": "Le Guide Noir",
+                "date": "Mar 2021 - Nov 2023",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "details": [
+                    "JavaScript",
+                    "HTML",
+                    "CSS",
+                    "UI Design",
+                    "Project management",
+                    "Google Analytics"
+                ]
+            },
+            {
+                "name": "Architect",
+                "company": "Agema Soluciones Globales",
+                "date": "Mar 2019 - Feb 2021",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "details": [
+                    "ArchiCAD",
+                    "Project management",
+                    "Modular design"
+                ]
+            }
+        ],
+        "education": [
+            {
+                "name": "Master in Architecture",
+                "company": "Universidad de Alcalá de Henares, Madrid",
+                "date": "Sept 2018 - May 2020",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            {
+                "name": "Master in Architecture",
+                "company": "Warsaw University of Technology",
+                "date": "Oct 2016 - Jun 2017 (60 ECTS)",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            {
+                "name": "Erasmus+ Exchange Program",
+                "company": "Universidade Lusiada de Lisboa",
+                "date": "Sept 2014 - Feb 2015",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            {
+                "name": "Bachelor in Architecture",
+                "company": "Warsaw University of Technology",
+                "date": "Oct 2012 - Jun 2016",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+        ],
+        "other": [
+            {
+                "name": "DareIT Mentorship Programme",
+                "company": "DareIT",
+                "date": "Nov 2021 - May 2022",
+                "description": "Mentorship Programme for women, on path Fullstack Development. Creating projects with JavaScript and React, then connecting with PostgreSQL. Also working on soft skills: time management, giving and receiving feedback, team work and working in Agile / Scrum environments.",
+                "details": [
+                    "ReactJS",
+                    "JavaScript",
+                    "styled-components",
+                    "Web design principles",
+                    "Basic SQL"
+                ]
+            }
+        ]
+    }
+}

@@ -22,6 +22,8 @@
             display: flex;
             gap: $space-1;
             margin-top: $space-1;
+            text-transform: uppercase;
+            flex-wrap: wrap;
         }
     }
 }
