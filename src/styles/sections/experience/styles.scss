@@ -40,10 +40,21 @@
         display: flex;
         gap: $space-2;
         list-style: none;
+        margin-bottom: $space-2;
 
         li {
             text-transform: uppercase;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
+    }
+
+    &__items__list {
+        display: flex;
+        flex-direction: column;
+        gap: $space-3;
     }
 
     &__item {
