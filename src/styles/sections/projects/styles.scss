@@ -18,9 +18,12 @@
         width: 100%;
 
         @include lg {
-            flex-direction: row;
-            gap: $space-6;
+            // flex-direction: row;
+            gap: $space-2;
             justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: stretch;
         }
     }
 
@@ -28,7 +31,7 @@
         margin-bottom: $space-2;
 
         @include lg {
-            max-width: 30%;
+            width: 100%;
             padding-bottom: $space-8;
         }
     }
@@ -39,12 +42,14 @@
 
         @include lg {
             justify-content: flex-end;
-            max-width: 30%;
+            width: 100%;
+            height: 100%;
         }
     }
 
     &__pagination-container {
         display: flex;
+        flex-direction: row;
         width: 100%;
         justify-content: center;
         gap: $space-2;

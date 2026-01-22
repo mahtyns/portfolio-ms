@@ -19,7 +19,7 @@
         {
             "name": "Harry Potter - Forbidden Forest Experience",
             "date": "February / March 2025",
-            "description": "Project with FeverUp - Full page redesign to adapt to the new CMS. Started with Figma mockups.",
+            "description": "Revamp of the older design. ",
             "stack": [
                 "Astro",
                 "Svelte",

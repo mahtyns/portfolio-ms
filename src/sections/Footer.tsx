@@ -1,4 +1,6 @@
 
+const year = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <section className="footer">
@@ -20,7 +22,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__copyright">
-        <p>Page created by Martyna Smolarek © / 2025</p>
+        <p>Page created by Martyna Smolarek © / {year}</p>
       </div>
     </section>
   )

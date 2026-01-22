@@ -23,6 +23,7 @@
             @include lg {
                 border: solid 1px $gray-500;
                 padding: $space-3;
+                height: 100%;
             }
         }
 
@@ -70,5 +71,15 @@
             justify-content: flex-start;
             margin-top: $space-4;
         }
+    }
+
+    &__hidden {
+        opacity: 0;
+        height: 0;
+    }
+
+    .visible {
+        opacity: 1;
+        height: auto;
     }
 }
