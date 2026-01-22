@@ -9,7 +9,7 @@ const Intro = () => {
             <h3 className="intro__subtitle">{intro.subtitle}</h3>
             <div className="intro__kpis__wrapper">
                 {
-                    intro.items.map(item => <IntroItem title={item.name} description={item.description} />)
+                    intro.items.map(item => <IntroItem title={item.name} description={item.description} src={item.image_src} />)
                 }
             </div>
         </section>

@@ -53,6 +53,23 @@
             }
         },
         {
+            "name": "Recipe Saver / WIP",
+            "date": "October 2025",
+            "description": "App to save your favorite recipes, add new ones and categorize them. Built with NextJS and Firebase for backend.",
+            "stack": [
+                "Firebase",
+                "NextJS",
+                "TypeScript"
+            ],
+            "link_live": "",
+            "link_github": "https://github.com/mahtyns/recipe-saver",
+            "work_project": false,
+            "image": {
+                "image_src": "/images/projects/recipe-saver.webp",
+                "image_alt": "Recipe Saver Project Thumbnail"
+            }
+        },
+        {
             "name": "Sofi Tukker Quiz",
             "date": "January 2025",
             "description": "Not so serious - Sofi Tukker quiz with Guess lyrics / Guess song options. ",

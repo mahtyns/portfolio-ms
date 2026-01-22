@@ -16,11 +16,11 @@ const ExperienceItem = (props: ExperienceItemProps) => {
             <ExperienceName expName={props.experience.name} />
             {
                 isOpen && <>
-                    <ExperienceDate expDate={props.experience.company + ' / ' + props.experience.date} />
+                    {/* <ExperienceDate expDate={props.experience.company + ' / ' + props.experience.date} />  */}
                     <ExperienceDescription expDescr={props.experience.description} />
-                    {
+                    {/* {
                         props.experience.details && <ExperienceDetail expDetails={props.experience.details} />
-                    }
+                    } */}
                 </>
 
             }

@@ -22,7 +22,7 @@
             gap: $space-2;
             margin: $space-4 0;
 
-            @include md {
+            @include lg {
                 flex-direction: row;
                 gap: $space-4;
                 margin: $space-6 0 0;
@@ -39,7 +39,11 @@
             padding: $space-4;
             background-color: $main-white;
 
-            @include md {
+            &:hover {
+                animation: lift 1s ease-in-out forwards;
+            }
+
+            @include lg {
                 width: calc(100% / 3 - $space-8);
             }
         }
@@ -51,6 +55,18 @@
 
         &__description {
             font-size: $font-bigger;
+        }
+
+        &__image {
+            width: 40px;
+            height: 40px;
+            margin-bottom: $space-2;
+
+            @include md {
+                width: 150px;
+                height: 150px;
+                margin-bottom: $space-4;
+            }
         }
     }
 }

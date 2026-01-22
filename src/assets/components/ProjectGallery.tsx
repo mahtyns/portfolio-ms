@@ -17,13 +17,15 @@ export const ProjectGallery = () => {
                     </div>
                 ))}
             </div>
-            <Button buttonContent={visible ? "Close" : "See more Projects"} buttonVariant={true} handleOnClick={() => setVisible(!visible)} />
-            <div className={`projects__container projects__hidden ${visible ? 'visible' : ''}`}>
-                {projectList.slice(3).map((project, index) => (
-                    <div key={index} className='project__item'>
-                        <ProjectGalleryItemDescription project={project} />
-                    </div>
-                ))}
+            <div className='projects__show-more'>
+                <Button buttonContent={visible ? "Close" : "See more Projects"} buttonVariant={true} handleOnClick={() => setVisible(!visible)} />
+                <div className={`projects__container projects__hidden ${visible ? 'visible' : ''}`}>
+                    {projectList.slice(3).map((project, index) => (
+                        <div key={index} className='project__item'>
+                            <ProjectGalleryItemDescription project={project} />
+                        </div>
+                    ))}
+                </div>
             </div>
         </>
     )

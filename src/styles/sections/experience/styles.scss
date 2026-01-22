@@ -60,4 +60,22 @@
     &__item {
         color: $main-white
     }
+
+    &__cta {
+        display: flex;
+        align-items: center;
+
+        &::after {
+            content: '';
+            background: url(/images/ui/_arrow.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            margin-left: $space-1;
+            padding-top: $space-1;
+            filter: invert(1);
+        }
+    }
 }

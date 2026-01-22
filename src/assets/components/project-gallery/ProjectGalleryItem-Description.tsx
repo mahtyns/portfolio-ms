@@ -19,9 +19,7 @@ export const ProjectGalleryItemDescription = (props: ProjectDescriptionProps) =>
                 </div>
                 <ProjectTitle projectTitle={props.project.name} />
                 <ProjectDescription projectDescription={props.project.description} />
-                <div>
-                    <ProjectLinks project={props.project} />
-                </div>
+                <ProjectLinks project={props.project} />
             </div>
         </div>
     )

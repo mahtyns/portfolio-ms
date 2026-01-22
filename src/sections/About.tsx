@@ -11,7 +11,7 @@ const About = () => {
     return (
         <section id="about" className={'about section-main section--black dark:bg-gray-800'}>
             <div className="about__container">
-                <SectionTitle sectionTitle="About me." sectionVariant={false} />
+                <SectionTitle sectionTitle="Here's my story..." sectionVariant={false} />
                 <article>
                     <h3 className="about__intro">{about.intro}</h3>
                     <p className="about__description">{about.main_text}</p>

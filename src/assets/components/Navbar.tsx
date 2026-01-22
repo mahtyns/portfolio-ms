@@ -3,6 +3,7 @@ import { useState } from "react";
 import useMediaQueries from "../hooks/useMediaQueries";
 import Navlink from "./basics/Navlink"
 import MenuMobile from "./MenuMobile";
+import Button from "./basics/Button";
 
 type Props = {
     darkMode: boolean,
@@ -25,11 +26,10 @@ const Navbar = (props: Props) => {
                         <Navlink pageName="Home" clickedPage="home" setMenuToggled={setMenuToggled} />
                         <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={setMenuToggled} />
                         <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} />
-                        {/* <Navlink pageName="Technology" clickedPage="technology" setMenuToggled={setMenuToggled} /> */}
-                        {/* <Navlink pageName="Experience" clickedPage="experience" setMenuToggled={setMenuToggled} /> */}
                         <Navlink pageName="Contact" clickedPage="contact" setMenuToggled={setMenuToggled} />
-                        {props.darkMode ?
-                            <img src="https://cdn-icons-png.flaticon.com/512/11598/11598733.png" alt="dark mode" className="navbar__menu__theme-icon invert" onClick={() => props.handleDarkMode()} /> : <img src="https://cdn-icons-png.flaticon.com/512/1415/1415431.png" alt="dark mode" className="navbar__menu__theme-icon" onClick={() => props.handleDarkMode()} />}
+                        <Button buttonContent={"Resume"} buttonVariant={false} handleOnClick={() => window.open("/doc/martynasmolarek2025.pdf", "_blank")} />
+                        {/* {props.darkMode ?
+                            <img src="https://cdn-icons-png.flaticon.com/512/11598/11598733.png" alt="dark mode" className="navbar__menu__theme-icon invert" onClick={() => props.handleDarkMode()} /> : <img src="https://cdn-icons-png.flaticon.com/512/1415/1415431.png" alt="dark mode" className="navbar__menu__theme-icon" onClick={() => props.handleDarkMode()} />} */}
                     </div>
                     :
                     <div className="navbar__menu navbar__menu--mobile">

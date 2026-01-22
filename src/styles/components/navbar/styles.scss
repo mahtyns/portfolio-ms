@@ -78,4 +78,22 @@
         font-weight: 300;
         color: $gray-50;
     }
+
+    .button {
+        padding: $space-1 $space-2;
+        display: flex;
+        align-items: center;
+
+        &::after {
+            content: '';
+            background: url(/images/ui/_arrow.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            margin-left: $space-1;
+            padding-top: $space-1;
+        }
+    }
 }

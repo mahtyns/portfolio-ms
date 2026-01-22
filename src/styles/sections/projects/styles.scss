@@ -81,4 +81,14 @@
             right: $space-9;
         }
     }
+
+    &__show-more {
+        .button {
+            margin: $space-4 auto;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
