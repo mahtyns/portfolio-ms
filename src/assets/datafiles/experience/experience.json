@@ -2,86 +2,86 @@
     "experiences_list": {
         "work": [
             {
+                "name": "Modular & component-driven architecture",
+                "description": "I build interfaces using small, reusable components, following atomic design principles to create flexible and scalable systems. I place strong emphasis on clean, well-structured, and easy-to-read code, making components easy to maintain, reuse, and extend when composing larger layouts.",
+                "details": [
+                    "Atomic Design",
+                    "Modular design",
+                    "Reusable components",
+                    "Code quality"
+                ]
+            },
+            {
                 "name": "Design principles",
-                "company": "FeverUp",
-                "date": "Jan 2024 - now",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "description": "With a background in architecture, I bring a strong understanding of usable, functional design. I focus on consistency, visual hierarchy, and responsive layouts, while ensuring accessibility standards are met — including compliance with current legislation — through semantic structure, clear interactions, and inclusive design practices.",
                 "details": [
-                    "JavaScript",
-                    "TypeScript",
+                    "Figma",
                     "SCSS",
+                    "BEM",
+                    "Tailwind CSS",
+                    "styled-components",
+                    "Web Accessibility"
+                ]
+            },
+            {
+                "name": "CMS architecture & content management",
+                "description": "I design and develop reusable CMS modules that power pages built from a shared template, extending and improving existing components to support new features and use cases. I also help troubleshoot and resolve CMS-related issues across teams, ensuring content remains flexible, reliable, and easy to manage.",
+                "details": [
+                    "Payload CMS",
+                    "Decap CMS",
+                    "Cross-team support",
+                    "New functionalities",
+                    "Refactoring"
+                ]
+            },
+            {
+                "name": "Data models & TypeScript schemas",
+                "description": "I design and implement robust data models and TypeScript schemas to ensure consistency across various projects and CMS modules. Using typed structures helps prevent errors, supports maintainable code, and makes it easier to scale features and integrate with different systems.",
+                "details": [
+                    "TypeScript",
+                    "Schemas",
+                    "Zod validation",
+                    "Predictable data structure"
+                ]
+            },
+            {
+                "name": "Client-side & server-side development",
+                "description": "I develop interactive, dynamic web pages and components, handling both client-side functionality and server-side logic when needed. This includes creating reusable frontend components, integrating APIs, managing forms and workflows, and ensuring smooth communication between front-end and back-end systems.",
+                "details": [
+                    "React",
                     "Svelte",
-                    "AstroJS",
-                    "NextJS"
+                    "Astro",
+                    "NextJS",
+                    "APIs and data fetching"
                 ]
             },
             {
-                "name": "Reusable components & modular design",
-                "company": "Le Guide Noir",
-                "date": "Mar 2021 - Nov 2023",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "name": "Automation & AI-assisted workflows",
+                "description": "I leverage automation and AI tools to streamline repetitive tasks and improve efficiency, reducing execution time and supporting faster delivery. I actively experiment with AI technologies and have participated in internal hackathons, integrating innovative solutions into daily workflows to enhance productivity.",
                 "details": [
-                    "JavaScript",
-                    "HTML",
-                    "CSS",
-                    "UI Design",
-                    "Project management",
-                    "Google Analytics"
+                    "AI-assisted task automation",
+                    "Prompt engineering",
+                    "Workflow optimisation"
                 ]
             },
             {
-                "name": "Models and Schemas",
-                "company": "Agema Soluciones Globales",
-                "date": "Mar 2019 - Feb 2021",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "name": "Technical leadership & collaboration",
+                "description": "I take ownership of technical decisions within projects, coordinate work across teams, and help shape implementation approaches. I’ve led technical interviews, supported teammates through code reviews and collaboration, and actively contribute to improving development workflows and standards.",
                 "details": [
-                    "ArchiCAD",
-                    "Project management",
-                    "Modular design"
+                    "Team collaboration",
+                    "Interviewing & onboarding",
+                    "Code reviews",
+                    "Knowledge sharing"
                 ]
             },
             {
-                "name": "CMS Structures",
-                "company": "Agema Soluciones Globales",
-                "date": "Mar 2019 - Feb 2021",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "name": "Data-driven improvements & optimisation",
+                "description": "I analysed user behaviour and campaign performance to inform design and development decisions. Using tools like Google Analytics and Looker, I identify opportunities for improvement, optimise interfaces, and iterate on features to increase engagement, conversions, and overall effectiveness of web projects.",
                 "details": [
-                    "ArchiCAD",
-                    "Project management",
-                    "Modular design"
-                ]
-            },
-            {
-                "name": "AI Prompts and automatisations",
-                "company": "Agema Soluciones Globales",
-                "date": "Mar 2019 - Feb 2021",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "details": [
-                    "ArchiCAD",
-                    "Project management",
-                    "Modular design"
-                ]
-            },
-            {
-                "name": "Client-side- and server-side components",
-                "company": "Agema Soluciones Globales",
-                "date": "Mar 2019 - Feb 2021",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "details": [
-                    "ArchiCAD",
-                    "Project management",
-                    "Modular design"
-                ]
-            },
-            {
-                "name": "Web accessibility standards",
-                "company": "Agema Soluciones Globales",
-                "date": "Mar 2019 - Feb 2021",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "details": [
-                    "ArchiCAD",
-                    "Project management",
-                    "Modular design"
+                    "Google Analytics",
+                    "Looker",
+                    "A/B testing",
+                    "Google Tag Manager"
                 ]
             }
         ]

@@ -35,6 +35,14 @@
         flex: 1,
     }
 
+    &__items {
+        @include lg {
+            max-height: $module-md;
+            overflow-y: scroll;
+            scrollbar-color: $main-dark $gray-800;
+        }
+    }
+
     &__categories {
         color: $main-white;
         display: flex;
