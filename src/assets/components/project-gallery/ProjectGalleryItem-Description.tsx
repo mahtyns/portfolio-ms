@@ -4,6 +4,7 @@ import ProjectLinks from "./project-description/ProjectLinks"
 import ProjectTitle from "./project-description/ProjectTitle"
 import ProjectDate from "./project-description/ProjectDate"
 import ProjectWork from "./project-description/ProjectWork"
+import ProjectStack from "./project-description/ProjectStack"
 
 interface ProjectDescriptionProps {
     project: Project
@@ -19,6 +20,7 @@ export const ProjectGalleryItemDescription = (props: ProjectDescriptionProps) =>
                 </div>
                 <ProjectTitle projectTitle={props.project.name} />
                 <ProjectDescription projectDescription={props.project.description} />
+                <ProjectStack projectStack={props.project.stack} />
                 <ProjectLinks project={props.project} />
             </div>
         </div>

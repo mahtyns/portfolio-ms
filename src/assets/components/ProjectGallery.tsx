@@ -12,7 +12,7 @@ export const ProjectGallery = () => {
         <>
             <div className='projects__container'>
                 {projectList.slice(0, 3).map((project, index) => (
-                    <div key={index} className='project__item'>
+                    <div key={index} className='projects__item'>
                         <ProjectGalleryItemDescription project={project} />
                     </div>
                 ))}
@@ -21,7 +21,7 @@ export const ProjectGallery = () => {
                 <Button buttonContent={visible ? "Close" : "See more Projects"} buttonVariant={true} handleOnClick={() => setVisible(!visible)} />
                 <div className={`projects__container projects__hidden ${visible ? 'visible' : ''}`}>
                     {projectList.slice(3).map((project, index) => (
-                        <div key={index} className='project__item'>
+                        <div key={index} className='projects__item'>
                             <ProjectGalleryItemDescription project={project} />
                         </div>
                     ))}

@@ -22,7 +22,7 @@
             gap: $space-2;
             margin: $space-4 0;
 
-            @include lg {
+            @include xxl {
                 flex-direction: row;
                 gap: $space-4;
                 margin: $space-6 0 0;
@@ -43,7 +43,7 @@
                 animation: lift 1s ease-in-out forwards;
             }
 
-            @include lg {
+            @include xxl {
                 width: calc(100% / 3 - $space-8);
             }
         }

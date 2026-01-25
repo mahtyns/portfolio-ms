@@ -66,12 +66,19 @@
     }
 
     &__item {
-        color: $main-white
+        color: $main-white;
+
+        &:hover {
+            animation: lift 1s linear;
+        }
     }
 
     &__cta {
         display: flex;
         align-items: center;
+        border: $main-white 1px solid;
+        width: fit-content;
+        padding: $space-1 $space-3;
 
         &::after {
             content: '';

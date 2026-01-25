@@ -1,22 +1,4 @@
 .projects {
-    &__image {
-        &__visual {
-            border: solid 1px $gray-100;
-
-            img {
-                aspect-ratio: 1 / 1;
-                object-fit: cover;
-
-                @include lg {
-                    filter: grayscale(1);
-
-                    &:hover {
-                        filter: grayscale(0);
-                    }
-                }
-            }
-        }
-    }
 
     &__description {
         &:hover {
@@ -49,6 +31,7 @@
             text-transform: uppercase;
             letter-spacing: $font-wider;
             font-size: $font-base;
+            max-width: 160px;
         }
 
         &__work {
@@ -92,8 +75,16 @@
             padding: $space-2 0;
 
             @include lg {
-                width: 80%;
+                width: 95%;
             }
+        }
+
+        &__stack {
+            display: flex;
+            flex-direction: row;
+            text-transform: uppercase;
+            gap: $space-1;
+            margin-bottom: $space-1;
         }
     }
 
