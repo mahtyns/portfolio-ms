@@ -1,6 +1,9 @@
 import Navbar from "./assets/components/Navbar"
+import AboutMe from "./sections/AboutMe"
 import Footer from "./sections/Footer"
 import Home from "./sections/Home"
+import Intro from "./sections/Intro"
+import Projects from "./sections/Projects"
 
 
 function App() {
@@ -12,9 +15,12 @@ function App() {
       </header>
       <main >
         <Home />
+        <Intro />
+        <AboutMe />
+        <Projects />
       </main>
       <footer>
-        {/* <Footer /> */}
+        <Footer />
       </footer>
     </>
   )

@@ -9,7 +9,7 @@ const Home = () => {
                     {home.intro_title}
                 </div>
                 <div className='home__title'>
-                    {home.h1_title}
+                    {home.text_title}
                 </div>
                 <div className='home__buttons'>
                     <Button buttonContent={home.contact_button} buttonVariant={true} handleOnClick={() => null} />

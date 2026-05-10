@@ -20,8 +20,8 @@ const Navbar = () => {
                 {isAboveMediumScreen
                     ? <div className="navbar__menu">
                         <Navlink pageName="Home" clickedPage="home" setMenuToggled={setMenuToggled} />
-                        <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={setMenuToggled} />
                         <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} />
+                        <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={setMenuToggled} />
                         <Navlink pageName="Contact" clickedPage="contact" setMenuToggled={setMenuToggled} />
                         <Button buttonContent={"Resume"} buttonVariant={false} handleOnClick={() => window.open("/doc/martynasmolarek2025.pdf", "_blank")} />
                     </div>

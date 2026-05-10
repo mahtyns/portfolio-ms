@@ -13,6 +13,14 @@ body,
 .container {
     @include md {
         max-width: 1200px;
-        margin: 0 auto;
+    }
+}
+
+section {
+    padding: $space-5 $space-3;
+    border-bottom: solid 1px $special-100;
+
+    @include md {
+        padding: $space-6 $space-8;
     }
 }
