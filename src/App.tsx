@@ -6,36 +6,18 @@ import Intro from "./sections/Intro"
 import Projects from "./sections/Projects"
 // import Technology from "./sections/Technology"
 import Footer from "./sections/Footer"
-import { useEffect, useState } from "react"
 import Experience from "./sections/Experience"
 
 
 function App() {
 
-  const [darkMode, setDarkMode] = useState(false)
-
-  useEffect(
-    () => {
-      document.documentElement.classList.toggle('dark', darkMode)
-    }, [darkMode]
-  )
-
-  const handleDarkMode = () => {
-    setDarkMode(!darkMode)
-  }
-
   return (
     <>
       <header>
-        <Navbar darkMode={darkMode} handleDarkMode={handleDarkMode} />
+        <Navbar />
       </header>
-      <main className="dark:bg-main-dark">
-        <Home />
-        <Intro />
-        <Projects />
-        <About />
-        <Experience />
-        <Contact />
+      <main >
+
       </main>
       <footer>
         <Footer />

@@ -1,3 +1,5 @@
+@use 'styles' as *;
+
 //Screen sizes mixins
 @mixin md {
     @media (min-width: #{$screen-md}) {

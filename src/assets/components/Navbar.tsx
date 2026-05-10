@@ -5,12 +5,8 @@ import Navlink from "./basics/Navlink"
 import MenuMobile from "./MenuMobile";
 import Button from "./basics/Button";
 
-type Props = {
-    darkMode: boolean,
-    handleDarkMode: () => void
-}
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
     const [isMenuToggled, setMenuToggled] = useState(false)
     const isAboveMediumScreen = useMediaQueries("(min-width: 1024px)");
 
@@ -28,13 +24,9 @@ const Navbar = (props: Props) => {
                         <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} />
                         <Navlink pageName="Contact" clickedPage="contact" setMenuToggled={setMenuToggled} />
                         <Button buttonContent={"Resume"} buttonVariant={false} handleOnClick={() => window.open("/doc/martynasmolarek2025.pdf", "_blank")} />
-                        {/* {props.darkMode ?
-                            <img src="https://cdn-icons-png.flaticon.com/512/11598/11598733.png" alt="dark mode" className="navbar__menu__theme-icon invert" onClick={() => props.handleDarkMode()} /> : <img src="https://cdn-icons-png.flaticon.com/512/1415/1415431.png" alt="dark mode" className="navbar__menu__theme-icon" onClick={() => props.handleDarkMode()} />} */}
                     </div>
                     :
                     <div className="navbar__menu navbar__menu--mobile">
-                        {props.darkMode ?
-                            <img src="https://cdn-icons-png.flaticon.com/512/11598/11598733.png" alt="dark mode" className=" invert navbar__menu__theme-icon" onClick={() => props.handleDarkMode()} /> : <img src="https://cdn-icons-png.flaticon.com/512/1415/1415431.png" alt="dark mode" className="navbar__menu__theme-icon" onClick={() => props.handleDarkMode()} />}
                         <div className="navbar__menu__burger-icon" onClick={() => setMenuToggled(!isMenuToggled)}>
                             <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" />
                         </div>
@@ -47,7 +39,5 @@ const Navbar = (props: Props) => {
         </nav>
     )
 }
-
-Navbar.propTypes = {}
 
 export default Navbar
