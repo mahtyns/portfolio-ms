@@ -1,0 +1,52 @@
+@use '../../foundation' as *;
+
+.home {
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: $space-9 $space-3 $space-5;
+    border-bottom: solid 1px $special-100;
+
+    @include md {
+        padding: 300px $space-8 $space-9
+    }
+
+    &__wrapper {
+        @include md {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            margin-right: auto;
+            gap: $space-3;
+        }
+    }
+
+    &__intro {
+        color: $special-500;
+        text-transform: uppercase;
+        letter-spacing: $font-wider;
+    }
+
+    &__title {
+        font-family: $playfair;
+        font-size: $font-xl;
+
+        @include md {
+            font-size: $font-super;
+        }
+
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: $space-2;
+
+        @include md {
+            flex-direction: row;
+        }
+    }
+}

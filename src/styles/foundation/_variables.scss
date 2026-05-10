@@ -50,15 +50,12 @@ $font-bigger: 18px;
 $font-md: 24px;
 $font-lg: 32px;
 $font-xl: 48px;
+$font-super: 64px;
 
 //Tracking 
 $font-wider: 1px;
 $font-xwide: 2px;
 
-
-body {
-    box-sizing: border-box;
-    background-color: $main-white;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-}
+//Fonts
+$playfair: 'Playfair Display', 'serif';
+$lato: 'Lato', 'sans-serif';
