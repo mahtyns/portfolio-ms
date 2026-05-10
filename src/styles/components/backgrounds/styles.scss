@@ -1,0 +1,25 @@
+@use '../../foundation' as *;
+
+.section-main {
+    padding: $space-3 $space-2;
+
+    @include md {
+        padding: $space-8;
+    }
+}
+
+.section--black {
+    background-color: $main-dark;
+}
+
+.section--white {
+    background-color: $main-white;
+}
+
+.section--gray {
+    background-color: $gray-300;
+}
+
+.section--gray-light {
+    background-color: $gray-100;
+}

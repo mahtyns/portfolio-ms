@@ -1,0 +1,34 @@
+@use '../../foundation' as *;
+
+.button {
+    padding: $space-1 $space-2;
+    text-transform: uppercase;
+    letter-spacing: $font-wider;
+    font-weight: 300;
+    font-size: $font-base;
+
+    @include md {
+        padding: $space-2 $space-6;
+        transition: ease-in-out 1s all;
+    }
+
+    &--black {
+        background-color: $main-dark;
+        color: $main-white;
+
+
+        &:hover {
+            background-color: $gray-700;
+        }
+    }
+
+    &--white {
+        background-color: $main-white;
+        color: $main-dark;
+        border: solid 1px $main-dark;
+
+        &:hover {
+            background-color: $gray-100;
+        }
+    }
+}

@@ -11,11 +11,11 @@ const Navbar = () => {
     const isAboveMediumScreen = useMediaQueries("(min-width: 1024px)");
 
     return (
-        <nav className="navbar dark:bg-main-dark dark:border-gray-800 " >
+        <nav className="navbar" >
             <div
                 className={`navbar__wrapper`}>
                 <div className="navbar__logo">
-                    <span className={`font-playfair md:text-xl text-lg dark:text-gray-200`}>Martyna Smolarek</span>
+                    <span className={`navbar__logo__text`}>Martyna Smolarek</span>
                 </div>
                 {isAboveMediumScreen
                     ? <div className="navbar__menu">

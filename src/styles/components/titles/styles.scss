@@ -1,0 +1,14 @@
+@use '../../foundation' as *;
+
+.title-h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: $font-lg;
+
+    &--white {
+        color: $main-white;
+    }
+
+    &--black {
+        color: $gray-500;
+    }
+}

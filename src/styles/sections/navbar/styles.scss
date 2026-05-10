@@ -1,11 +1,11 @@
-@use '../../global' as *;
+@use '../../foundation' as *;
 
 .navbar {
     position: fixed;
     width: 100%;
     top: 0;
     background-color: $main-white;
-    border-bottom: solid 1px $gray-100;
+    border-bottom: solid 1px $special-100;
     z-index: 20;
     @include flex-row;
     justify-content: center;
@@ -36,10 +36,6 @@
                 width: $space-3;
                 height: $space-3;
             }
-        }
-
-        .navlink {
-            color: $main-dark !important;
         }
     }
 
@@ -75,35 +71,15 @@
         }
     }
 
-    .navlink {
-        letter-spacing: $font-wider;
-        font-weight: 300;
-        color: $gray-50;
-        position: relative;
-        transition: color 0.3s ease;
-
-        &:hover {
-            color: $special-500;
-        }
-
-        &:focus-visible {
-            outline: none;
-            color: $special-500;
-        }
-
-        &:focus-visible::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -4px;
-            width: 100%;
-            height: 1px;
-            background-color: $special-500;
+    &__logo {
+        &__text {
+            font-family: 'Playfair Display', 'serif';
+            font-size: $font-md;
         }
     }
 
     .button {
-        padding: $space-1 $space-2;
+        padding: $size-3 $size-4;
         display: flex;
         align-items: center;
 
@@ -112,11 +88,14 @@
             background: url(/images/ui/_arrow.webp);
             background-size: contain;
             background-repeat: no-repeat;
-            width: 16px;
-            height: 16px;
-            display: inline-block;
+            width: $size-3;
+            height: $size-3;
             margin-left: $space-1;
-            padding-top: $space-1;
+            display: inline-block;
+        }
+
+        &:hover {
+            background-color: $special-100;
         }
     }
 }

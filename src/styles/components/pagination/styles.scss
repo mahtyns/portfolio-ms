@@ -1,0 +1,16 @@
+@use '../../foundation' as *;
+
+.pagination {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    &--active {
+        background-color: $main-dark;
+    }
+
+    &--basic {
+        background-color: $main-white;
+        border: solid 1px $main-dark;
+    }
+}

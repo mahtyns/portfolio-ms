@@ -1,0 +1,31 @@
+@use '../../foundation' as *;
+
+.navlink {
+    text-transform: uppercase;
+    font-size: $font-base;
+    font-weight: 300;
+    color: $gray-500;
+    letter-spacing: $font-wider;
+    transition: ease-in-out 0.5s all;
+    text-decoration: none;
+    color: $main-dark;
+
+    &:hover {
+        color: $special-300;
+    }
+
+    &:focus-visible {
+        outline: none;
+        color: $special-500;
+    }
+
+    &:focus-visible::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 1px;
+        background-color: $special-500;
+    }
+}
