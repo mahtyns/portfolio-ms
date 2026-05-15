@@ -4,7 +4,6 @@
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: $main-white;
     border-bottom: solid 1px $special-100;
     z-index: 20;
     @include flex-row;

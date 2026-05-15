@@ -3,7 +3,7 @@ import home from '../assets/datafiles/home/home.json'
 
 const Home = () => {
     return (
-        <section id='home' className='home'>
+        <section id='home' className='home section--white'>
             <div className='home__wrapper'>
                 <div className='home__intro'>
                     {home.intro_title}

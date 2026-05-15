@@ -1,9 +1,11 @@
 import Navbar from "./assets/components/Navbar"
 import AboutMe from "./sections/AboutMe"
+import { ContactMe } from "./sections/ContactMe"
 import Footer from "./sections/Footer"
 import Home from "./sections/Home"
 import Intro from "./sections/Intro"
 import Projects from "./sections/Projects"
+import Stack from "./sections/Stack"
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <Intro />
         <AboutMe />
         <Projects />
+        <Stack />
+        <ContactMe />
       </main>
       <footer>
         <Footer />

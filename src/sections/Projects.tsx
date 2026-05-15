@@ -1,8 +1,10 @@
+import { SectionTitle } from "../assets/components/basics/SectionTitle"
+
 const Projects = () => {
     return (
-        <section id="projects" className="projects">
+        <section id="projects" className="projects section-main section--white">
             <div className="projects__wrapper container">
-                <h2 className="title-h2">Discover my projects</h2>
+                <SectionTitle sectionTitle="My projects." sectionVariant={true} />
             </div>
         </section>
     )
