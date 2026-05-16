@@ -19,11 +19,19 @@ const Navbar = () => {
                 </div>
                 {isAboveMediumScreen
                     ? <div className="navbar__menu">
-                        <Navlink pageName="Home" clickedPage="home" setMenuToggled={setMenuToggled} />
-                        <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} />
-                        <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={setMenuToggled} />
-                        <Navlink pageName="Contact" clickedPage="contact" setMenuToggled={setMenuToggled} />
-                        <Button buttonContent={"Resume"} buttonVariant={false} handleOnClick={() => window.open("/doc/martynasmolarek2025.pdf", "_blank")} />
+                        <Navlink pageName="Home" clickedPage="home" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="Experience" clickedPage="contact" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="Resume" clickedPage="contact" setMenuToggled={setMenuToggled} isAnchor={false} linkURL="/doc/martynasmolarek2025.pdf" />
+                        <Button
+                            buttonContent={"Contact Me"}
+                            buttonVariant={false}
+                            handleOnClick={() =>
+                                window.location.href =
+                                "mailto:martyna.smolarek19@gmail.com?subject=Portfolio Contact&body=Hi Martyna,"
+                            }
+                        />
                     </div>
                     :
                     <div className="navbar__menu navbar__menu--mobile">

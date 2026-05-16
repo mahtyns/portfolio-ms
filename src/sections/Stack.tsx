@@ -4,7 +4,7 @@ const Stack = () => {
     return (
         <section id="stack" className="stack section-main section--gray">
             <div className="stack__wrapper container">
-                <SectionTitle sectionTitle="Technology." sectionVariant={true} />
+                <SectionTitle sectionTitle="Technology." sectionVariant={true} textAlign="center" />
             </div>
 
         </section>

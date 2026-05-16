@@ -5,21 +5,34 @@ type Props = {
     clickedPage: string
     currentPage?: string
     setMenuToggled: (value: boolean) => void
+    isAnchor: boolean
+    linkURL?: string
 }
 
 export const Navlink = (props: Props) => {
 
-    const isActive = props.currentPage === props.clickedPage;
+    const isActive = props.currentPage === props.clickedPage
 
-    return (
+    return props.isAnchor ? (
         <AnchorLink
             href={`#${props.clickedPage}`}
-            className={`navlink`}
+            className="navlink"
             aria-label={`Go to ${props.pageName} section`}
             aria-current={isActive ? 'page' : undefined}
-            onClick={() => props.setMenuToggled(false)}>
+            onClick={() => props.setMenuToggled(false)}
+        >
             {props.pageName}
         </AnchorLink>
+    ) : (
+        <a
+            href={props.linkURL}
+            className="navlink"
+            aria-label={`Go to ${props.pageName}`}
+            onClick={() => props.setMenuToggled(false)}
+            target='_blank'
+        >
+            {props.pageName}
+        </a>
     )
 }
 

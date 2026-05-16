@@ -1,0 +1,44 @@
+@use '../../foundation' as *;
+
+.projects {
+    &__text {
+        @include md {
+            width: 50%;
+            border-right: solid 4px $main-dark;
+            padding-right: $space-6;
+        }
+    }
+
+    p {
+        @include md {
+            font-size: $font-bigger;
+            line-height: 150%;
+        }
+    }
+
+    &--design {
+
+        @include md {
+            margin-top: $space-8 !important;
+        }
+
+        p {
+            text-align: right;
+            width: 50%;
+            margin-left: auto;
+        }
+
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        margin: $space-3 0;
+
+        @include md {
+            flex-direction: row;
+            margin: $space-6 0 $space-5;
+            gap: $space-3;
+        }
+    }
+}

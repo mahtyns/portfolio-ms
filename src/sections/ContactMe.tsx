@@ -4,7 +4,7 @@ export const ContactMe = () => {
     return (
         <section id="contact" className="contact section-main section--gray-light">
             <div className="contact__wrapper container">
-                <SectionTitle sectionTitle="Contact me." sectionVariant={true} />
+                <SectionTitle sectionTitle="Let's create together" sectionVariant={true} textAlign="left" />
             </div>
         </section>
     )
