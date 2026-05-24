@@ -15,7 +15,22 @@ const Projects = () => {
                     <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
                 </div>
                 <div className="projects__content">
-
+                    <div className="projects__item">
+                        <div className="projects__item__title">AI Workflows</div>
+                        <p>Automated AI LP Generation, skill structure, automated daily tasks, prompting</p>
+                    </div>
+                    <div className="projects__item">
+                        <div className="projects__item__title">CMS SYSTEMS</div>
+                        <p>Working with various internal CMS system development, Creating reusable modules</p>
+                    </div>
+                    <div className="projects__item">
+                        <div className="projects__item__title">AUTOMATIONS </div>
+                        <p>Creating automated workflows, AI page generation, Slackbot</p>
+                    </div>
+                    <div className="projects__item">
+                        <div className="projects__item__title">DAY TO DAY IMPROVEMENTS </div>
+                        <p>Testing new features, providing constant feedback, initiative</p>
+                    </div>
                 </div>
             </div>
             <div className="projects__wrapper container projects--design">

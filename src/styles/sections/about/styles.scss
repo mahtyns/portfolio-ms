@@ -1,0 +1,41 @@
+@use '../../foundation' as *;
+
+.about {
+    .title-h2 {
+        border-bottom: solid $size-1 $main-white;
+        width: fit-content;
+        padding-bottom: $space-1;
+        margin-bottom: $space-4;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        @include md {
+            flex-direction: row;
+        }
+    }
+
+    &__description {
+        color: $gray-50;
+        font-size: $font-bigger;
+        line-height: 150%;
+
+        p {
+            margin-bottom: $space-1;
+        }
+
+        @include md {
+            width: 80%;
+        }
+    }
+
+    &__image {
+        @include md {
+            height: fit-content;
+            max-height: 700px;
+            object-position: right;
+        }
+    }
+}

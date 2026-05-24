@@ -1,3 +1,26 @@
 @use '../../foundation' as *;
 
-.intro {}
+.intro {
+    &__description {
+        text-align: center;
+
+        @include md {
+            text-align: left;
+        }
+    }
+
+    &__content {
+        &-cards {
+            display: flex;
+            flex-direction: column;
+            padding: $space-3 $space-2;
+            gap: $space-3;
+
+            @include md {
+                flex-direction: row;
+                margin: $space-4 0;
+                gap: $space-4;
+            }
+        }
+    }
+}

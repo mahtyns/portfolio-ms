@@ -7,16 +7,12 @@ $gray-300: #c6c6c6;
 $gray-500: #454545;
 $gray-700: #302f2f;
 $gray-800: #1d1d1d;
-$special-500: #690636;
 $special-800: #39051e;
+$special-500: #690636;
 $special-300: #b71d67;
 $special-200: #e99bc0;
 $special-100: #e6d2dc;
-
-//Module heights
-$module-lg: 1000px;
-$module-md: 650px;
-$module-sm: 400px;
+$special-50: #f1ebee;
 
 //Breakpoints
 $screen-sm: 640px;
@@ -35,14 +31,20 @@ $space-6: 64px;
 $space-7: 80px;
 $space-8: 96px;
 $space-9: 144px;
+$space-10: 240px;
 
 //Sizing
+$size-05: 2px;
 $size-1: 4px;
 $size-2: 8px;
 $size-3: 12px;
 $size-4: 16px;
 $size-5: 20px;
 $size-6: 24px;
+$size-sm: 72px;
+$size-md: 96px;
+$size-lg: 160px;
+$size-xl: 240px;
 
 //Font sizes
 $font-base: 16px;

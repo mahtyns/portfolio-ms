@@ -2,7 +2,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 type Props = {
     pageName: string
-    clickedPage: string
+    clickedPage?: string
     currentPage?: string
     setMenuToggled: (value: boolean) => void
     isAnchor: boolean

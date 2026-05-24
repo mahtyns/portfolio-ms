@@ -2,17 +2,54 @@
 
 .projects {
     &__text {
-        @include md {
+        @include lg {
             width: 50%;
-            border-right: solid 4px $main-dark;
+            border-right: solid $size-1 $main-dark;
             padding-right: $space-6;
         }
     }
 
     p {
-        @include md {
+        @include lg {
             font-size: $font-bigger;
             line-height: 150%;
+        }
+    }
+
+    &--code {
+        @include lg {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include lg {
+            padding-left: $space-4;
+            width: 50%;
+            grid-template-columns: repeat(2, 1fr);
+            gap: $space-4 0;
+        }
+    }
+
+    &__item {
+        height: fit-content;
+        padding: $space-2 $space-4;
+        border-bottom: $size-1 solid $main-dark;
+        height: 100%s;
+        min-height: $size-lg;
+
+        &:nth-child(odd) {
+            border-right: $size-1 solid $main-dark;
+        }
+
+        &__title {
+            text-transform: uppercase;
+            font-family: $archivo;
+            font-size: $font-bigger;
         }
     }
 
@@ -40,5 +77,10 @@
             margin: $space-6 0 $space-5;
             gap: $space-3;
         }
+    }
+
+    .button {
+        margin: 0 auto;
+        display: block;
     }
 }

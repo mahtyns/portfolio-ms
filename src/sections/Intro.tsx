@@ -14,7 +14,7 @@ const Intro = () => {
                     </p>
                 </div>
                 <div className='intro__content-cards'>
-                    {intro.items_2.map(item => <IntroCard />)}
+                    {intro.items_2.map(item => <IntroCard name={item.name} image_src={item.image_src} description={item.description} />)}
                 </div>
             </div>
         </section>
