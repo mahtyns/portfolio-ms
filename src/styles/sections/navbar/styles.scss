@@ -68,7 +68,7 @@
                 font-size: $font-md;
                 padding-bottom: $space-2;
                 border-bottom: solid 1px white;
-                font-family: $playfair;
+                font-family: $ibm;
                 text-transform: none;
             }
         }
@@ -86,13 +86,14 @@
 
     &__logo {
         &__text {
-            font-family: $playfair;
+            font-family: $ibm;
             font-size: $font-md;
+            color: $special-800;
         }
     }
 
     .button {
-        padding: $size-3 $size-4;
+        padding: $size-2 $size-4;
         display: flex;
         align-items: center;
 
@@ -100,6 +101,7 @@
             content: '';
             background: url(/images/ui/_arrow.webp);
             background-size: contain;
+            filter: invert(1);
             background-repeat: no-repeat;
             width: $size-3;
             height: $size-3;

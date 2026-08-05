@@ -19,10 +19,10 @@ function App() {
       <main >
         <Home />
         <Intro />
-        <AboutMe />
         <Projects />
-        <Experience />
+        <AboutMe />
         <Stack />
+        <Experience />
         <ContactMe />
       </main>
       <footer>

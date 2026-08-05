@@ -11,7 +11,7 @@ const Navbar = () => {
     const isAboveMediumScreen = useMediaQueries("(min-width: 1024px)");
 
     return (
-        <nav className="navbar section--white" >
+        <nav className="navbar section--black" >
             <div
                 className={`navbar__wrapper`}>
                 <div className="navbar__logo">

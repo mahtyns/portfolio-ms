@@ -2,7 +2,7 @@ import { SectionTitle } from "../assets/components/basics/SectionTitle"
 
 const AboutMe = () => {
     return (
-        <section id="about" className="about section-main section--black">
+        <section id="about" className="about section-main section--gray-dark">
             <div className="about__wrapper container">
                 <div className="about__content">
                     <SectionTitle sectionTitle="About me." sectionVariant={false} textAlign="left" />

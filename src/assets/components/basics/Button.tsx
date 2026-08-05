@@ -6,12 +6,12 @@ type Props = {
 
 const Button = (props: Props) => {
 
-  const buttonBlack = `black`
-  const buttonWhite = `white`
+  const buttonPrimary = `primary`
+  const buttonSecondary = `secondary`
 
   return (
     <button
-      className={`button button--${props.buttonVariant ? buttonBlack : buttonWhite}`}
+      className={`button button--${props.buttonVariant ? buttonPrimary : buttonSecondary}`}
       onClick={() => props.handleOnClick()}
     >
       {props.buttonContent}

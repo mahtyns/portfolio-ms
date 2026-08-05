@@ -1,18 +1,18 @@
 //Colors
 $main-white: #f9f9f9;
-$main-dark: #151515;
+$main-dark: #0b0b0b;
 $gray-50: #eeeeee;
 $gray-100: #e7e7e7;
 $gray-300: #c6c6c6;
-$gray-500: #454545;
-$gray-700: #302f2f;
-$gray-800: #1d1d1d;
-$special-800: #39051e;
-$special-500: #690636;
-$special-300: #b71d67;
-$special-200: #e99bc0;
-$special-100: #e6d2dc;
-$special-50: #f1ebee;
+$gray-500: #262626;
+$gray-700: #141414;
+$gray-800: #111111;
+$special-800: #b4f800;
+$special-500: #cbff3c;
+$special-300: #e4ff99;
+$special-200: #efffc2;
+$special-100: #e9efd6;
+$special-50: #f1f6e4;
 
 //Breakpoints
 $screen-sm: 640px;
@@ -34,6 +34,7 @@ $space-9: 144px;
 $space-10: 240px;
 
 //Sizing
+$size-min: 1px;
 $size-05: 2px;
 $size-1: 4px;
 $size-2: 8px;
@@ -61,5 +62,7 @@ $font-xwide: 2px;
 
 //Fonts
 $playfair: 'Playfair Display', 'serif';
-$lato: 'Lato', 'sans-serif';
+$inter: 'Lato', 'sans-serif';
 $archivo: "Archivo Black", sans-serif;
+$ibm: "IBM Plex Mono", monospace;
+$inter: "Inter", sans-serif;

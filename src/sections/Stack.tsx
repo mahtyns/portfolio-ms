@@ -2,11 +2,10 @@ import { SectionTitle } from "../assets/components/basics/SectionTitle"
 
 const Stack = () => {
     return (
-        <section id="stack" className="stack section-main section--pink-light">
+        <section id="stack" className="stack section--gray-dark">
             <div className="stack__wrapper container">
-                <SectionTitle sectionTitle="Technology." sectionVariant={true} textAlign="center" />
+                <SectionTitle sectionTitle="Technology." sectionVariant={false} textAlign="center" />
             </div>
-
         </section>
     )
 }

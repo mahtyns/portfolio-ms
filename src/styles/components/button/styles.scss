@@ -7,26 +7,28 @@
     font-weight: 300;
     font-size: $font-base;
     border: none;
+    font-family: $inter;
+    font-weight: 700;
 
     @include md {
-        padding: $space-2 $space-6;
+        padding: $space-2;
         transition: ease-in-out 1s all;
     }
 
-    &--black {
-        background-color: $main-dark;
-        color: $main-white;
+    &--primary {
+        background-color: $special-800;
+        color: $main-dark;
 
 
         &:hover {
-            background-color: $special-800;
+            background-color: $special-500;
         }
     }
 
-    &--white {
-        background-color: $main-white;
-        color: $main-dark;
-        border: solid 1px $main-dark;
+    &--secondary {
+        background-color: $main-dark;
+        color: $main-white;
+        border: solid $size-05 $main-white;
 
         &:hover {
             background-color: $special-100;

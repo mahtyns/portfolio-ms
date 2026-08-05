@@ -3,7 +3,7 @@ import intro from '../assets/datafiles/intro/intro.json'
 
 const Intro = () => {
     return (
-        <section id='intro' className='intro section-main section--white'>
+        <section id='intro' className='intro section-main section--black'>
             <div className='intro__wrapper container'>
                 <div className='intro__content-text'>
                     <h1 className='title-h1'>

@@ -2,6 +2,8 @@
 
 .projects {
     &__text {
+        color: $gray-300;
+
         @include lg {
             width: 50%;
             border-right: solid $size-1 $main-dark;
@@ -38,17 +40,18 @@
     &__item {
         height: fit-content;
         padding: $space-2 $space-4;
-        border-bottom: $size-1 solid $main-dark;
+        border-bottom: $size-1 solid $special-800;
         height: 100%s;
         min-height: $size-lg;
+        color: $gray-300;
 
         &:nth-child(odd) {
-            border-right: $size-1 solid $main-dark;
+            border-right: $size-1 solid $special-800;
         }
 
         &__title {
             text-transform: uppercase;
-            font-family: $archivo;
+            font-family: $ibm;
             font-size: $font-bigger;
         }
     }
@@ -63,6 +66,7 @@
             text-align: right;
             width: 50%;
             margin-left: auto;
+            color: $gray-300;
         }
 
     }

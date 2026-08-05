@@ -3,12 +3,12 @@
 .navlink {
     text-transform: uppercase;
     font-size: $font-base;
-    font-weight: 300;
-    color: $gray-500;
+    color: $gray-300;
     letter-spacing: $font-wider;
     transition: ease-in-out 0.5s all;
     text-decoration: none;
-    color: $main-dark;
+    font-family: $ibm;
+    font-weight: 500;
 
     &:hover {
         color: $special-300;
@@ -27,5 +27,9 @@
         width: 100%;
         height: 1px;
         background-color: $special-500;
+    }
+
+    a {
+        color: $gray-300;
     }
 }
