@@ -3,6 +3,7 @@
 .intro {
     &__description {
         text-align: center;
+        color: $gray-400;
 
         @include md {
             text-align: left;

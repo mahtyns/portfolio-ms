@@ -3,26 +3,33 @@
 .footer {
     background-color: $main-dark;
     width: 100%;
-    justify-content: center;
-    padding: $space-1 0;
+    padding: $space-1 $space-2;
+    display: flex;
 
     &__links {
         @include flex-row;
         width: 100%;
-        justify-content: center;
+        justify-content: flex-end;
         gap: $space-1;
     }
 
     &__copyright {
-        color: $gray-300;
-        text-align: center;
+        color: $gray-400;
         font-size: $font-small;
         padding-top: $space-1;
+        width: 100%;
+        text-transform: uppercase;
+        p {
+            font-family: $ibm;
+        }
     }
 
     &__icon img {
         width: $size-6;
         height: $size-6;
         filter: invert(1);
+        &:hover {
+            filter: invert(0.8);
+        }
     }
 }

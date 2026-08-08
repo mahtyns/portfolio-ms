@@ -4,6 +4,9 @@ const year = new Date().getFullYear();
 const Footer = () => {
   return (
     <section className="footer">
+      <div className="footer__copyright">
+        <p>Martyna Smolarek - Frontend Developer © / {year}</p>
+      </div>
       <div className="footer__links">
         <div className="footer__icon">
           <a href="https://github.com/mahtyns" target="_blank">
@@ -20,9 +23,6 @@ const Footer = () => {
             <img src="https://cdn-icons-png.flaticon.com/512/181/181535.png" alt="mailme icon" loading="lazy" />
           </a>
         </div>
-      </div>
-      <div className="footer__copyright">
-        <p>Page created by Martyna Smolarek © / {year}</p>
       </div>
     </section>
   )

@@ -2,7 +2,7 @@
 
 .projects {
     &__text {
-        color: $gray-300;
+        color: $gray-400;
 
         @include lg {
             width: 50%;
@@ -43,15 +43,15 @@
         border-bottom: $size-1 solid $special-800;
         height: 100%s;
         min-height: $size-lg;
-        color: $gray-300;
+        color: $gray-400;
 
         &:nth-child(odd) {
             border-right: $size-1 solid $special-800;
         }
 
         &__title {
-            text-transform: uppercase;
             font-family: $ibm;
+            text-transform: uppercase;
             font-size: $font-bigger;
         }
     }
@@ -63,9 +63,8 @@
         }
 
         p {
-            text-align: right;
             width: 50%;
-            margin-left: auto;
+            margin-left: 0;
             color: $gray-300;
         }
 

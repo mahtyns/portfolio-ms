@@ -34,8 +34,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="projects__wrapper container projects--design">
-                <SectionTitle sectionTitle="Design" sectionVariant={false} textAlign="right" />
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+
             </div>
         </section>
     )

@@ -10,11 +10,17 @@ body,
     font-family: $inter;
 }
 
+body {
+        counter: titles;
+    counter-reset: titles;
+}
+
 .container {
     margin: 0 auto;
 
     @include md {
         max-width: 1200px;
+        margin: 0 auto 0 0;
     }
 
     @include lg {

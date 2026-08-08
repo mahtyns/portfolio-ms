@@ -2,8 +2,6 @@
 
 .about {
     .title-h2 {
-        border-bottom: solid $size-1 $main-white;
-        width: fit-content;
         padding-bottom: $space-1;
         margin-bottom: $space-4;
     }
@@ -18,7 +16,7 @@
     }
 
     &__description {
-        color: $gray-50;
+        color: $gray-400;
         font-size: $font-bigger;
         line-height: 150%;
 
