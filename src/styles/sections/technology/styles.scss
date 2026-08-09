@@ -1,0 +1,42 @@
+@use '../../foundation' as *;
+
+.technology {
+    &__description {
+        font-size: $font-bigger;
+        margin-bottom: $space-2;
+
+        @include md {
+            width: 80%;
+        }
+    }
+
+    &__stack {
+        &--main {
+            display: flex;
+            gap: $space-4;
+            margin-bottom: $space-2;
+
+            @include md {
+                flex-wrap: nowrap;
+                margin-bottom: $space-4;
+            }
+        }
+
+        &--secondary {
+            display: flex;
+            gap: $space-2;
+            flex-wrap: wrap;
+            gap: $space-min $space-3;
+
+            span {
+                text-transform: uppercase;
+                font-family: $ibm;
+                color: $gray-300;
+            }
+
+            @include md {
+                width: 80%;
+            }
+        }
+    }
+}
