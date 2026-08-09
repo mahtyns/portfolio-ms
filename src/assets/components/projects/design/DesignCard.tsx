@@ -1,20 +1,38 @@
+import { Project } from "../../../types/projects"
 import Button from "../../basics/Button"
+import { useState } from "react"
 
-export const DesignCard = () => {
+export const DesignCard = (project: Project) => {
+    const [open, setOpen] = useState<boolean>(false)
+
     return (
-        <div className="projects__card">
-            <picture><img className="projects__card__image" src="/images/projects/sofi-tukker-app.webp" /></picture>
-            <div className="projects__card__title">
-                Title
+        <div className="projects__card" onClick={() => setOpen(!open)}>
+            <div className="projects__card__count">
+
             </div>
-            <div className="projects__card__description">
-                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system
+            <div className="projects__card__content">
+                <div className="projects__card__topbar">
+                    <h3 className="projects__card__title">
+                        {project.name}
+                    </h3>
+                    <p className="projects__card__dates">
+                        {project.date}
+                    </p>
+                </div>
+                {
+                    open ? <picture><img className="projects__card__image" src={project.image.image_src} alt={project.image.image_alt} /></picture> : null
+                }
+                <div className="projects__card__description">
+                    {
+                        project.description
+                    }
+                </div>
+                <div className="projects__card__stack">Stack stack</div>
+                <div className="projects__card__buttons">
+                    <Button buttonContent="Live" buttonVariant={false} handleOnClick={() => window.open(project.link_live)} />
+                    <Button buttonContent="Code" buttonVariant={false} handleOnClick={() => window.open(project.link_github)} />
+                </div>
             </div>
-            <div className="projects__card__buttons">
-                <Button buttonContent="Live" buttonVariant={true} handleOnClick={null} />
-                <Button buttonContent="Code" buttonVariant={false} handleOnClick={null} />
-            </div>
-            <div className="projects__card__stack">Stack stack</div>
         </div>
     )
 }

@@ -2,6 +2,7 @@
     "project_list": [
         {
             "name": "Formula 1® Grand Prix España 2026",
+            "slug": "formula-1-spain-gp",
             "date": "August / September 2025",
             "description": "Landing page developed for a major international event in Spain. Built pixel-perfect interfaces based on Figma prototypes provided by the creative team, collaborating closely with multiple teams and leading the landing page development to ensure quality, consistency, and timely delivery.",
             "stack": [
@@ -20,6 +21,7 @@
         },
         {
             "name": "Toyota x SMN: Secret Road Trip",
+            "slug": "toyota-smn-road-trip",
             "date": "January / February 2025",
             "description": "Full page design developed for a large campaign with Toyota and Secret Media. Built from scratch outside the standard template using Astro and Svelte, translating Figma designs into a fully custom experience. Integrated complex Google Maps functionality with dynamic routes and markers, leveraging Svelte state management and local storage to deliver an interactive hidden gems journey.",
             "stack": [
@@ -38,6 +40,7 @@
         },
         {
             "name": "Daniel Śnieżyński web",
+            "slug": "daniel-sniezynski-meble",
             "date": "October - November 2023",
             "description": "Freelance website created for a local business offering custom furniture and wooden terrace services. Designed and developed a bespoke, lightweight page using Vanilla JavaScript and Tailwind CSS, working directly with the client to deliver a tailored solution and deploying the final site to a custom domain via Netlify.",
             "stack": [
@@ -55,6 +58,7 @@
         },
         {
             "name": "Harry Potter - Forbidden Forest Experience",
+            "slug": "hp-forbidden-forest-experience",
             "date": "February / March 2025",
             "description": "Revamp of the older design. ",
             "stack": [
@@ -73,6 +77,7 @@
         },
         {
             "name": "Recipe Saver / WIP",
+            "slug": "recipe-saver",
             "date": "October 2025",
             "description": "App to save your favorite recipes, add new ones and categorize them. Built with NextJS and Firebase for backend.",
             "stack": [
@@ -90,6 +95,7 @@
         },
         {
             "name": "Sofi Tukker Quiz",
+            "slug": "sofi-tukker-quiz",
             "date": "January 2025",
             "description": "Not so serious - Sofi Tukker quiz with Guess lyrics / Guess song options. ",
             "stack": [
@@ -105,6 +111,7 @@
         },
         {
             "name": "Magnum Pleasure Pass",
+            "slug": "magnum-pleasure-pass",
             "date": "June 2024",
             "description": "Freelance project, personal webpage for Daniel offering his furniture and wooden terraces services ",
             "stack": [
@@ -119,40 +126,6 @@
             "image": {
                 "image_src": "/images/projects/magnumpleasurepass.webp",
                 "image_alt": "Magnum Pleasure Pass Page Project Thumbnail"
-            }
-        },
-        {
-            "name": "Volare Aerials",
-            "date": "April 2023",
-            "description": "Aerial school Volare page, created with React and Typescript. Used Tailwind for CSS styling, smooth scroll for links and framer motion for animations. First project to learn basics of TypeScript. ",
-            "stack": [
-                "React",
-                "TypeScript",
-                "TailwindCSS",
-                "Framer-motion"
-            ],
-            "link_live": "https://aerialclass.netlify.app/",
-            "link_github": "https://github.com/mahtyns/aerialSchool",
-            "work_project": false,
-            "image": {
-                "image_src": "https://i.ibb.co/LRNcRsb/daniel.jpg",
-                "image_alt": "Volare Aerials Project Thumbnail"
-            }
-        },
-        {
-            "name": "PamApp Challenge",
-            "date": "May 2021",
-            "description": "Innovation Challenge by Reply Challenges, created in team with Edyta Przybysz - a 48h brainstorming run on 21-23 May 21. The objective was to propose UX improvements for the famous Fitness App run by Pam. Our idea was to create a bigger sense of community, increase the engagement and keep all the fitness information the user might need in one place. We have added some new functionalities and shifted the focus to the app user.",
-            "stack": [
-                "Figma",
-                "Photoshop"
-            ],
-            "link_live": "https://www.behance.net/gallery/122593259/Pam-App-Challenge",
-            "link_github": "",
-            "work_project": false,
-            "image": {
-                "image_src": "https://i.ibb.co/z2kcryr/pamap.jpg",
-                "image_alt": "PamApp Challenge Page Project Thumbnail"
             }
         }
     ]

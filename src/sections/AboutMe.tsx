@@ -1,14 +1,21 @@
 import { SectionTitle } from "../assets/components/basics/SectionTitle"
+import about from '../assets/datafiles/about/about.json'
 
 const AboutMe = () => {
     return (
         <section id="about" className="about section-main section--gray-dark">
             <div className="about__wrapper container">
                 <div className="about__content">
-                    <SectionTitle sectionTitle="About me." sectionVariant={false} textAlign="left" />
+                    <SectionTitle sectionTitle={about.intro} sectionVariant={false} textAlign="left" />
                     <div className="about__description">
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+                        <p>{about.main_text}</p>
+                    </div>
+                    <div className="about__description-extra">
+                        <p>{about.extra_text}</p>
+                    </div>
+                    <div className="about__languages">
+                        <span className="about__languages__title">{about.languages_text}</span>
+                        {about.languages.map(lang => <p>{lang}</p>)}
                     </div>
                 </div>
                 <div>

@@ -1,6 +1,8 @@
 {
     "text_title": "Hello, I'm Martyna.",
-    "intro_title": "MADRID · FRONTEND DEVELOPER",
-    "contact_button": "Discover my projects",
-    "about_button": "Get in touch"
+    "intro_title": "FRONTEND DEVELOPER / BASED IN MADRID",
+    "about_button": "Discover my projects",
+    "contact_button": "Get in touch",
+    "text_subtitle": "Developer with a unique foundation in architecture and design principles. Discover my projects",
+    "text_description": "REACT · TYPESCRIPT · SVELTE · NEXTJS · ASTRO"
 }

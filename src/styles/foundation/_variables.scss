@@ -5,7 +5,7 @@ $gray-50: #eeeeee;
 $gray-100: #e7e7e7;
 $gray-300: #c6c6c6;
 $gray-400: #a3a3a3;
-$gray-500: #262626;
+$gray-500: #747b74;
 $gray-700: #141414;
 $gray-800: #111111;
 $special-800: #b4f800;
@@ -23,6 +23,7 @@ $screen-xl: 1280px;
 $screen-xxl: 1536px;
 
 //Spacing
+$space-min: 4px;
 $space-1: 8px;
 $space-2: 16px;
 $space-3: 24px;
@@ -47,6 +48,7 @@ $size-sm: 72px;
 $size-md: 96px;
 $size-lg: 160px;
 $size-xl: 240px;
+$size-2xl: 450px;
 
 //Font sizes
 $font-base: 16px;
@@ -63,8 +65,6 @@ $font-wider: 1px;
 $font-xwide: 2px;
 
 //Fonts
-$playfair: 'Playfair Display', 'serif';
-$inter: 'Lato', 'sans-serif';
-$archivo: "Archivo Black", sans-serif;
 $ibm: "IBM Plex Mono", monospace;
 $inter: "Inter", sans-serif;
+$space: "Space Grotesk", sans-serif;

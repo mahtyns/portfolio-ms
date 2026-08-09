@@ -8,10 +8,10 @@ body,
     box-sizing: border-box;
     margin: 0;
     font-family: $inter;
+    color: $gray-300;
 }
 
 body {
-        counter: titles;
     counter-reset: titles;
 }
 

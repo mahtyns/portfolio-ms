@@ -2,40 +2,99 @@
 
 .projects {
     &__card {
-        background-color: $gray-50;
         padding: $space-3 $space-2;
+        border-bottom: solid $size-05 $gray-700;
         display: flex;
         flex-direction: column;
         gap: $space-2;
-        border: solid $size-05 $gray-500;
+
+        @include md {
+            gap: $space-4;
+            flex-direction: row;
+        }
+
+        &__count {
+            position: relative;
+
+            &::before {
+                counter-increment: projects;
+                content: "0" counter(projects);
+                color: $gray-500;
+                font-family: $ibm;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: $space-2;
+        }
 
         &__image {
             width: 100%;
-            height: $size-xl;
+            height: $size-2xl;
             object-fit: cover;
         }
 
-        &__title {
+        &__topbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__dates {
+            text-align: right;
             font-family: $ibm;
+            text-transform: uppercase;
+            font-size: $font-small;
+            color: $gray-500;
+        }
+
+        &__title {
+            font-family: $space;
             font-size: $font-md;
-            text-align: center;
+            color: $gray-100;
         }
 
         &__description {
-            text-align: center;
             font-size: $font-bigger;
+            color: $gray-400;
+        }
+
+        &__stack {
+            color: $gray-100;
+            text-transform: uppercase;
+            font-family: $ibm;
+            font-size: $font-small;
         }
 
         &__buttons {
             display: flex;
             gap: $space-2;
             align-items: center;
-            justify-content: center
+            justify-content: flex-start;
         }
 
         .button {
-            padding: $space-1 $space-3;
+            padding: $space-min 0;
             margin: 0 !important;
+            position: relative;
+            background-color: transparent;
+            border: none;
+            border-bottom: solid $size-05 $main-white;
+            display: flex;
+            align-items: center;
+
+            &::after {
+                content: '';
+                background: url(/images/ui/_arrow.webp);
+                background-size: contain;
+                background-repeat: no-repeat;
+                filter: invert(1);
+                width: $size-4;
+                height: $size-4;
+                margin-left: $space-min;
+                display: inline-block;
+            }
         }
     }
 }

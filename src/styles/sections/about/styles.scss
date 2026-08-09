@@ -15,7 +15,8 @@
         }
     }
 
-    &__description {
+    &__description,
+    &__description-extra {
         color: $gray-400;
         font-size: $font-bigger;
         line-height: 150%;
@@ -25,15 +26,43 @@
         }
 
         @include md {
-            width: 80%;
+            width: 60%;
         }
     }
 
-    &__image {
-        @include md {
-            height: fit-content;
-            max-height: 700px;
-            object-position: right;
+    &__languages {
+        &__title {
+            display: block;
+            font-size: $font-base;
+            margin-bottom: $space-1;
+        }
+
+        font-size: $font-md;
+
+
+        p {
+            display: inline;
+            color: $main-white;
+            font-family: $space;
+            margin: 0 $space-2;
+            position: relative;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            &::after {
+                position: absolute;
+                right: -$space-2;
+                content: '·';
+            }
+
+            &:last-of-type {
+                &::after {
+                    display: none;
+                }
+            }
         }
     }
+
 }

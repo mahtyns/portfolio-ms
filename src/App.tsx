@@ -6,7 +6,7 @@ import Footer from "./sections/Footer"
 import Home from "./sections/Home"
 import Intro from "./sections/Intro"
 import Projects from "./sections/Projects"
-import Stack from "./sections/Stack"
+import { Technology } from "./sections/Technology"
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
         <Intro />
         <Projects />
         <AboutMe />
+        <Technology />
         <Experience />
         <ContactMe />
       </main>

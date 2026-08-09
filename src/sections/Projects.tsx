@@ -1,11 +1,8 @@
-import Button from "../assets/components/basics/Button";
 import { SectionTitle } from "../assets/components/basics/SectionTitle"
 import { DesignCard } from "../assets/components/projects/design/DesignCard"
-import projects from '../assets/datafiles/projects/projects.json'
+import { project_list } from '../assets/datafiles/projects/projects.json'
 
 const Projects = () => {
-
-    const projectList = projects.project_list;
 
     return (
         <section id="projects" className="projects section-main section--black">
@@ -34,7 +31,9 @@ const Projects = () => {
                 </div>
             </div>
             <div className="projects__wrapper container projects--design">
-
+                {
+                    project_list.map(project => <DesignCard key={project.slug} {...project} />)
+                }
             </div>
         </section>
     )

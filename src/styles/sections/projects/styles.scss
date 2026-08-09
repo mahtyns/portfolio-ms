@@ -13,7 +13,6 @@
 
     p {
         @include lg {
-            font-size: $font-bigger;
             line-height: 150%;
         }
     }
@@ -58,6 +57,9 @@
 
     &--design {
 
+        counter-reset: projects;
+        counter: projects;
+
         @include md {
             margin-top: $space-8 !important;
         }
@@ -85,5 +87,11 @@
     .button {
         margin: 0 auto;
         display: block;
+    }
+
+    .title-h2 {
+        @include md {
+            font-size: $font-super;
+        }
     }
 }

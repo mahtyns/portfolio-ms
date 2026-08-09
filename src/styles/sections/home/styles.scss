@@ -7,7 +7,7 @@
     align-items: flex-start;
     justify-content: center;
     padding: $space-9 $space-3 $space-5;
-    border-bottom: solid 1px $special-300;
+    border-bottom: solid 1px $special-800;
 
     @include md {
         padding: 300px $space-8 $space-9;
@@ -20,9 +20,11 @@
     }
 
     &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: $space-2;
+
         @include md {
-            display: flex;
-            flex-direction: column;
             margin-right: auto;
             gap: $space-3;
         }
@@ -33,30 +35,55 @@
         color: $gray-400;
         text-transform: uppercase;
         letter-spacing: $font-wider;
-        font-family: $ibm
+        font-family: $ibm;
+        font-size: $font-small
     }
 
     &__title {
         font-family: $ibm;
-        font-size: $font-lg;
+        font-size: $font-xl;
         line-height: 100%;
         color: $main-white;
+        text-align: center;
 
         @include md {
             font-size: $font-super;
-            width: 85%;
+            width: 60%;
+            text-align: left;
         }
 
+    }
+
+    &__subtitle {
+        font-size: $font-base;
+        text-align: center;
+
+        @include md {
+            font-size: $font-md;
+            width: 60%;
+            text-align: left;
+        }
+    }
+
+    &__description {
+        font-size: $font-small;
+        color: $main-white;
+        text-align: center;
+
+        @include md {
+            text-align: left;
+        }
     }
 
     &__buttons {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: $space-2;
 
         @include md {
             flex-direction: row;
+            align-items: flex-start;
         }
     }
 }
