@@ -19,6 +19,12 @@ export const DesignCard = (project: Project) => {
                         {project.name}
                     </h3>
 
+                    {
+                        project.work_project && <span className="projects__card__work">
+                            Work project
+                        </span>
+                    }
+
                     <p className="projects__card__dates">
                         {project.date}
                     </p>
@@ -41,21 +47,29 @@ export const DesignCard = (project: Project) => {
                 </div>
 
                 <div className="projects__card__stack">
-                    Stack stack
+                    {
+                        project.stack.map(item => <span key={item}>{item}</span>)
+                    }
                 </div>
 
                 <div className="projects__card__buttons">
-                    <Button
-                        buttonContent="Live"
-                        buttonVariant={false}
-                        handleOnClick={() => window.open(project.link_live)}
-                    />
+                    {
+                        project.link_live &&
+                        <Button
+                            buttonContent="Live"
+                            buttonVariant={false}
+                            handleOnClick={() => window.open(project.link_live)}
+                        />
+                    }
 
-                    <Button
-                        buttonContent="Code"
-                        buttonVariant={false}
-                        handleOnClick={() => window.open(project.link_github)}
-                    />
+                    {
+                        project.link_github &&
+                        <Button
+                            buttonContent="Code"
+                            buttonVariant={false}
+                            handleOnClick={() => window.open(project.link_github)}
+                        />
+                    }
                 </div>
             </div>
         </div>

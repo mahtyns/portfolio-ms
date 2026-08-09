@@ -15,7 +15,7 @@
             "link_github": "",
             "work_project": true,
             "image": {
-                "image_src": "",
+                "image_src": "/images/projects/formula1.webp",
                 "image_alt": "Formula 1® Grand Prix España 2026 Project thumbnail"
             }
         },
@@ -39,9 +39,29 @@
             }
         },
         {
+            "name": "Recipe Saver",
+            "slug": "recipe-saver",
+            "date": "July 2026 / Work in progress",
+            "description": "App to save your favorite recipes, add new ones and categorize them. Built with NextJS and Firebase for backend.",
+            "stack": [
+                "NextJS",
+                "TypeScript",
+                "Docker",
+                "PostgreSQL",
+                "CRUD"
+            ],
+            "link_live": "",
+            "link_github": "https://github.com/mahtyns/recipe-saver",
+            "work_project": false,
+            "image": {
+                "image_src": "/images/projects/recipe-saver.webp",
+                "image_alt": "Recipe Saver Project Thumbnail"
+            }
+        },
+        {
             "name": "Daniel Śnieżyński web",
             "slug": "daniel-sniezynski-meble",
-            "date": "October - November 2023",
+            "date": "October / November 2023 - Revamp coming soon",
             "description": "Freelance website created for a local business offering custom furniture and wooden terrace services. Designed and developed a bespoke, lightweight page using Vanilla JavaScript and Tailwind CSS, working directly with the client to deliver a tailored solution and deploying the final site to a custom domain via Netlify.",
             "stack": [
                 "Vanilla JS",
@@ -54,43 +74,6 @@
             "image": {
                 "image_src": "https://i.ibb.co/LRNcRsb/daniel.jpg",
                 "image_alt": "Daniel Śnieżyński Page Project Thumbnail"
-            }
-        },
-        {
-            "name": "Harry Potter - Forbidden Forest Experience",
-            "slug": "hp-forbidden-forest-experience",
-            "date": "February / March 2025",
-            "description": "Revamp of the older design. ",
-            "stack": [
-                "Astro",
-                "Svelte",
-                "CSS Animations",
-                "SCSS"
-            ],
-            "link_live": "https://hpforbiddenforestexperience.com",
-            "link_github": "",
-            "work_project": true,
-            "image": {
-                "image_src": "/images/projects/hpforbiddenforest.webp",
-                "image_alt": "Harry Potter - Forbidden Forest Experience Project Thumbnail"
-            }
-        },
-        {
-            "name": "Recipe Saver / WIP",
-            "slug": "recipe-saver",
-            "date": "October 2025",
-            "description": "App to save your favorite recipes, add new ones and categorize them. Built with NextJS and Firebase for backend.",
-            "stack": [
-                "Firebase",
-                "NextJS",
-                "TypeScript"
-            ],
-            "link_live": "",
-            "link_github": "https://github.com/mahtyns/recipe-saver",
-            "work_project": false,
-            "image": {
-                "image_src": "/images/projects/recipe-saver.webp",
-                "image_alt": "Recipe Saver Project Thumbnail"
             }
         },
         {
@@ -107,25 +90,6 @@
             "image": {
                 "image_src": "/images/projects/sofi-tukker-app.webp",
                 "image_alt": "Sofi Tukker Quiz Project Thumbnail"
-            }
-        },
-        {
-            "name": "Magnum Pleasure Pass",
-            "slug": "magnum-pleasure-pass",
-            "date": "June 2024",
-            "description": "Freelance project, personal webpage for Daniel offering his furniture and wooden terraces services ",
-            "stack": [
-                "Svelte",
-                "Svelte stores",
-                "Tailwind CSS",
-                "Astro JS"
-            ],
-            "link_live": "https://secretmedianetwork.com/magnumpleasurepass",
-            "link_github": "",
-            "work_project": true,
-            "image": {
-                "image_src": "/images/projects/magnumpleasurepass.webp",
-                "image_alt": "Magnum Pleasure Pass Page Project Thumbnail"
             }
         }
     ]

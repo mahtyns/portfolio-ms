@@ -41,6 +41,7 @@
             clip-path: inset(0 0 100% 0);
             transform: scaleY(0.8);
             transform-origin: top;
+            border: solid $size-min rgba($color: $special-800, $alpha: 0.3);
             transition:
                 max-height 0.6s cubic-bezier(0.16, 1, 0.3, 1),
                 opacity 0.2s ease,
@@ -95,6 +96,10 @@
         &__topbar {
             display: flex;
             justify-content: space-between;
+            border-bottom: solid $size-min rgba($color: $special-800, $alpha: 0.3);
+            padding-bottom: $space-1;
+            gap: $space-3;
+            align-items: center;
         }
 
         &__dates {
@@ -103,6 +108,7 @@
             text-transform: uppercase;
             font-size: $font-small;
             color: $gray-500;
+            width: fit-content !important;
         }
 
         &__title {
@@ -114,13 +120,19 @@
         &__description {
             font-size: $font-bigger;
             color: $gray-400;
+            line-height: 150%;
         }
 
         &__stack {
-            color: $gray-100;
             text-transform: uppercase;
-            font-family: $ibm;
             font-size: $font-small;
+            gap: $space-1;
+            display: flex;
+
+            span {
+                color: $gray-100;
+                font-family: $ibm;
+            }
         }
 
         &__buttons {
@@ -128,6 +140,18 @@
             gap: $space-2;
             align-items: center;
             justify-content: flex-start;
+        }
+
+        &__work {
+            margin-left: auto;
+            text-transform: uppercase;
+            font-family: $space;
+            font-size: $font-small;
+            padding: $space-1;
+            border: solid $size-min rgba($color: $gray-400, $alpha: 0.15);
+            border-radius: $size-1;
+            box-shadow: 0 0 $space-1 rgba($color: $special-800, $alpha: 0.1);
+            color: $special-800;
         }
 
         .button {

@@ -1,0 +1,73 @@
+@use '../../foundation' as *;
+
+.experience {
+    &__card {
+        padding: $space-3 $space-2;
+        border-bottom: solid $size-05 $gray-700;
+        display: flex;
+        flex-direction: column;
+        gap: $space-2;
+
+        @include md {
+            gap: $space-4;
+            flex-direction: row;
+        }
+
+        &__count {
+            position: relative;
+
+            &::before {
+                counter-increment: experience;
+                content: "0" counter(experience);
+                color: $gray-500;
+                font-family: $ibm;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: $space-2;
+            width: 100%;
+        }
+
+        &__topbar {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: solid $size-min rgba($color: $special-800, $alpha: 0.3);
+            padding-bottom: $space-1;
+        }
+
+        &__dates {
+            text-align: right;
+            font-family: $ibm;
+            text-transform: uppercase;
+            font-size: $font-small;
+            color: $gray-500;
+        }
+
+        &__name {
+            font-family: $space;
+            font-size: $font-md;
+            color: $gray-100;
+        }
+
+        &__description {
+            font-size: $font-base;
+            color: $gray-400;
+            line-height: 150%;
+        }
+
+        &__details {
+            text-transform: uppercase;
+            font-size: $font-small;
+            gap: $space-3;
+            display: flex;
+
+            span {
+                color: $gray-100;
+                font-family: $ibm;
+            }
+        }
+    }
+}

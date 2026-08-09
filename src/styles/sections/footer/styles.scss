@@ -3,7 +3,7 @@
 .footer {
     background-color: $main-dark;
     width: 100%;
-    padding: $space-1 $space-2;
+    padding: $space-2 $space-5;
     display: flex;
 
     &__links {
@@ -19,6 +19,7 @@
         padding-top: $space-1;
         width: 100%;
         text-transform: uppercase;
+
         p {
             font-family: $ibm;
         }
@@ -28,6 +29,7 @@
         width: $size-6;
         height: $size-6;
         filter: invert(1);
+
         &:hover {
             filter: invert(0.8);
         }

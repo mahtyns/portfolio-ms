@@ -60,9 +60,15 @@ h1.title-h1 {
         counter-increment: titles;
         content: "0" counter(titles);
         position: absolute;
-        top: -$space-6;
+        top: -$space-4;
         left: 0;
         color: $special-800;
-        font-size: $font-base;
+        font-size: $font-small;
+        font-family: $ibm;
+
+        @include md {
+            top: -$space-5;
+            font-size: $font-base;
+        }
     }
 }

@@ -3,6 +3,7 @@
 .projects {
     &__text {
         color: $gray-400;
+        font-size: $font-bigger;
 
         @include lg {
             width: 50%;
@@ -58,7 +59,6 @@
     &--design {
 
         counter-reset: projects;
-        counter: projects;
 
         @include md {
             margin-top: $space-8 !important;
