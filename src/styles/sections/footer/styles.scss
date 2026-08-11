@@ -3,8 +3,12 @@
 .footer {
     background-color: $main-dark;
     width: 100%;
-    padding: $space-2 $space-5;
+    padding: $space-2 $space-3;
     display: flex;
+
+    @include md {
+        padding: $space-2 $space-5;
+    }
 
     &__links {
         @include flex-row;

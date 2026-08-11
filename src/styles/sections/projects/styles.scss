@@ -85,8 +85,10 @@
     }
 
     .button {
-        margin: 0 auto;
+        margin: $space-3 auto 0 0;
         display: block;
+        position: relative;
+        @include button-arrow;
     }
 
     .title-h2 {

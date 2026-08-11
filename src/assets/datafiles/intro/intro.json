@@ -2,36 +2,24 @@
     "subtitle": "Always curious, always creating — here’s a bit more about what drives my work and keeps me inspired.",
     "items": [
         {
-            "name": "Creativity",
+            "name": "Reusable UIs",
             "description": "I enjoy exploring ideas through design and code, turning concepts into engaging, visually balanced experiences that feel intuitive and thoughtful.",
-            "image_src": "/images/ui/idea.png"
+            "image_src": "/images/ui/atomic.png"
         },
         {
-            "name": "Problem-solving",
-            "description": "I approach challenges with curiosity and persistence, breaking problems down and finding practical, efficient solutions through experimentation and learning.",
-            "image_src": "/images/ui/puzzle.png"
+            "name": "Complex Architecture",
+            "description": "I enjoy exploring ideas through design and code, turning concepts into engaging, visually balanced experiences that feel intuitive and thoughtful.",
+            "image_src": "/images/ui/architecture.png"
         },
         {
-            "name": "Constant learning",
-            "description": "I never stop exploring new tools, techniques, and opportunities to grow — every project is a chance to learn something new.",
-            "image_src": "/images/ui/learn.png"
-        }
-    ],
-    "items_2": [
-        {
-            "name": "Scalable systems",
+            "name": "Design Principles",
             "description": "I enjoy exploring ideas through design and code, turning concepts into engaging, visually balanced experiences that feel intuitive and thoughtful.",
-            "image_src": "/images/ui/idea.png"
+            "image_src": "/images/ui/design.png"
         },
         {
-            "name": "Automations",
+            "name": "Automating workflows",
             "description": "I enjoy exploring ideas through design and code, turning concepts into engaging, visually balanced experiences that feel intuitive and thoughtful.",
-            "image_src": "/images/ui/puzzle.png"
-        },
-        {
-            "name": "Pixel-perfect",
-            "description": "I enjoy exploring ideas through design and code, turning concepts into engaging, visually balanced experiences that feel intuitive and thoughtful.",
-            "image_src": "/images/ui/learn.png"
+            "image_src": "/images/ui/workflow.png"
         }
     ],
     "h1_title": "Martyna Smolarek Portfolio"

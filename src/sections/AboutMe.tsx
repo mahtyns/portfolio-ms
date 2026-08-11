@@ -15,13 +15,8 @@ const AboutMe = () => {
                     </div>
                     <div className="about__languages">
                         <span className="about__languages__title">{about.languages_text}</span>
-                        {about.languages.map(lang => <p>{lang}</p>)}
+                        {about.languages.map(lang => <p key={lang}>{lang}</p>)}
                     </div>
-                </div>
-                <div>
-                    <picture>
-                        <img src="" className="about__image" />
-                    </picture>
                 </div>
             </div>
         </section>

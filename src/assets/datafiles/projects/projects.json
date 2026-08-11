@@ -1,6 +1,27 @@
 {
     "project_list": [
         {
+            "name": "Component development for CMS",
+            "slug": "component-development",
+            "date": "From 2025",
+            "description": "Designed and developed a library of reusable frontend components that could be configured and combined by content editors through the CMS. Components were built with responsive behavior, reusable styling and flexible content structures in mind, allowing the same patterns to support multiple page layouts.",
+            "stack": [
+                "Svelte",
+                "Astro",
+                "TypeScript",
+                "SCSS",
+                "Payload CMS",
+                "Decap CMS"
+            ],
+            "link_live": "",
+            "link_github": "",
+            "work_project": true,
+            "image": {
+                "image_src": "",
+                "image_alt": ""
+            }
+        },
+        {
             "name": "Formula 1® Grand Prix España 2026",
             "slug": "formula-1-spain-gp",
             "date": "August / September 2025",
@@ -17,25 +38,6 @@
             "image": {
                 "image_src": "/images/projects/formula1.webp",
                 "image_alt": "Formula 1® Grand Prix España 2026 Project thumbnail"
-            }
-        },
-        {
-            "name": "Toyota x SMN: Secret Road Trip",
-            "slug": "toyota-smn-road-trip",
-            "date": "January / February 2025",
-            "description": "Full page design developed for a large campaign with Toyota and Secret Media. Built from scratch outside the standard template using Astro and Svelte, translating Figma designs into a fully custom experience. Integrated complex Google Maps functionality with dynamic routes and markers, leveraging Svelte state management and local storage to deliver an interactive hidden gems journey.",
-            "stack": [
-                "Astro",
-                "Svelte",
-                "Google Maps API",
-                "local storage"
-            ],
-            "link_live": "https://toyotaroadtrip.secretmedianetwork.com",
-            "link_github": "",
-            "work_project": true,
-            "image": {
-                "image_src": "",
-                "image_alt": "Toyota Secret Road Trip Project Thumbnail"
             }
         },
         {
@@ -74,22 +76,6 @@
             "image": {
                 "image_src": "https://i.ibb.co/LRNcRsb/daniel.jpg",
                 "image_alt": "Daniel Śnieżyński Page Project Thumbnail"
-            }
-        },
-        {
-            "name": "Sofi Tukker Quiz",
-            "slug": "sofi-tukker-quiz",
-            "date": "January 2025",
-            "description": "Not so serious - Sofi Tukker quiz with Guess lyrics / Guess song options. ",
-            "stack": [
-                "React"
-            ],
-            "link_live": "https://sofi-lyrics-challenge.netlify.app",
-            "link_github": "",
-            "work_project": false,
-            "image": {
-                "image_src": "/images/projects/sofi-tukker-app.webp",
-                "image_alt": "Sofi Tukker Quiz Project Thumbnail"
             }
         }
     ]

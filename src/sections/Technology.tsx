@@ -17,7 +17,7 @@ export const Technology = () => {
                     </div>
                     <div className="technology__stack--secondary">
                         {
-                            tech && tech.stack.slice(6).map(item => <span>{item.tech_name}</span>)
+                            tech && tech.stack.slice(6).map(item => <span key={item.tech_name}>{item.tech_name}</span>)
                         }
                     </div>
                 </div>

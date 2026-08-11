@@ -61,8 +61,14 @@
         &__details {
             text-transform: uppercase;
             font-size: $font-small;
-            gap: $space-3;
+            gap: $space-1 $space-3;
             display: flex;
+            flex-wrap: wrap;
+
+            @include md {
+                flex-wrap: nowrap;
+                gap: $space-3;
+            }
 
             span {
                 color: $gray-100;

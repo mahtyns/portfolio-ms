@@ -1,7 +1,7 @@
 type Props = {
   buttonContent: string,
   buttonVariant: boolean
-  handleOnClick: () => Window | void | null
+  handleOnClick: () => void
 }
 
 const Button = (props: Props) => {

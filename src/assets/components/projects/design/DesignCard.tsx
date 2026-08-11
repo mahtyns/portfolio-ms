@@ -28,6 +28,9 @@ export const DesignCard = (project: Project) => {
                     <p className="projects__card__dates">
                         {project.date}
                     </p>
+                    <picture aria-label="Show more" className={open ? `arrow-down arrow-down--open` : `arrow-down`}>
+                        <img src="/images/ui/arrow_down.png" alt="Show more - arrow down" />
+                    </picture>
                 </div>
 
                 <div className="projects__card__image-wrapper">

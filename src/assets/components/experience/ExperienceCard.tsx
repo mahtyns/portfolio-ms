@@ -15,7 +15,7 @@ const ExperienceCard = (experience: Experience) => {
                     {experience.description}
                 </div>
                 <div className="experience__card__details">
-                    {experience.details?.map(detail => <span>{detail}</span>)}
+                    {experience.details?.map(detail => <span key={detail}>{detail}</span>)}
                 </div>
             </div>
         </div>
