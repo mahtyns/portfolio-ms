@@ -1,4 +1,5 @@
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import ScrambleText from '../../components/basics/ScrambleText';
 
 type Props = {
     pageName: string
@@ -21,7 +22,9 @@ export const Navlink = (props: Props) => {
             aria-current={isActive ? 'page' : undefined}
             onClick={() => props.setMenuToggled(false)}
         >
-            {props.pageName}
+            <ScrambleText>
+                {props.pageName}
+            </ScrambleText>
         </AnchorLink>
     ) : (
         <a

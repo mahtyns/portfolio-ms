@@ -8,6 +8,7 @@
     font-family: $inter;
     font-weight: 700;
     height: 100%;
+    cursor: pointer;
 
     @include md {
         padding: $space-2;
