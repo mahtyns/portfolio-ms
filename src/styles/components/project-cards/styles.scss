@@ -123,12 +123,13 @@
             font-size: $font-small;
             color: $gray-500;
             order: 3;
-            width: 100% !important;
+            width: 100%;
 
 
             @include md {
                 width: fit-content !important;
                 text-align: right;
+                margin-right: 0;
             }
         }
 
@@ -155,6 +156,7 @@
             font-size: $font-small;
             gap: $space-1;
             display: flex;
+            flex-wrap: wrap;
 
             span {
                 color: $gray-100;
@@ -176,6 +178,22 @@
             font-size: $font-small;
             padding: $space-1;
             color: $special-800;
+            @include card-bordered;
+            order: 1;
+
+            @include md {
+                margin-left: auto;
+                order: 2;
+            }
+        }
+
+        &__personal {
+            margin-left: 0;
+            text-transform: uppercase;
+            font-family: $space;
+            font-size: $font-small;
+            padding: $space-1;
+            color: $gray-300;
             @include card-bordered;
             order: 1;
 

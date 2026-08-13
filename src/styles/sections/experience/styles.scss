@@ -3,5 +3,13 @@
 .experience {
     &__cards {
         counter-reset: experience;
+        display: flex;
+        flex-direction: column;
+
+        @include md {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: $space-4;
+        }
     }
 }

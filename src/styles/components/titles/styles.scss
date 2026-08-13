@@ -10,6 +10,7 @@ h1.title-h1 {
 
     @include md {
         font-size: $font-2xl;
+        margin-bottom: 0;
         color: $main-white;
         text-align: left;
     }

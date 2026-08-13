@@ -13,4 +13,9 @@ export interface Project {
     }
 }
 
+export interface ProjectDetails {
+    slug: string,
+    description: string
+}
+
 export type ProjectGalleryItems = Project[];

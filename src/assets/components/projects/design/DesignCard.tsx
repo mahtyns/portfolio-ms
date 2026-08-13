@@ -1,8 +1,15 @@
 import { Project } from "../../../types/projects"
 import Button from "../../basics/Button"
-import { useState } from "react"
+import { useState, Dispatch, SetStateAction } from "react"
 
-export const DesignCard = (project: Project) => {
+type DesignCardProps = Project & {
+    setProjectModal: Dispatch<SetStateAction<string | null>>
+}
+
+export const DesignCard = ({
+    setProjectModal,
+    ...project
+}: DesignCardProps) => {
     const [open, setOpen] = useState(false)
 
     return (
@@ -20,8 +27,10 @@ export const DesignCard = (project: Project) => {
                     </h3>
 
                     {
-                        project.work_project && <span className="projects__card__work">
+                        project.work_project ? <span className="projects__card__work">
                             Work project
+                        </span> : <span className="projects__card__personal">
+                            Personal project
                         </span>
                     }
 
@@ -73,6 +82,12 @@ export const DesignCard = (project: Project) => {
                             handleOnClick={() => window.open(project.link_github)}
                         />
                     }
+
+                    {/* <Button
+                        buttonContent="See more"
+                        buttonVariant={false}
+                        handleOnClick={() => setProjectModal(project.slug)}
+                    /> */}
                 </div>
             </div>
         </div>

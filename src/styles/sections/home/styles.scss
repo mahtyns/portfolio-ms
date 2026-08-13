@@ -41,18 +41,21 @@
         text-transform: uppercase;
         letter-spacing: $font-wider;
         font-family: $ibm;
-        font-size: $font-small
+        font-size: $font-small;
+        text-align: center;
+
+        @include md {
+            text-align: left !important;
+        }
     }
 
     &__title {
         font-family: $ibm;
-        font-size: $font-xl;
         line-height: 100%;
         color: $main-white;
         text-align: center;
 
         @include md {
-            font-size: $font-super;
             width: 60%;
             text-align: left;
         }

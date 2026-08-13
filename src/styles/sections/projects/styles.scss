@@ -94,6 +94,7 @@
     .title-h2 {
         @include md {
             font-size: $font-super;
+            padding-top: $space-1;
         }
     }
 }

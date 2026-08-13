@@ -8,12 +8,12 @@ const Home = () => {
                 <div className='home__intro'>
                     {home.intro_title}
                 </div>
-                <div className='home__title'>
+                <h1 className='home__title title-h1'>
                     {home.text_title}
-                </div>
-                <div className='home__subtitle'>
+                </h1>
+                <h2 className='home__subtitle'>
                     {home.text_subtitle}
-                </div>
+                </h2>
                 <div className='home__description'>
                     {home.text_description}
                 </div>

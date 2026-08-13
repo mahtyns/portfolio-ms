@@ -11,6 +11,7 @@
         @include md {
             gap: $space-4;
             flex-direction: row;
+            width: calc(50% - $space-4);
         }
 
         &__count {
