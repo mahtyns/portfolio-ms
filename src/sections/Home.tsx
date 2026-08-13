@@ -1,12 +1,17 @@
 import Button from '../assets/components/basics/Button'
 import home from '../assets/datafiles/home/home.json'
+import HeroInteractive from '../assets/components/basics/HomeInteractive'
+
 
 const Home = () => {
     return (
         <section id='home' className='home section--black'>
+            <div className='home__grid' aria-hidden='true' />
+            <div className='home__scanline' aria-hidden='true' />
+            <HeroInteractive />
             <div className='home__wrapper container'>
                 <div className='home__intro'>
-                    {home.intro_title}
+                    <span className='home__intro-cursor'>&gt;</span> {home.intro_title}
                 </div>
                 <h1 className='home__title title-h1'>
                     {home.text_title}
@@ -25,6 +30,7 @@ const Home = () => {
         </section>
     )
 }
+
 
 
 export default Home

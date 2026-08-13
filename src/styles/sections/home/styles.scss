@@ -8,6 +8,9 @@
     justify-content: center;
     // padding: $space-9 $space-3 $space-5;
     border-bottom: solid 1px $special-800;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
 
     @include md {
         padding: $size-xl 0;
@@ -25,6 +28,8 @@
     }
 
     &__wrapper {
+        position: relative;
+        z-index: 2;
         display: flex;
         flex-direction: column;
         gap: $space-2;
@@ -33,20 +38,29 @@
             margin-right: auto;
             gap: $space-3;
         }
-
     }
 
     &__intro {
-        color: $gray-400;
+        color: $special-500;
         text-transform: uppercase;
         letter-spacing: $font-wider;
         font-family: $ibm;
         font-size: $font-small;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $space-min;
 
         @include md {
             text-align: left !important;
+            justify-content: flex-start;
         }
+    }
+
+    &__intro-cursor {
+        display: inline-block;
+        animation: home-cursor-blink 1s step-end infinite;
     }
 
     &__title {
@@ -59,7 +73,6 @@
             width: 60%;
             text-align: left;
         }
-
     }
 
     &__subtitle {
@@ -93,5 +106,172 @@
             flex-direction: row;
             align-items: flex-start;
         }
+    }
+
+    // faint dot grid, ambient texture
+    &__grid {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background-image: radial-gradient($gray-600 1px, transparent 1px);
+        background-size: 28px 28px;
+        opacity: 0.35;
+    }
+
+    // grid brightens locally around the main particle, wherever it currently is
+    &--interactive .home__grid {
+        mask-image: radial-gradient(220px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+                black 0%,
+                black 30%,
+                rgba(0, 0, 0, 0.35) 70%,
+                transparent 100%);
+        -webkit-mask-image: radial-gradient(220px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+                black 0%,
+                black 30%,
+                rgba(0, 0, 0, 0.35) 70%,
+                transparent 100%);
+    }
+
+    // soft highlight glow, always follows the main particle — idle or active
+    &--interactive::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background: radial-gradient(220px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+                rgba(203, 255, 60, 0.08),
+                transparent 70%);
+    }
+
+    // occasional sweep — brief pass, then a long quiet stretch before it repeats
+    &__scanline {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        z-index: 0;
+        pointer-events: none;
+        background: linear-gradient(to right,
+                transparent,
+                rgba(180, 248, 0, 0.35),
+                transparent);
+        box-shadow: 0 0 8px rgba(180, 248, 0, 0.25);
+        animation: home-scan 26s ease-in-out infinite;
+    }
+
+    // the main, cursor-following particle
+    &__reticle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+    }
+
+    &--pointer-active &__reticle {
+        opacity: 1;
+    }
+
+    &__reticle-line {
+        position: absolute;
+        background: rgba(203, 255, 60, 0.4);
+    }
+
+    &__reticle-line--h {
+        width: 18px;
+        height: 1px;
+        top: 0;
+        left: -9px;
+    }
+
+    &__reticle-line--v {
+        width: 1px;
+        height: 18px;
+        top: -9px;
+        left: 0;
+    }
+
+    &__reticle-dot {
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $special-500;
+        box-shadow: 0 0 6px 2px rgba(203, 255, 60, 0.5);
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    &--pointer-active &__reticle-dot {
+        background: $special-300;
+        box-shadow: 0 0 10px 3px rgba(228, 255, 153, 0.6);
+    }
+
+    // small ambient particles — always drifting on their own, never tied to the cursor
+    &__particle {
+        position: absolute;
+        top: -1.5px;
+        left: -1.5px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        z-index: 1;
+        pointer-events: none;
+        background: $special-800;
+        box-shadow: 0 0 4px 1px rgba(180, 248, 0, 0.35);
+        opacity: 0.5;
+    }
+}
+
+@keyframes home-scan {
+    0% {
+        top: 0%;
+        opacity: 0;
+    }
+
+    2% {
+        opacity: 0.6;
+    }
+
+    10% {
+        top: 100%;
+        opacity: 0.6;
+    }
+
+    13% {
+        top: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes home-cursor-blink {
+
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .home__intro-cursor,
+    .home__scanline {
+        animation: none;
     }
 }
