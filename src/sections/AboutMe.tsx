@@ -1,5 +1,6 @@
 import { SectionTitle } from "../assets/components/basics/SectionTitle"
-import about from '../assets/datafiles/about/about.json'
+import about from '../assets/datafiles/about/about.json';
+import ScrambleText from "../assets/components/basics/ScrambleText"
 
 const AboutMe = () => {
     return (
@@ -15,7 +16,7 @@ const AboutMe = () => {
                     </div>
                     <div className="about__languages">
                         <span className="about__languages__title">{about.languages_text}</span>
-                        {about.languages.map(lang => <p key={lang}>{lang}</p>)}
+                        {about.languages.map(lang => <ScrambleText className="about__languages__text" key={lang}>{lang}</ScrambleText>)}
                     </div>
                 </div>
             </div>

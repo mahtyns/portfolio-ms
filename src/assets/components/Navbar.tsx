@@ -20,9 +20,10 @@ const Navbar = () => {
                 {isAboveMediumScreen
                     ? <div className="navbar__menu">
                         <Navlink pageName="Home" clickedPage="home" setMenuToggled={setMenuToggled} isAnchor={true} />
-                        <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} isAnchor={true} />
                         <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={setMenuToggled} isAnchor={true} />
-                        <Navlink pageName="Experience" clickedPage="contact" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="Tech" clickedPage="technology" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="Experiences" clickedPage="contact" setMenuToggled={setMenuToggled} isAnchor={true} />
                         <Navlink pageName="Resume" setMenuToggled={setMenuToggled} isAnchor={false} linkURL="/doc/martynasmolarek2026.pdf" />
                         <Button
                             buttonContent={"Contact Me"}

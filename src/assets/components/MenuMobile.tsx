@@ -12,9 +12,10 @@ const MenuMobile = (props: Props) => {
       <div className="navbar-mobile__container">
         <div className="navbar-mobile__links">
           <Navlink pageName="Home" clickedPage="home" setMenuToggled={props.setMenuToggled} isAnchor={true} />
-          <Navlink pageName="About" clickedPage="about" setMenuToggled={props.setMenuToggled} isAnchor={true} />
           <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={props.setMenuToggled} isAnchor={true} />
-          <Navlink pageName="Experience" clickedPage="experience" setMenuToggled={props.setMenuToggled} isAnchor={true} />
+          <Navlink pageName="About" clickedPage="about" setMenuToggled={props.setMenuToggled} isAnchor={true} />
+          <Navlink pageName="Tech" clickedPage="technology" setMenuToggled={props.setMenuToggled} isAnchor={true} />
+          <Navlink pageName="Experiences" clickedPage="experience" setMenuToggled={props.setMenuToggled} isAnchor={true} />
           <Navlink pageName="Resume" setMenuToggled={props.setMenuToggled} isAnchor={false} linkURL="/doc/martynasmolarek2025.pdf" />
           <Button
             buttonContent={"Contact Me"}

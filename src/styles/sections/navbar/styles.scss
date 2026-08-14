@@ -30,6 +30,7 @@
             width: $size-5;
             height: $size-5;
             cursor: pointer;
+            filter: invert(1);
 
             @include md {
                 width: $size-6;
@@ -60,15 +61,14 @@
             align-items: center;
             justify-content: center;
             margin-top: -$space-2;
-            gap: $space-4;
+            gap: $space-2;
             height: 100%;
 
             a {
                 color: $main-white;
                 font-size: $font-md;
                 padding-bottom: $space-2;
-                border-bottom: solid 1px white;
-                font-family: $ibm;
+                font-family: $space;
                 text-transform: none;
             }
         }
@@ -93,9 +93,11 @@
     }
 
     .button {
-        padding: $size-2 $size-4;
+        padding: $size-3 $size-4;
         display: flex;
         align-items: center;
+        font-size: $font-bigger;
+        height: fit-content;
 
         &::after {
             content: '';

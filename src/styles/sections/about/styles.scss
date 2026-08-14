@@ -40,7 +40,11 @@
             color: $gray-400;
         }
 
-        font-size: $font-md;
+        &__text {
+            font-size: $font-md;
+            margin-right: $space-2;
+        }
+
 
 
         p {

@@ -2,7 +2,7 @@
 
 .projects {
     &__card {
-        padding: $space-3 $space-2;
+        padding: $space-3 0;
         border-bottom: solid $size-05 $gray-700;
         display: flex;
         flex-direction: column;
@@ -12,6 +12,7 @@
         @include md {
             gap: $space-4;
             flex-direction: row;
+            padding: $space-3 $space-2;
         }
 
         &:last-of-type {
