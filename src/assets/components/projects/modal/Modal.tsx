@@ -1,10 +1,10 @@
-import { ProjectDetails } from "../../../types/projects";
+// import { ProjectDetails } from "../../../types/projects";
 
-interface ModalProps {
-    project: ProjectDetails
-}
+// interface ModalProps {
+//     project: ProjectDetails
+// }
 
-export const Modal = (props: ModalProps) => {
+export const Modal = () => {
     return (
         <div className="projects__modal">
             <div>

@@ -4,10 +4,15 @@
     &__card {
         padding: $space-3 0;
         border-bottom: solid $size-05 $gray-700;
+        border-radius: $size-4;
         display: flex;
         flex-direction: column;
         gap: $space-2;
         cursor: pointer;
+
+        &:hover {
+            background-color: $gray-700;
+        }
 
         @include md {
             gap: $space-4;
@@ -143,6 +148,12 @@
             @include md {
                 order: 1;
             }
+
+            &:hover {
+                color: $special-800;
+                animation: Pulse 0.05s ease 9;
+                text-shadow: 0 0 $size-2 rgba($color: $special-800, $alpha: 0.2);
+            }
         }
 
         &__description {
@@ -250,5 +261,19 @@
     100% {
         top: 105%;
         opacity: 0;
+    }
+}
+
+@keyframes Pulse {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
     }
 }

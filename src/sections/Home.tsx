@@ -23,8 +23,8 @@ const Home = () => {
                     {home.text_description}
                 </div>
                 <div className='home__buttons'>
-                    <Button buttonContent={home.about_button} buttonVariant={true} handleOnClick={() => null} />
-                    <Button buttonContent={home.contact_button} buttonVariant={false} handleOnClick={() => null} />
+                    <Button buttonContent={home.about_button} buttonVariant={true} handleOnClick={() => window.location.href = '#projects'} />
+                    <Button buttonContent={home.contact_button} buttonVariant={false} handleOnClick={() => window.location.href = '#contact'} />
                 </div>
             </div>
         </section>

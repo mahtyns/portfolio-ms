@@ -1,7 +1,7 @@
 {
     "title": "Tech stack",
-    "description": "I build modern, scalable web experiences with a strong focus on React, TypeScript, and the broader JavaScript ecosystem. My work combines solid frontend architecture with a strong eye for visual detail, responsive design, accessibility, and performance.",
-    "description_extra": " I’m experienced in building reusable component systems, integrating APIs, working with modern application frameworks such as Next.js, and writing maintainable, testable code. My background in architecture brings an additional perspective to how I approach digital products — with an emphasis on structure, composition, usability, and attention to detail.",
+    "description": "I’m experienced in building reusable component systems, integrating APIs, working with modern application frameworks such as Next.js, and writing maintainable, testable code. My background in architecture brings an additional perspective to how I approach digital products — with an emphasis on structure, composition, usability, and attention to detail.",
+    "description_extra": "",
     "stack": [
         {
             "tech_name": "React",

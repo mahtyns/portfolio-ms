@@ -6,7 +6,7 @@
         font-size: $font-bigger;
 
         @include lg {
-            width: 50%;
+            width: 80%;
             border-right: solid $size-1 $main-dark;
             padding-right: $space-6;
         }
@@ -93,7 +93,7 @@
 
     .title-h2 {
         @include md {
-            font-size: $font-super;
+            font-size: $font-2xl;
             padding-top: $space-1;
         }
     }
