@@ -4,7 +4,7 @@
             "name": "Component development for CMS",
             "slug": "component-development",
             "date": "From 2025",
-            "description": "Designed and developed a library of reusable frontend components that could be configured and combined by content editors through the CMS. Components were built with responsive behavior, reusable styling and flexible content structures in mind, allowing the same patterns to support multiple page layouts.",
+            "description": "Designing, building, maintaining and upgrading components for the template used across various projects. From basic to more complex structures - including form component, tabs content, map with markers, search and filter component.",
             "stack": [
                 "Svelte",
                 "Astro",
@@ -17,8 +17,8 @@
             "link_github": "",
             "work_project": true,
             "image": {
-                "image_src": "",
-                "image_alt": ""
+                "image_src": "/images/projects/modules.webp",
+                "image_alt": "Modules & Components - Project thumbnail"
             }
         },
         {
@@ -41,30 +41,48 @@
             }
         },
         {
-            "name": "Recipe Saver",
-            "slug": "recipe-saver",
-            "date": "July 2026 / Work in progress",
-            "description": "App to save your favorite recipes, add new ones and categorize them. Built with NextJS and Firebase for backend.",
+            "name": "SMN x Toyota - Road Trip",
+            "slug": "smn-toyota-road-trip",
+            "date": "December 2024 / March 2025",
+            "description": "Colaboration of Secret Media Network and Toyota. Brought live from Figma design, includes complex Google Maps development with customized map markers, paths and interactive point cards.",
             "stack": [
-                "NextJS",
+                "Astro",
                 "TypeScript",
-                "Docker",
-                "PostgreSQL",
-                "CRUD"
+                "SCSS",
+                "Google Maps API"
             ],
-            "link_live": "",
-            "link_github": "https://github.com/mahtyns/recipe-saver",
-            "work_project": false,
+            "link_live": "https://toyotaroadtrip.secretmedianetwork.com",
+            "link_github": "",
+            "work_project": true,
             "image": {
-                "image_src": "/images/projects/recipe-saver.webp",
-                "image_alt": "Recipe Saver Project Thumbnail"
+                "image_src": "/images/projects/toyotasmn.webp",
+                "image_alt": "Secret Media Network x Toyota Project thumbnail"
+            }
+        },
+        {
+            "name": "Harry Potter: Forbidden Forest Experience",
+            "slug": "hp-forbidden-forest",
+            "date": "February / March 2025",
+            "description": "Complete redesign and migration from older stack to new tech. Moved from chaotic structure to clean design based on the shared template. Introduced more magic-like effects so the ambience follows the main wizardry topic.",
+            "stack": [
+                "Astro",
+                "TypeScript",
+                "SCSS",
+                "Figma"
+            ],
+            "link_live": "https://hpforbiddenforestexperience.com",
+            "link_github": "",
+            "work_project": true,
+            "image": {
+                "image_src": "/images/projects/hp-forbidden-forest.webp",
+                "image_alt": "Harry Potter Forbidden Forest Experience Project thumbnail"
             }
         },
         {
             "name": "Daniel Śnieżyński web",
             "slug": "daniel-sniezynski-meble",
             "date": "October / November 2023 - Revamp coming soon",
-            "description": "Freelance website created for a local business offering custom furniture and wooden terrace services. Designed and developed a bespoke, lightweight page using Vanilla JavaScript and Tailwind CSS, working directly with the client to deliver a tailored solution and deploying the final site to a custom domain via Netlify.",
+            "description": "Freelance website created for a local business offering custom furniture and wooden terrace services. Designed and developed a lightweight page with Vanilla JavaScript and Tailwind CSS, working directly with the client to deliver a tailored solution and deploying the final site to a custom domain via Netlify.",
             "stack": [
                 "Vanilla JS",
                 "Tailwind CSS",

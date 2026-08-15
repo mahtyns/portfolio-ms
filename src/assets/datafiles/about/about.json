@@ -1,7 +1,7 @@
 {
     "intro": "About me",
-    "main_text": "A Pole living in Madrid and a creative and detail-oriented Frontend Developer with a unique foundation in architecture and design. I’m a self-taught developer who’s been exploring the world of web development for the past few years. I build modern, scalable web experiences with a strong focus on React, TypeScript, and the broader JavaScript ecosystem. ",
-    "extra_text": "In my free time, I enjoy climbing, playing video games, creating art (mainly watercolor) and spending time with my cat, Cebula (Onion in Polish). If you'd like to find out more about me, don't hestitate to send me a message!",
+    "main_text": "Frontend Developer based in Madrid, with +5 years of experience, combining a background in architecture with modern web technologies to create interesting, scalable web experiences. I specialize in React and TypeScript with particular focus on component-driven, modular structures, design systems, and integrating AI-assisted workflows into development. Owning projects end-to-end, from initial Figma designs to production code.",
+    "extra_text": "Originally from Poland. Outside of work, you'll find me climbing, paiting, deep in a video game or hanging out with my cat. Let's connect!",
     "languages_text": "You can send me a message in:",
     "languages": [
         "English",
