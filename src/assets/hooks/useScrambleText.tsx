@@ -4,8 +4,8 @@ const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 export const useScrambleText = (
     text: string,
-    speed = 30,
-    increment = 0.2
+    speed = 15,
+    increment = 0.3
 ) => {
     const [displayText, setDisplayText] = useState(text)
     const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)

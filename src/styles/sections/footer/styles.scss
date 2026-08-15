@@ -32,10 +32,9 @@
     &__icon img {
         width: $size-6;
         height: $size-6;
-        filter: invert(1);
 
         &:hover {
-            filter: invert(0.8);
+            filter: brightness(1.2);
         }
     }
 }

@@ -4,6 +4,7 @@ import useMediaQueries from "../hooks/useMediaQueries";
 import Navlink from "./basics/Navlink"
 import MenuMobile from "./MenuMobile";
 import Button from "./basics/Button";
+import ScrambleText from "../components/basics/ScrambleText"
 
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
             <div
                 className={`navbar__wrapper`}>
                 <div className="navbar__logo">
-                    <span className={`navbar__logo__text`}>Martyna Smolarek</span>
+                    <ScrambleText className={`navbar__logo__text`}>Martyna Smolarek</ScrambleText>
                 </div>
                 {isAboveMediumScreen
                     ? <div className="navbar__menu">
@@ -37,7 +38,7 @@ const Navbar = () => {
                     :
                     <div className="navbar__menu navbar__menu--mobile">
                         <div className="navbar__menu__burger-icon" onClick={() => setMenuToggled(!isMenuToggled)}>
-                            <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" />
+                            <img src="/images/ui/menu-bars.png" alt="burger-menu" />
                         </div>
                         {
                             isMenuToggled ? <MenuMobile setMenuToggled={setMenuToggled} isMenuToggled={isMenuToggled} /> : null
