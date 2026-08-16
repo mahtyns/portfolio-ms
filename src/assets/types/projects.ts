@@ -15,7 +15,11 @@ export interface Project {
 
 export interface ProjectDetails {
     slug: string,
-    description: string
+    context: string,
+    approach: string,
+    implementation: string,
+    outcome: string,
+    extra: string,
 }
 
 export type ProjectGalleryItems = Project[];
