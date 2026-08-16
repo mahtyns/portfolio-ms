@@ -1,0 +1,29 @@
+@use './foundation' as *;
+@use './components' as *;
+@use './sections' as *;
+
+html,
+body,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: $inter;
+    color: $gray-300;
+}
+
+body {
+    counter-reset: titles;
+}
+
+.container {
+    margin: 0 auto;
+
+    @include md {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    @include lg {
+        max-width: 1250px;
+    }
+}

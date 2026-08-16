@@ -1,0 +1,279 @@
+@use '../../foundation' as *;
+
+.projects {
+    &__card {
+        padding: $space-3 0;
+        border-bottom: solid $size-05 $gray-700;
+        border-radius: $size-4;
+        display: flex;
+        flex-direction: column;
+        gap: $space-2;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $gray-700;
+        }
+
+        @include md {
+            gap: $space-4;
+            flex-direction: row;
+            padding: $space-3 $space-2;
+        }
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        &__count {
+            position: relative;
+
+            &::before {
+                counter-increment: projects;
+                content: "0" counter(projects);
+                color: $gray-500;
+                font-family: $ibm;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: $space-2;
+            width: 100%;
+        }
+
+        &__image-wrapper {
+            position: relative;
+            display: grid;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            clip-path: inset(0 0 100% 0);
+            transform: scaleY(0.8);
+            transform-origin: top;
+            border: solid $size-min rgba($color: $special-800, $alpha: 0.3);
+            transition:
+                max-height 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.2s ease,
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                clip-path 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        &.is-open {
+            .projects__card__image-wrapper {
+                max-height: 600px;
+                opacity: 1;
+                clip-path: inset(0);
+                transform: scaleY(1);
+            }
+
+            .projects__card__image {
+                transform: scale(1);
+                filter: saturate(1) contrast(1);
+            }
+
+            .projects__card__scanline {
+                animation: matrix-scan 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .projects__card__description {
+                display: block;
+            }
+        }
+
+        &__image {
+            display: block;
+            width: 100%;
+            height: $size-2xl;
+            object-fit: cover;
+            transform: scale(1.08);
+            filter: saturate(0.8) contrast(1.15);
+            transition:
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                filter 0.5s ease;
+        }
+
+        &__scanline {
+            position: absolute;
+            top: -10%;
+            left: 0;
+            width: 100%;
+            height: $size-1;
+            background: $special-800;
+            box-shadow:
+                0 0 $size-4 $special-500,
+                0 0 $size-6 rgba($color: $special-800, $alpha: 0.3);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        &__topbar {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: solid $size-min rgba($color: $special-800, $alpha: 0.3);
+            padding-bottom: $space-1;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: $space-1;
+
+            @include md {
+                gap: $space-3;
+                flex-wrap: nowrap;
+            }
+        }
+
+        &__dates {
+
+            font-family: $ibm;
+            text-transform: uppercase;
+            font-size: $font-small;
+            color: $gray-500;
+            order: 3;
+            width: 100%;
+
+
+            @include md {
+                width: fit-content !important;
+                text-align: right;
+                margin-right: 0;
+            }
+        }
+
+        &__title {
+            font-family: $space;
+            font-size: $font-md;
+            color: $gray-100;
+            order: 2;
+
+            @include md {
+                order: 1;
+            }
+
+            &:hover {
+                color: $special-800;
+                animation: Pulse 0.05s ease 9;
+                text-shadow: 0 0 $size-2 rgba($color: $special-800, $alpha: 0.2);
+            }
+        }
+
+        &__description {
+            font-size: $font-bigger;
+            color: $gray-400;
+            line-height: 150%;
+            display: none;
+        }
+
+        &__stack {
+            text-transform: uppercase;
+            font-size: $font-small;
+            gap: $space-1;
+            display: flex;
+            flex-wrap: wrap;
+
+            span {
+                color: $gray-100;
+                font-family: $ibm;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            gap: $space-2;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        &__work {
+            margin-left: 0;
+            text-transform: uppercase;
+            font-family: $space;
+            font-size: $font-small;
+            padding: $space-1;
+            color: $special-800;
+            @include card-bordered;
+            order: 1;
+
+            @include md {
+                margin-left: auto;
+                order: 2;
+            }
+        }
+
+        &__personal {
+            margin-left: 0;
+            text-transform: uppercase;
+            font-family: $space;
+            font-size: $font-small;
+            padding: $space-1;
+            color: $gray-300;
+            @include card-bordered;
+            order: 1;
+
+            @include md {
+                margin-left: auto;
+                order: 2;
+            }
+        }
+
+        .button {
+            padding: $space-min 0;
+            margin: 0 !important;
+            position: relative;
+            background-color: transparent;
+            border: none;
+            border-bottom: solid $size-05 $main-white;
+            display: flex;
+            align-items: center;
+
+            @include button-arrow;
+        }
+
+        .arrow-down {
+            order: 4;
+            transition: transform 0.3s ease;
+
+            img {
+                width: $size-3;
+                height: $size-3;
+            }
+
+            &--open {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+@keyframes matrix-scan {
+    0% {
+        top: -5%;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 105%;
+        opacity: 0;
+    }
+}
+
+@keyframes Pulse {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}

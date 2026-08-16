@@ -1,0 +1,75 @@
+@use '../../foundation' as *;
+
+.about {
+    .title-h2 {
+        padding-bottom: $space-1;
+        margin-bottom: $space-4;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        @include md {
+            flex-direction: row;
+        }
+    }
+
+    &__description,
+    &__description-extra {
+        font-size: $font-bigger;
+        line-height: 150%;
+
+        p {
+            margin-bottom: $space-1;
+            color: $gray-100;
+        }
+
+        @include md {
+            width: 60%;
+        }
+    }
+
+    &__languages {
+        &__title {
+            display: block;
+            font-size: $font-small;
+            margin-bottom: $space-1;
+            font-family: $ibm;
+            text-transform: uppercase;
+            color: $gray-400;
+        }
+
+        &__text {
+            font-size: $font-md;
+            margin-right: $space-2;
+        }
+
+
+
+        p {
+            display: inline;
+            color: $main-white;
+            font-family: $space;
+            margin: 0 $space-2;
+            position: relative;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            &::after {
+                position: absolute;
+                right: -$space-2;
+                content: '·';
+            }
+
+            &:last-of-type {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

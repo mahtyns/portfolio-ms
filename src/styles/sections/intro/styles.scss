@@ -1,0 +1,27 @@
+@use '../../foundation' as *;
+
+.intro {
+    &__description {
+        text-align: center;
+        color: $gray-400;
+
+        @include md {
+            text-align: left;
+        }
+    }
+
+    &__content {
+        &-cards {
+            display: flex;
+            flex-direction: column;
+            padding: $space-3 0;
+            gap: $space-3;
+
+            @include md {
+                flex-direction: row;
+                margin: $space-4 0;
+                gap: $space-4;
+            }
+        }
+    }
+}

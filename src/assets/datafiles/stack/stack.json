@@ -1,0 +1,147 @@
+{
+    "title": "Tech stack",
+    "description": "I’m experienced in building reusable component systems, integrating APIs, working with modern application frameworks such as Next.js, and writing maintainable, testable code. My background in architecture brings an additional perspective to how I approach digital products — with an emphasis on structure, composition, usability, and attention to detail.",
+    "description_extra": "",
+    "stack": [
+        {
+            "tech_name": "React",
+            "tech_img": "/images/stack/react.webp",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "TypeScript",
+            "tech_img": "/images/stack/typescript.webp",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "NextJS",
+            "tech_img": "/images/stack/next.webp",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "Svelte",
+            "tech_img": "/images/stack/svelte.webp",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "Astro JS",
+            "tech_img": "/images/stack/astro.webp",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "Github",
+            "tech_img": "/images/stack/github.webp",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "Docker",
+            "tech_img": "",
+            "tech_cat": "backend"
+        },
+        {
+            "tech_name": "REST API",
+            "tech_img": "",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "PostgreSQL",
+            "tech_img": "",
+            "tech_cat": "backend"
+        },
+        {
+            "tech_name": "AI Automations",
+            "tech_img": "",
+            "tech_cat": "AI"
+        },
+        {
+            "tech_name": "ZOD",
+            "tech_img": "",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "Airtable",
+            "tech_img": "",
+            "tech_cat": "automations"
+        },
+        {
+            "tech_name": "Playwright",
+            "tech_img": "",
+            "tech_cat": "testing"
+        },
+        {
+            "tech_name": "Vitest",
+            "tech_img": "",
+            "tech_cat": "testing"
+        },
+        {
+            "tech_name": "React Testing Library",
+            "tech_img": "",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "Responsive Design",
+            "tech_img": "",
+            "tech_cat": "webdev"
+        },
+        {
+            "tech_name": "SEO basics",
+            "tech_img": "",
+            "tech_cat": "webdev"
+        },
+        {
+            "tech_name": "Storybook",
+            "tech_img": "",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "Vite",
+            "tech_img": "",
+            "tech_cat": "other"
+        },
+        {
+            "tech_name": "SCSS",
+            "tech_img": "",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "BEM",
+            "tech_img": "",
+            "tech_cat": "frontend"
+        },
+        {
+            "tech_name": "Photoshop",
+            "tech_img": "",
+            "tech_cat": "design"
+        },
+        {
+            "tech_name": "Illustrator",
+            "tech_img": "",
+            "tech_cat": "design"
+        },
+        {
+            "tech_name": "Figma",
+            "tech_img": "",
+            "tech_cat": "design"
+        },
+        {
+            "tech_name": "Indesign",
+            "tech_img": "",
+            "tech_cat": "design"
+        },
+        {
+            "tech_name": "Canva",
+            "tech_img": "",
+            "tech_cat": "design"
+        },
+        {
+            "tech_name": "Asana",
+            "tech_img": "",
+            "tech_cat": "other"
+        },
+        {
+            "tech_name": "npm",
+            "tech_img": "",
+            "tech_cat": "other"
+        }
+    ]
+}

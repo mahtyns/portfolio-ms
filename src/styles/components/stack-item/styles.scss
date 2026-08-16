@@ -1,0 +1,28 @@
+@use '../../foundation' as *;
+
+.stack {
+    &__item {
+        width: $size-lg;
+        height: $size-lg;
+        padding: $space-2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: $space-2;
+        @include card-bordered;
+
+        &__image {
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            width: $size-sm;
+        }
+
+        &__text {
+            text-transform: uppercase;
+            font-size: $font-small;
+            color: $gray-100;
+            font-family: $space;
+        }
+    }
+}

@@ -1,44 +1,31 @@
 import Navbar from "./assets/components/Navbar"
-import About from "./assets/sections/About"
-import Contact from "./assets/sections/Contact"
-import Experience from "./assets/sections/Experience"
-import Home from "./assets/sections/Home"
-import Projects from "./assets/sections/Projects"
-import Technology from "./assets/sections/Technology"
-import Footer from "./assets/sections/Footer"
-import { useEffect, useState } from "react"
+import AboutMe from "./sections/AboutMe"
+import { ContactMe } from "./sections/ContactMe"
+import { Experience } from "./sections/Experience"
+import Footer from "./sections/Footer"
+import Home from "./sections/Home"
+import Projects from "./sections/Projects"
+import { Technology } from "./sections/Technology"
 
 
 function App() {
 
-  const [darkMode, setDarkMode] = useState(false)
-
-  useEffect( 
-    () => {
-    document.documentElement.classList.toggle('dark', darkMode)
-    }, [darkMode]
-  )
-
-  const handleDarkMode = () => {
-    setDarkMode(!darkMode)
-  }
-  
   return (
     <>
       <header>
-        <Navbar darkMode={darkMode} handleDarkMode={handleDarkMode}/>
+        <Navbar />
       </header>
-      <main className="dark:bg-main-dark">
+      <main >
         <Home />
         <Projects />
-        <About />
+        <AboutMe />
         <Technology />
         <Experience />
-        <Contact />
-        <Footer />
-        <div>
-        </div>
+        <ContactMe />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

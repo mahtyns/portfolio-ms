@@ -1,0 +1,11 @@
+{
+    "intro": "About me",
+    "main_text": "Frontend Developer based in Madrid, with +5 years of experience, combining a background in architecture with modern web technologies to create interesting, scalable web experiences. I specialize in React and TypeScript with particular focus on component-driven, modular structures, design systems, and integrating AI-assisted workflows into development. Owning projects end-to-end, from initial Figma designs to production code.",
+    "extra_text": "Originally from Poland. Outside of work, you'll find me climbing, paiting, deep in a video game or hanging out with my cat. Let's connect!",
+    "languages_text": "You can send me a message in:",
+    "languages": [
+        "English",
+        "Polish",
+        "Spanish"
+    ]
+}

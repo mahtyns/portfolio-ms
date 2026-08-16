@@ -1,0 +1,114 @@
+@use '../../foundation' as *;
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: solid $size-1 $special-800;
+    z-index: 20;
+    @include flex-row;
+    justify-content: center;
+    padding: $space-3 $space-5;
+
+    &__wrapper {
+        width: 100%;
+        @include flex-row;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        @include flex-row;
+        gap: $space-2;
+
+        &--mobile {
+            @include flex-row;
+            gap: $space-2;
+        }
+
+        &__theme-icon,
+        &__burger-icon img {
+            width: $size-5;
+            height: $size-5;
+            cursor: pointer;
+
+            @include md {
+                width: $size-6;
+                height: $size-6;
+            }
+        }
+    }
+
+    &-mobile {
+        &__container {
+            background-color: rgba($color: $main-dark, $alpha: 0.9);
+            backdrop-filter: blur($size-6);
+            height: 100vh;
+            width: 100%;
+            filter: opacity(0.98);
+            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+            border-left: 1px solid $gray-100;
+            z-index: 20;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: $space-6 $space-4;
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: -$space-2;
+            gap: $space-2;
+            height: 100%;
+
+            a {
+                color: $main-white;
+                font-size: $font-md;
+                padding-bottom: $space-2;
+                font-family: $space;
+                text-transform: none;
+            }
+        }
+
+        &__close {
+            position: absolute;
+            bottom: $space-4;
+            text-transform: up;
+            color: $gray-100;
+            letter-spacing: $font-wider;
+            background-color: transparent;
+            border: none;
+        }
+    }
+
+    &__logo {
+        &__text {
+            font-family: $ibm;
+            font-size: $font-md;
+            color: $special-800;
+        }
+    }
+
+    .button {
+        padding: $size-3 $size-4;
+        display: flex;
+        align-items: center;
+        font-size: $font-bigger;
+        height: fit-content;
+
+        &::after {
+            content: '';
+            background: url(/images/ui/_arrow.webp);
+            background-size: contain;
+            filter: invert(1);
+            background-repeat: no-repeat;
+            width: $size-4;
+            height: $size-4;
+            margin-left: $space-min;
+            display: inline-block;
+        }
+    }
+}

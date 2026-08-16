@@ -1,0 +1,100 @@
+@use '../../foundation' as *;
+
+.projects {
+    &__text {
+        color: $gray-400;
+        font-size: $font-bigger;
+
+        @include lg {
+            width: 80%;
+            border-right: solid $size-1 $main-dark;
+            padding-right: $space-6;
+        }
+    }
+
+    p {
+        @include lg {
+            line-height: 150%;
+        }
+    }
+
+    &--code {
+        @include lg {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include lg {
+            padding-left: $space-4;
+            width: 50%;
+            grid-template-columns: repeat(2, 1fr);
+            gap: $space-4 0;
+        }
+    }
+
+    &__item {
+        height: fit-content;
+        padding: $space-2 $space-4;
+        border-bottom: $size-1 solid $special-800;
+        height: 100%s;
+        min-height: $size-lg;
+        color: $gray-400;
+
+        &:nth-child(odd) {
+            border-right: $size-1 solid $special-800;
+        }
+
+        &__title {
+            font-family: $ibm;
+            text-transform: uppercase;
+            font-size: $font-bigger;
+        }
+    }
+
+    &--design {
+
+        counter-reset: projects;
+
+        @include md {
+            margin-top: $space-8 !important;
+        }
+
+        p {
+            width: 50%;
+            margin-left: 0;
+            color: $gray-300;
+        }
+
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        margin: $space-3 0;
+
+        @include md {
+            flex-direction: row;
+            margin: $space-6 0 $space-5;
+            gap: $space-3;
+        }
+    }
+
+    .button {
+        margin: $space-3 auto 0 0;
+        display: block;
+        position: relative;
+        @include button-arrow;
+    }
+
+    .title-h2 {
+        @include md {
+            font-size: $font-2xl;
+            padding-top: $space-1;
+        }
+    }
+}

@@ -3,57 +3,51 @@ import { useState } from "react";
 import useMediaQueries from "../hooks/useMediaQueries";
 import Navlink from "./basics/Navlink"
 import MenuMobile from "./MenuMobile";
-
-const flex = `flex items-center justify-between`
-
-type Props = {
-    darkMode: boolean,
-    handleDarkMode: () => void
-}
-
-const Navbar = (props:Props) => {
+import Button from "./basics/Button";
+import ScrambleText from "../components/basics/ScrambleText"
 
 
+const Navbar = () => {
     const [isMenuToggled, setMenuToggled] = useState(false)
     const isAboveMediumScreen = useMediaQueries("(min-width: 1024px)");
 
     return (
-        <nav >
+        <nav className="navbar section--black" >
             <div
-                className={`${flex} py-6 px-9 border-b border-gray-100 fixed top-0 bg-main-white z-20 w-full dark:bg-main-dark dark:border-gray-800`}>
-                <div>
-                    <span className={`font-playfair md:text-xl text-lg dark:text-gray-200`}>Martyna Smolarek</span>
+                className={`navbar__wrapper`}>
+                <div className="navbar__logo">
+                    <ScrambleText className={`navbar__logo__text`}>Martyna Smolarek</ScrambleText>
                 </div>
                 {isAboveMediumScreen
-                    ? <div className={`${flex} gap-4`}>
-                        <Navlink pageName="Home" clickedPage="home" setMenuToggled={setMenuToggled} />
-                        <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={setMenuToggled} />
-                        <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} />
-                        <Navlink pageName="Technology" clickedPage="technology" setMenuToggled={setMenuToggled} />
-                        <Navlink pageName="Experience" clickedPage="experience" setMenuToggled={setMenuToggled} />
-                        <Navlink pageName="Contact" clickedPage="contact" setMenuToggled={setMenuToggled} />
-                        {props.darkMode ? 
-                        <img src="https://cdn-icons-png.flaticon.com/512/11598/11598733.png" alt="dark mode" className="w-7 h-7 cursor-pointer invert" onClick={() => props.handleDarkMode()} /> : <img src="https://cdn-icons-png.flaticon.com/512/1415/1415431.png" alt="dark mode" className="w-6 h-6 cursor-pointer" onClick={()=>props.handleDarkMode()}/>}
-                        </div>
-                    : 
-                    <div className="flex flex-row gap-4">
-                    {props.darkMode ?
-                            <img src="https://cdn-icons-png.flaticon.com/512/11598/11598733.png" alt="dark mode" className="w-5 h-5 cursor-pointer invert" onClick={() => props.handleDarkMode()} /> : <img src="https://cdn-icons-png.flaticon.com/512/1415/1415431.png" alt="dark mode" className="w-5 h-5 cursor-pointer" onClick={() => props.handleDarkMode()} />}
-                    <div onClick={()=>setMenuToggled(!isMenuToggled)}>
-                        <img src="https://cdn-icons-png.flaticon.com/512/7073/7073780.png" alt="burger-menu" className="w-5 h-5 cursor-pointer dark:invert"/>
+                    ? <div className="navbar__menu">
+                        <Navlink pageName="Home" clickedPage="home" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="Tech" clickedPage="technology" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="Experiences" clickedPage="contact" setMenuToggled={setMenuToggled} isAnchor={true} />
+                        <Navlink pageName="Resume" setMenuToggled={setMenuToggled} isAnchor={false} linkURL="/doc/martynasmolarek2026.pdf" />
+                        <Button
+                            buttonContent={"Contact Me"}
+                            buttonVariant={false}
+                            handleOnClick={() =>
+                                window.location.href =
+                                "mailto:martyna.smolarek19@gmail.com?subject=Portfolio Contact&body=Hi Martyna,"
+                            }
+                        />
                     </div>
+                    :
+                    <div className="navbar__menu navbar__menu--mobile">
+                        <div className="navbar__menu__burger-icon" onClick={() => setMenuToggled(!isMenuToggled)}>
+                            <img src="/images/ui/menu-bars.png" alt="burger-menu" />
+                        </div>
                         {
-                    isMenuToggled ? <MenuMobile setMenuToggled={setMenuToggled} isMenuToggled={isMenuToggled} /> : null
+                            isMenuToggled ? <MenuMobile setMenuToggled={setMenuToggled} isMenuToggled={isMenuToggled} /> : null
                         }
                     </div>
-                    }
-                    
+                }
             </div>
-
         </nav>
     )
 }
-
-Navbar.propTypes = {}
 
 export default Navbar

@@ -1,21 +1,42 @@
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import ScrambleText from '../../components/basics/ScrambleText';
 
 type Props = {
     pageName: string
-    clickedPage: string
-    setMenuToggled: (value: boolean)=>void
+    clickedPage?: string
+    currentPage?: string
+    setMenuToggled: (value: boolean) => void
+    isAnchor: boolean
+    linkURL?: string
 }
 
 export const Navlink = (props: Props) => {
-  
-    return (
-    <AnchorLink 
-    href={`#${props.clickedPage}`} 
-    className={`tracking-wider uppercase text-base text-gray-500 dark:text-gray-200 hover:text-special-500 transition-all hover:tracking-widest`}
-    onClick={()=>props.setMenuToggled(false)}>
-        {props.pageName}
-    </AnchorLink>
-  )
+
+    const isActive = props.currentPage === props.clickedPage
+
+    return props.isAnchor ? (
+        <AnchorLink
+            href={`#${props.clickedPage}`}
+            className="navlink"
+            aria-label={`Go to ${props.pageName} section`}
+            aria-current={isActive ? 'page' : undefined}
+            onClick={() => props.setMenuToggled(false)}
+        >
+            <ScrambleText>
+                {props.pageName}
+            </ScrambleText>
+        </AnchorLink>
+    ) : (
+        <a
+            href={props.linkURL}
+            className="navlink"
+            aria-label={`Go to ${props.pageName}`}
+            onClick={() => props.setMenuToggled(false)}
+            target='_blank'
+        >
+            {props.pageName}
+        </a>
+    )
 }
 
 export default Navlink

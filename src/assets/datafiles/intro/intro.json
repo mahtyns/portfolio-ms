@@ -1,0 +1,26 @@
+{
+    "subtitle": "Always curious, always creating — here’s a bit more about what drives my work and keeps me inspired.",
+    "items": [
+        {
+            "name": "Reusable UIs",
+            "description": "I enjoy exploring ideas through design and code, turning concepts into engaging, visually balanced experiences that feel intuitive and thoughtful.",
+            "image_src": "/images/ui/atomic.png"
+        },
+        {
+            "name": "Complex Architecture",
+            "description": "I enjoy exploring ideas through design and code, turning concepts into engaging, visually balanced experiences that feel intuitive and thoughtful.",
+            "image_src": "/images/ui/architecture.png"
+        },
+        {
+            "name": "Design Principles",
+            "description": "I enjoy exploring ideas through design and code, turning concepts into engaging, visually balanced experiences that feel intuitive and thoughtful.",
+            "image_src": "/images/ui/design.png"
+        },
+        {
+            "name": "Automating workflows",
+            "description": "I enjoy exploring ideas through design and code, turning concepts into engaging, visually balanced experiences that feel intuitive and thoughtful.",
+            "image_src": "/images/ui/workflow.png"
+        }
+    ],
+    "h1_title": "Martyna Smolarek Portfolio"
+}

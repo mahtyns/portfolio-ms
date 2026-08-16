@@ -1,24 +1,31 @@
+import Button from "./basics/Button";
 import Navlink from "./basics/Navlink"
 
 type Props = {
   isMenuToggled: boolean;
-  setMenuToggled: (toggle: boolean)=> void
+  setMenuToggled: (toggle: boolean) => void
 }
 
-const MenuMobile = ( props: Props ) => {
+const MenuMobile = (props: Props) => {
   return (
-    <nav>
-      <div className="bg-main-dark h-screen w-5/6 z-50 absolute top-0 r p-24 right-0 dark:bg-gray-200">
-        <div className="w-5/6 flex justify-end" onClick={()=>props.setMenuToggled(!props.isMenuToggled)}>
-          <img src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="close button" className="w-6 h-6 invert cursor-pointer dark:invert-0"/>
-        </div>
-        <div className="flex gap-8 flex-col py-10 invert">
-          <Navlink pageName="Home" clickedPage="home" setMenuToggled={props.setMenuToggled}/>
-          <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={props.setMenuToggled} />
-          <Navlink pageName="About" clickedPage="about" setMenuToggled={props.setMenuToggled} />
-          <Navlink pageName="Technology" clickedPage="technology" setMenuToggled={props.setMenuToggled} />
-          <Navlink pageName="Experience" clickedPage="experience" setMenuToggled={props.setMenuToggled} />
-          <Navlink pageName="Contact" clickedPage="contact" setMenuToggled={props.setMenuToggled} />
+    <nav className="navbar-mobile">
+      <div className="navbar-mobile__container">
+        <div className="navbar-mobile__links">
+          <Navlink pageName="Home" clickedPage="home" setMenuToggled={props.setMenuToggled} isAnchor={true} />
+          <Navlink pageName="Projects" clickedPage="projects" setMenuToggled={props.setMenuToggled} isAnchor={true} />
+          <Navlink pageName="About" clickedPage="about" setMenuToggled={props.setMenuToggled} isAnchor={true} />
+          <Navlink pageName="Tech" clickedPage="technology" setMenuToggled={props.setMenuToggled} isAnchor={true} />
+          <Navlink pageName="Experiences" clickedPage="experience" setMenuToggled={props.setMenuToggled} isAnchor={true} />
+          <Navlink pageName="Resume" setMenuToggled={props.setMenuToggled} isAnchor={false} linkURL="/doc/martynasmolarek2025.pdf" />
+          <Button
+            buttonContent={"Contact Me"}
+            buttonVariant={false}
+            handleOnClick={() =>
+              window.location.href =
+              "mailto:martyna.smolarek19@gmail.com?subject=Portfolio Contact&body=Hi Martyna,"
+            }
+          />
+          <button className="navbar-mobile__close" onClick={() => props.setMenuToggled(false)}>Close menu</button>
         </div>
       </div>
     </nav>

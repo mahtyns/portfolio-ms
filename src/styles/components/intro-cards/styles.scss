@@ -1,0 +1,33 @@
+@use '../../foundation' as *;
+
+.intro {
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $space-1;
+        padding: $space-2;
+        @include card-bordered;
+
+        &__image {
+            max-width: $image-sm;
+
+            @include md {
+                max-width: $image-md;
+            }
+        }
+
+        &__description {
+            text-align: center;
+        }
+
+        &__title {
+            text-align: center;
+
+            h2 {
+                font-family: $ibm;
+                font-size: $font-bigger;
+            }
+        }
+    }
+}

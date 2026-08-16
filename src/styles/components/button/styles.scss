@@ -1,0 +1,38 @@
+@use '../../foundation' as *;
+
+.button {
+    padding: $space-1 $space-2;
+    font-weight: 300;
+    font-size: $font-base;
+    border: none;
+    font-family: $inter;
+    font-weight: 700;
+    height: 100%;
+    cursor: pointer;
+
+    @include md {
+        padding: $space-2;
+        transition: ease-in-out 1s all;
+    }
+
+    &--primary {
+        background-color: $special-800;
+        color: $main-dark;
+        border: solid $size-05 $special-800;
+
+
+        &:hover {
+            background-color: $special-300;
+        }
+    }
+
+    &--secondary {
+        background-color: $main-dark;
+        color: $main-white;
+        border: solid $size-05 $main-white;
+
+        &:hover {
+            background-color: $gray-600;
+        }
+    }
+}
