@@ -8,7 +8,6 @@
         display: flex;
         flex-direction: column;
         gap: $space-2;
-        cursor: pointer;
 
         &:hover {
             background-color: $gray-700;
@@ -109,6 +108,7 @@
 
         &__topbar {
             display: flex;
+            cursor: pointer;
             justify-content: space-between;
             border-bottom: solid $size-min rgba($color: $special-800, $alpha: 0.3);
             padding-bottom: $space-1;

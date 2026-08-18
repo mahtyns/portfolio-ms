@@ -4,7 +4,7 @@ import { SectionTitle } from "../assets/components/basics/SectionTitle"
 import { DesignCard } from "../assets/components/projects/design/DesignCard"
 import { project_list } from '../assets/datafiles/projects/projects.json'
 import { project_details } from '../assets/datafiles/projects/projects-detailed.json'
-// import { Modal } from "../assets/components/projects/modal/Modal";
+import { Modal } from "../assets/components/projects/modal/Modal";
 
 
 const Projects = () => {
@@ -33,9 +33,9 @@ const Projects = () => {
                 }
                 <Button buttonVariant={false} buttonContent="See more on Github" handleOnClick={() => window.open('https://github.com/mahtyns/')} />
             </div>
-            {/* {
-                projectModal && selectedProject && <Modal project={selectedProject} />
-            } */}
+            {
+                projectModal && selectedProject && <Modal project={selectedProject} onClose={() => setProjectModal(null)} />
+            }
         </section>
     )
 }

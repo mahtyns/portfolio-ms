@@ -15,13 +15,12 @@ export const DesignCard = ({
     return (
         <div
             className={`projects__card ${open ? 'is-open' : ''} `}
-            onClick={() => setOpen(!open)}
         >
             <div className="projects__card__count">
             </div>
 
             <div className="projects__card__content">
-                <div className="projects__card__topbar">
+                <div className="projects__card__topbar" onClick={() => setOpen(!open)}>
                     <h3 className="projects__card__title">
                         {project.name}
                     </h3>
@@ -83,11 +82,13 @@ export const DesignCard = ({
                         />
                     }
 
-                    {/* <Button
-                        buttonContent="See more"
-                        buttonVariant={false}
-                        handleOnClick={() => setProjectModal(project.slug)}
-                    /> */}
+                    {
+                        project.enable_modal && <Button
+                            buttonContent="Detailed information"
+                            buttonVariant={false}
+                            handleOnClick={() => setProjectModal(project.slug)}
+                        />
+                    }
                 </div>
             </div>
         </div>

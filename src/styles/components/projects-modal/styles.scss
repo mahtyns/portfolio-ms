@@ -1,12 +1,15 @@
 @use '../../foundation' as *;
 
+$modal-bar-height: $size-3;
+$modal-duration: 1500ms;
+
 .projects {
     &__modal {
         position: fixed;
         width: 100%;
         height: 100%;
-        overflow: hidden;
-        background-color: rgba($color: $gray-700, $alpha: 0.5);
+        background-color: rgba($color: $gray-700, $alpha: 0.75);
+        backdrop-filter: blur($size-2);
         top: 0;
         left: 0;
         inset: 0;
@@ -14,5 +17,160 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        opacity: 0;
+        animation: modal-overlay-in 200ms ease-out forwards;
+
+        &--closing {
+            animation: modal-overlay-out 250ms ease-in forwards;
+            animation-delay: $modal-duration - 250ms;
+        }
+
+        &__container {
+            position: relative;
+            width: 95%;
+            height: $screen-md;
+            background-color: $gray-700;
+            @include card-bordered;
+            border-radius: $size-3;
+            clip-path: inset(0 50% calc(100% - #{$modal-bar-height}) 50% round $size-3);
+            animation: modal-reveal $modal-duration cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            padding: $space-3;
+            overflow-y: scroll;
+            scrollbar-color: $gray-600 $gray-800 ;
+
+            @include md {
+                width: 65%;
+                padding: $space-5;
+            }
+
+            &--closing {
+                animation: modal-reveal-close $modal-duration cubic-bezier(0.7, 0, 0.84, 0) forwards;
+            }
+        }
+
+        &__topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: solid $size-min rgba($color: $special-800, $alpha: 0.3);
+            padding-bottom: $space-2;
+            margin-bottom: $space-2;
+
+            &__title {
+                font-family: $space;
+                color: $special-500;
+                font-size: $font-md;
+            }
+
+            &__close {
+                cursor: pointer;
+            }
+
+            img {
+                width: $size-6;
+                height: $size-6;
+                object-fit: contain;
+            }
+        }
+
+        &__content {
+            &__block {
+                margin-bottom: $space-2;
+                color: $gray-400;
+            }
+
+            &__image {
+                width: 100%;
+                margin-bottom: $space-2;
+
+                img {
+                    width: 100%;
+                    height: $size-2xl;
+                    object-fit: cover;
+                    @include card-bordered;
+                }
+
+                span {
+                    font-size: $font-small;
+                }
+            }
+
+            &__title {
+                display: block;
+                font-family: $ibm;
+                font-size: $font-bigger;
+                margin-bottom: $space-1;
+                color: $gray-100;
+            }
+        }
+    }
+}
+
+@keyframes modal-overlay-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modal-overlay-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes modal-reveal {
+    0% {
+        clip-path: inset(0 50% calc(100% - #{$modal-bar-height}) 50% round $size-3);
+        box-shadow: 0 0 0 rgba($special-500, 0);
+        background-color: rgba($color: $special-800, $alpha: 0.7);
+    }
+
+    35% {
+        clip-path: inset(0 0% calc(100% - #{$modal-bar-height}) 0% round $size-3);
+        box-shadow: 0 0 $size-6 rgba($special-500, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 $size-6 rgba($special-500, 0.3);
+    }
+
+    100% {
+        clip-path: inset(0 0% 0% 0% round $size-3);
+        box-shadow: 0 0 0 rgba($special-500, 0);
+    }
+}
+
+@keyframes modal-reveal-close {
+    0% {
+        clip-path: inset(0 0% 0% 0% round $size-3);
+        box-shadow: 0 0 0 rgba($special-500, 0);
+    }
+
+    50% {
+        clip-path: inset(0 0% calc(100% - #{$modal-bar-height}) 0% round $size-3);
+        box-shadow: 0 0 $size-6 rgba($special-500, 0.5);
+    }
+
+    100% {
+        clip-path: inset(0 50% calc(100% - #{$modal-bar-height}) 50% round $size-3);
+        box-shadow: 0 0 0 rgba($special-500, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .projects__modal,
+    .projects__modal__container {
+        animation: none !important;
+        opacity: 1;
+        clip-path: inset(0 round $size-3) !important;
     }
 }

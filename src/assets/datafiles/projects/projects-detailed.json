@@ -2,15 +2,34 @@
     "project_details": [
         {
             "slug": "component-development",
-            "description": ""
+            "name": "Development of CMS template components",
+            "context": "Content management systems are living organisms and evolve continuously. They must adapt to the needs of the users, and sometimes new implementations are needed to present the information on the page and organise contents in a better way. I have experience with managing the components of those systems - adding new modules, updating existing ones and fixing bugs.",
+            "approach": "The new implementations must ensure that the component could be added in all of the pages, be easily understood by the users that don't work with code, and the content management will work in both decap and Payload CMS. This is a particular challenge, since both CMS have different features and adapters are needed. What is needed is to understand the goal of the new feature - who would use it, what should be the possible functionalities and layouts, what information should it present. The implementation is done in phases - a study, coding sessions, testing and review.",
+            "implementation": "I start every implementation with study - a doc that covers the goal of the new feature, the information that is currently available, things needed to be mentioned before starting and possible implementation plans. For the study I try to collect as much information as possible - depending if the task is to create a new module or update an existing one, I review the current database, component ideas in other webpages, possible challenges. I always keep in mind the problem I am trying to solve for the future user. After creating a study and having it reviewed by collegues, I can move on to the coding phase. In this phase, I plan the file structure and necessary layouts and components for the new module. If the implementation is more complex, I will divide it into smaller, reusable components. I need to think of various spaces where the module lives - the code base, the decap and Payload CMS, and the adapter to read the module in both techs. I then try to leave the how-to-test and implementation goals as clear as possible for the code reviewers.",
+            "outcome": "New modules are available for all of the users. The user fills fields in the CMS and adds the module in the desired webpage. The modules receive props from the CMS, are fully responsible and follow BEM convention in SCSS. The new module can also customized - added style classes make the design flexible.",
+            "extra": "I was responsible for creation of components such as Tabs component (changing content by clicking on the tab name), Reveal Content (Show more button), Advanced Map Marker module (Google Maps implementation), Search and Filter module.",
+            "images": [
+                {
+                    "url": "/images/projects/detailed/components/component-study.webp",
+                    "alt": "Study phase of the component creation - Figma schemas and study doc"
+                },
+                {
+                    "url": "/images/projects/detailed/components/component-pr.webp",
+                    "alt": "PR of the implementation - with live previews and how-to-test instructions"
+                },
+                {
+                    "url": "/images/projects/detailed/components/component-live.webp",
+                    "alt": "Live version of the component, used by the CMS users in a webpage"
+                }
+            ]
         },
         {
             "slug": "recipe-saver",
+            "name": "",
             "context": "",
             "approach": "",
             "implementation": "",
-            "outcome": "",
-            "extra": ""
+            "outcome": ""
         }
     ]
 }

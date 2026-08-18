@@ -1,3 +1,8 @@
+interface ProjectImages {
+    url: string,
+    alt: string
+}
+
 export interface Project {
     name: string,
     slug: string,
@@ -6,6 +11,7 @@ export interface Project {
     stack: string[],
     link_live?: string,
     link_github?: string,
+    enable_modal: boolean,
     work_project: boolean,
     image: {
         image_src: string,
@@ -15,11 +21,13 @@ export interface Project {
 
 export interface ProjectDetails {
     slug: string,
+    name: string,
     context: string,
     approach: string,
     implementation: string,
     outcome: string,
-    extra: string,
+    extra?: string,
+    images?: ProjectImages[]
 }
 
 export type ProjectGalleryItems = Project[];
