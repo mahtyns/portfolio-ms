@@ -24,6 +24,27 @@
             }
         },
         {
+            "name": "AI Automated Generation Workflow",
+            "slug": "ai-automated-workflow",
+            "date": "From January 2026",
+            "description": "Leading the creation of AI processes and skills to automate not only daily repetitive tasks, but also the whole complex process of the generation of the landing page, from receiving the partner's guidelines to deployment.",
+            "stack": [
+                "Claude",
+                "Cursor",
+                "MCP",
+                "Payload CMS",
+                "Figma"
+            ],
+            "link_live": "",
+            "link_github": "",
+            "enable_modal": false,
+            "work_project": true,
+            "image": {
+                "image_src": "/images/projects/ai-automation.webp",
+                "image_alt": "AI Automated Workflow - Page Creation - Project thumbnail"
+            }
+        },
+        {
             "name": "Formula 1® Grand Prix España 2026",
             "slug": "formula-1-spain-gp",
             "date": "August / September 2025",
@@ -44,6 +65,27 @@
             }
         },
         {
+            "name": "Recipe Saver (WIP)",
+            "slug": "recipe-saver",
+            "date": "From July 2026",
+            "description": "Personal project for an app that would keep a list of ingredients, let the user save their recipes, check the products currently in their pantry and generate shopping lists. With SQL solution, but works also with mock data.",
+            "stack": [
+                "React",
+                "NextJS",
+                "TypeScript",
+                "Docker",
+                "PostgreSQL"
+            ],
+            "link_live": "",
+            "link_github": "https://github.com/mahtyns/recipe-saver",
+            "work_project": false,
+            "enable_modal": false,
+            "image": {
+                "image_src": "/images/projects/recipe-saver.webp",
+                "image_alt": "Recipe Saver Personal Project Project thumbnail"
+            }
+        },
+        {
             "name": "SMN x Toyota - Road Trip",
             "slug": "smn-toyota-road-trip",
             "date": "December 2024 / March 2025",
@@ -61,26 +103,6 @@
             "image": {
                 "image_src": "/images/projects/toyotasmn.webp",
                 "image_alt": "Secret Media Network x Toyota Project thumbnail"
-            }
-        },
-        {
-            "name": "Harry Potter: Forbidden Forest Experience",
-            "slug": "hp-forbidden-forest",
-            "date": "February / March 2025",
-            "description": "Complete redesign and migration from older stack to new tech. Moved from chaotic structure to clean design based on the shared template. Introduced more magic-like effects so the ambience follows the main wizardry topic.",
-            "stack": [
-                "Astro",
-                "TypeScript",
-                "SCSS",
-                "Figma"
-            ],
-            "link_live": "https://hpforbiddenforestexperience.com",
-            "link_github": "",
-            "enable_modal": false,
-            "work_project": true,
-            "image": {
-                "image_src": "/images/projects/hp-forbidden-forest.webp",
-                "image_alt": "Harry Potter Forbidden Forest Experience Project thumbnail"
             }
         },
         {
