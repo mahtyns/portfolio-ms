@@ -108,19 +108,21 @@
         {
             "name": "Daniel Śnieżyński web",
             "slug": "daniel-sniezynski-meble",
-            "date": "October / November 2023 - Revamp coming soon",
-            "description": "Freelance website created for a local business offering custom furniture and wooden terrace services. Designed and developed a lightweight page with Vanilla JavaScript and Tailwind CSS, working directly with the client to deliver a tailored solution and deploying the final site to a custom domain via Netlify.",
+            "date": "October / November 2023 - Revamp October 2026",
+            "description": "Freelance website created for a Warsaw-based custom furniture and woodwork business. It presents the company's offer, a gallery of finished projects and contact details, so potential clients can see the work and get in touch quickly.",
             "stack": [
-                "Vanilla JS",
-                "Tailwind CSS",
+                "Astro",
+                "Svelte",
+                "SCSS",
+                "SEO",
                 "Netlify"
             ],
             "link_live": "https://meblesniezynski.com/",
-            "link_github": "https://github.com/mahtyns/danielsniezynski-meble",
+            "link_github": "https://github.com/mahtyns/danielsniezynski-meble-new",
             "work_project": false,
             "enable_modal": false,
             "image": {
-                "image_src": "https://i.ibb.co/LRNcRsb/daniel.jpg",
+                "image_src": "/images/projects/daniel-sniezynski.webp",
                 "image_alt": "Daniel Śnieżyński Page Project Thumbnail"
             }
         }
