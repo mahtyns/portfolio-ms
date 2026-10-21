@@ -25,7 +25,6 @@ const Navbar = () => {
                         <Navlink pageName="About" clickedPage="about" setMenuToggled={setMenuToggled} isAnchor={true} />
                         <Navlink pageName="Tech" clickedPage="technology" setMenuToggled={setMenuToggled} isAnchor={true} />
                         <Navlink pageName="Experiences" clickedPage="contact" setMenuToggled={setMenuToggled} isAnchor={true} />
-                        <Navlink pageName="Resume" setMenuToggled={setMenuToggled} isAnchor={false} linkURL="/doc/martynasmolarek2026.pdf" />
                         <Button
                             buttonContent={"Contact Me"}
                             buttonVariant={false}
