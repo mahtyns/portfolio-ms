@@ -86,24 +86,26 @@
             }
         },
         {
-            "name": "Recipe Saver (WIP)",
-            "slug": "recipe-saver",
-            "date": "From July 2026",
-            "description": "Personal project for an app that would keep a list of ingredients, let the user save their recipes, check the products currently in their pantry and generate shopping lists. With SQL solution, but works also with mock data.",
+            "name": "Formula 1 Bets Page (WIP)",
+            "slug": "f1-bets",
+            "date": "October 2026",
+            "description": "An web app to place bets on the F1 GPs Results. Using NextJS with Supabase for database. Comparing the user bets with the official results from the Open F1 API. Track info, race stats, choosing various bets options.",
             "stack": [
                 "React",
                 "NextJS",
                 "TypeScript",
-                "Docker",
-                "PostgreSQL"
+                "Supabase",
+                "PostgreSQL",
+                "API",
+                "Claude AI"
             ],
-            "link_live": "",
+            "link_live": "https://rosario-racing.netlify.app",
             "link_github": "https://github.com/mahtyns/recipe-saver",
             "work_project": false,
             "enable_modal": false,
             "image": {
-                "image_src": "/images/projects/recipe-saver.webp",
-                "image_alt": "Recipe Saver Personal Project Project thumbnail"
+                "image_src": "/images/projects/f1-app.webp",
+                "image_alt": "F1 Bets App Personal Project Project thumbnail"
             }
         },
         {
